@@ -1,0 +1,58 @@
+{
+    "heroTitle": "Welcome to CAVIC Festival 2025",
+    "heroSubtitle": "Exploring the Future of Technology",
+    "eventDate": "2025-09-15T09:00:00.000Z",
+    "sponsors": [
+        {
+            "name": "TechCorp",
+            "logo": "/logos/techcorp.svg"
+        },
+        {
+            "name": "InnovateTech",
+            "logo": "/logos/innovatetech.svg"
+        },
+        {
+            "name": "FutureSystems",
+            "logo": "/logos/futuresystems.svg"
+        }
+    ],
+    "aboutFestival": "CAVIC Festival is an annual celebration of innovation and technology. Join us for inspiring talks, hands-on workshops, and networking opportunities with industry leaders.",
+    "aboutWorkshop": "Our annual workshop offers intensive, hands-on learning experiences led by industry experts. Dive deep into cutting-edge technologies and emerging trends.",
+    "pressAppearances": [
+        {
+            "title": "CAVIC Festival Featured in TechCrunch",
+            "url": "https://techcrunch.com/tech-festival-feature"
+        },
+        {
+            "title": "Wired Magazine Highlights CAVIC Festival Innovations",
+            "url": "https://wired.com/tech-festival-innovations"
+        },
+        {
+            "title": "Forbes: CAVIC Festival Shaping the Future of Technology",
+            "url": "https://forbes.com/tech-festival-future"
+        }
+    ],
+    "callToAction": {
+        "title": "Join Us in Shaping the Future",
+        "description": "We're always looking for innovative partners, inspiring speakers, and passionate collaborators. If you're interested in being a part of CAVIC Festival, we'd love to hear from you!",
+        "buttonText": "Get Involved"
+    },
+    "gallery": [
+        {
+            "image": "/images/gallery1.jpg",
+            "alt": "CAVIC Festival Keynote"
+        },
+        {
+            "image": "/images/gallery2.jpg",
+            "alt": "Workshop Session"
+        },
+        {
+            "image": "/images/gallery3.jpg",
+            "alt": "Networking Event"
+        },
+        {
+            "image": "/images/gallery4.jpg",
+            "alt": "Exhibition Hall"
+        }
+    ]
+}

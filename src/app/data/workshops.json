@@ -1,0 +1,201 @@
+{
+  "2025": {
+    "status": "upcoming",
+    "title": "Tech Workshop 2025",
+    "date": "2025-03-15T09:00:00.000Z",
+    "location": "Tech City Innovation Hub",
+    "theme": "AI and the Future of Work",
+    "brief": "Join us for an intensive 4-day workshop exploring the impact of AI on various industries and the future of work. Engage in hands-on sessions, listen to expert talks, and network with industry leaders to gain insights into how AI is reshaping our professional landscape.",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "title": "Introduction to AI and Machine Learning",
+        "sessions": [
+          {
+            "time": "9:00 AM - 10:30 AM",
+            "title": "Keynote: The State of AI",
+            "speaker": "Dr. Jane Smith",
+            "location": "Main Auditorium",
+            "description": "Dr. Smith will provide an overview of current AI trends and their potential impact on various industries."
+          },
+          {
+            "time": "11:00 AM - 12:30 PM",
+            "title": "Workshop: Hands-on Machine Learning",
+            "speaker": "John Doe",
+            "location": "Lab A",
+            "description": "An interactive session where participants will get hands-on experience with basic machine learning algorithms."
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      {
+        "name": "Dr. Jane Smith",
+        "bio": "AI Researcher",
+        "image": "/speakers/jane-smith.jpg",
+        "socials": {
+          "twitter": "https://twitter.com/janesmith",
+          "linkedin": "https://linkedin.com/in/janesmith"
+        }
+      },
+      {
+        "name": "John Doe",
+        "bio": "Machine Learning Expert",
+        "image": "/speakers/john-doe.jpg",
+        "socials": {
+          "twitter": "https://twitter.com/johndoe",
+          "linkedin": "https://linkedin.com/in/johndoe"
+        }
+      }
+    ],
+    "highlights": [
+      {
+        "title": "AI in Healthcare Panel",
+        "description": "Leading healthcare professionals discuss the impact of AI in medicine",
+        "images": ["/highlights/ai-healthcare1.jpg", "/highlights/ai-healthcare2.jpg"],
+        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      {
+        "title": "Future of Work Exhibition",
+        "description": "Explore how AI is transforming various industries and job roles",
+        "images": ["/highlights/future-work1.jpg", "/highlights/future-work2.jpg"],
+        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/gallery/workshop2025-1.jpg",
+        "alt": "Opening Session"
+      },
+      {
+        "image": "/gallery/workshop2025-2.jpg",
+        "alt": "Hands-on Workshop"
+      },
+      {
+        "image": "/gallery/workshop2025-3.jpg",
+        "alt": "Networking Break"
+      },
+      {
+        "image": "/gallery/workshop2025-4.jpg",
+        "alt": "Closing Ceremony"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "title": "TechCrunch: AI Workshop 2025 Shapes the Future of Work",
+        "url": "https://techcrunch.com/ai-workshop-2025",
+        "image": "/press/techcrunch.png"
+      },
+      {
+        "title": "Forbes: How AI Workshop 2025 is Preparing the Workforce for Tomorrow",
+        "url": "https://forbes.com/ai-workshop-2025",
+        "image": "/press/forbes.png"
+      },
+      {
+        "title": "Wired: Emerging AI Trends Spotted at Tech Workshop 2025",
+        "url": "https://wired.com/ai-workshop-2025",
+        "image": "/press/wired.png"
+      }
+    ]
+  },
+  "2024": {
+    "status": "past",
+    "title": "Tech Workshop 2024",
+    "date": "2024-03-20T09:00:00.000Z",
+    "location": "Tech City Innovation Hub",
+    "theme": "Blockchain and Decentralized Systems",
+    "brief": "Dive deep into the world of blockchain and decentralized systems in this 4-day intensive workshop. Learn about cryptocurrency, smart contracts, and the potential of decentralized applications (dApps) to revolutionize various industries.",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "title": "Introduction to Blockchain Technology",
+        "sessions": [
+          {
+            "time": "9:00 AM - 10:30 AM",
+            "title": "Keynote: The Promise of Blockchain",
+            "speaker": "Alex Johnson",
+            "location": "Main Auditorium",
+            "description": "Alex Johnson will provide an overview of blockchain technology and its potential applications across industries."
+          },
+          {
+            "time": "11:00 AM - 12:30 PM",
+            "title": "Workshop: Building Your First Smart Contract",
+            "speaker": "Maria Garcia",
+            "location": "Lab B",
+            "description": "A hands-on session where participants will create and deploy their first Ethereum smart contract."
+          }
+        ]
+      }
+    ],
+    "speakers": [
+      {
+        "name": "Alex Johnson",
+        "bio": "Blockchain Researcher",
+        "image": "/speakers/alex-johnson.jpg",
+        "socials": {
+          "twitter": "https://twitter.com/alexjohnson",
+          "linkedin": "https://linkedin.com/in/alexjohnson"
+        }
+      },
+      {
+        "name": "Maria Garcia",
+        "bio": "Smart Contract Developer",
+        "image": "/speakers/maria-garcia.jpg",
+        "socials": {
+          "twitter": "https://twitter.com/mariagarcia",
+          "linkedin": "https://linkedin.com/in/mariagarcia"
+        }
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Decentralized Finance (DeFi) Panel",
+        "description": "Experts discuss the future of finance in a decentralized world",
+        "images": ["/highlights/defi-panel1.jpg", "/highlights/defi-panel2.jpg"],
+        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      {
+        "title": "Blockchain in Supply Chain Showcase",
+        "description": "Explore how blockchain is revolutionizing supply chain management",
+        "images": ["/highlights/blockchain-supply1.jpg", "/highlights/blockchain-supply2.jpg"],
+        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    ],
+    "gallery": [
+      {
+        "image": "/gallery/workshop2024-1.jpg",
+        "alt": "Blockchain Demo"
+      },
+      {
+        "image": "/gallery/workshop2024-2.jpg",
+        "alt": "Smart Contract Workshop"
+      },
+      {
+        "image": "/gallery/workshop2024-3.jpg",
+        "alt": "Networking Event"
+      },
+      {
+        "image": "/gallery/workshop2024-4.jpg",
+        "alt": "Closing Panel"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "title": "TechCrunch: Blockchain Workshop 2024 Showcases Decentralized Future",
+        "url": "https://techcrunch.com/blockchain-workshop-2024",
+        "image": "/press/techcrunch.png"
+      },
+      {
+        "title": "Forbes: How Blockchain Workshop 2024 is Shaping the Future of Finance",
+        "url": "https://forbes.com/blockchain-workshop-2024",
+        "image": "/press/forbes.png"
+      },
+      {
+        "title": "Wired: Innovative Blockchain Applications Unveiled at Tech Workshop 2024",
+        "url": "https://wired.com/blockchain-workshop-2024",
+        "image": "/press/wired.png"
+      }
+    ]
+  }
+}
+

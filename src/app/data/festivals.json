@@ -1,0 +1,548 @@
+{
+    "2025": {
+        "status": "upcoming",
+        "title": "CAVIC Festival 2025",
+        "date": "2025-09-15T09:00:00.000Z",
+        "location": "Tech City Convention Center",
+        "theme": "Shaping the Digital Future",
+        "brief": "Join us for an exciting 3-day festival celebrating the latest advancements in technology. From AI and quantum computing to cybersecurity and digital art, explore how technology is shaping our future across various domains.",
+        "schedule": [
+            {
+                "day": "Day 1",
+                "title": "The Future of Computing",
+                "sessions": [
+                    {
+                        "time": "9:00 AM - 10:30 AM",
+                        "title": "Keynote: Quantum Computing: The Next Frontier",
+                        "speaker": "Dr. Alice Johnson",
+                        "location": "Main Stage",
+                        "description": "Dr. Johnson will explore the potential of quantum computing and its implications for various industries."
+                    },
+                    {
+                        "time": "11:00 AM - 12:30 PM",
+                        "title": "Panel Discussion: The Ethics of AI",
+                        "location": "Panel Room A",
+                        "description": "Leading experts discuss the ethical considerations surrounding the development and deployment of AI technologies."
+                    }
+                ]
+            }
+        ],
+        "speakers": [
+            {
+                "name": "Lailay Ali Othman",
+                "bio": "CEO L&N Group of Companies",
+                "image": "/speakers/alice-johnson.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/alicejohnson",
+                    "linkedin": "https://linkedin.com/in/alicejohnson"
+                }
+            },
+            {
+                "name": "Bob Williams",
+                "bio": "Cybersecurity Expert",
+                "image": "/speakers/bob-williams.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/bobwilliams",
+                    "linkedin": "https://linkedin.com/in/bobwilliams"
+                }
+            }
+        ],
+        "highlights": [
+            {
+                "title": "Quantum Computing Demo",
+                "description": "Experience the power of quantum computing firsthand",
+                "images": [
+                    "/highlights/quantum-demo1.jpg",
+                    "/highlights/quantum-demo2.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "thumbnail": "/thumbnails/quantum-demo.jpg"
+            },
+            {
+                "title": "AI Art Exhibition",
+                "description": "Explore the intersection of AI and creativity",
+                "images": [
+                    "/highlights/ai-art1.jpg",
+                    "/highlights/ai-art2.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "thumbnail": "/thumbnails/ai-art.jpg"
+            }
+        ],
+        "exhibitions": [
+            {
+                "name": "NOK Exhibition",
+                "description": "Showcasing the latest in Norwegian technology",
+                "image": "/exhibitions/nok.jpg"
+            },
+            {
+                "name": "VR Exhibition",
+                "description": "Immersive virtual reality experiences",
+                "image": "/exhibitions/vr.jpg"
+            }
+        ],
+        "gallery": [
+            {
+                "image": "/gallery/festival2025-1.jpg",
+                "alt": "Opening Ceremony"
+            },
+            {
+                "image": "/gallery/festival2025-2.jpg",
+                "alt": "Keynote Speech"
+            },
+            {
+                "image": "/gallery/festival2025-3.jpg",
+                "alt": "Exhibition Hall"
+            },
+            {
+                "image": "/gallery/festival2025-4.jpg",
+                "alt": "Networking Event"
+            }
+        ],
+        "pressCoverage": [
+            {
+                "title": "CAVIC Festival 2025 Showcases Groundbreaking Innovations",
+                "url": "https://techcrunch.com/tech-festival-2025",
+                "source": "TechCrunch",
+                "date": "2025-09-20",
+                "excerpt": "The annual CAVIC Festival once again proves to be at the forefront of technological innovation, with quantum computing and AI taking center stage."
+            },
+            {
+                "title": "How CAVIC Festival 2025 is Redefining the Future of Technology",
+                "url": "https://forbes.com/tech-festival-2025",
+                "source": "Forbes",
+                "date": "2025-09-22",
+                "excerpt": "From AI-powered art to quantum computing demonstrations, CAVIC Festival 2025 offers a glimpse into the future of technology across various industries."
+            },
+            {
+                "title": "Emerging Trends Spotted at CAVIC Festival 2025",
+                "url": "https://wired.com/tech-festival-2025",
+                "source": "Wired",
+                "date": "2025-09-25",
+                "excerpt": "Wired's technology experts break down the most exciting trends and innovations showcased at this year's CAVIC Festival."
+            }
+        ]
+    },
+    "2024": {
+        "status": "past",
+        "title": "CAVIC Festival 2024",
+        "date": "2024-11-07T09:00:00.000Z",
+        "location": "Tech City Convention Center",
+        "theme": "Interactive Futures: Bridging Realities",
+        "brief": "CAVIC Festival 2024 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "schedule": [
+            {
+                "day": "Day 1",
+                "date": "Thursday, November 7th, 2024",
+                "title": "Opening Ceremony and Exhibitions",
+                "sessions": [
+                    {
+                        "time": "3:00 PM - 4:00 PM",
+                        "title": "Registration & Networking",
+                        "description": "Arrival and registration of guests, followed by a networking session."
+                    },
+                    {
+                        "time": "4:00 PM - 5:00 PM",
+                        "title": "Opening Ceremony and App Launch",
+                        "description": "Keynote speeches from dignitaries, including the Honourable Minister of Arts, Culture and Creative Economy. The welcome address will highlight the theme: Interactive Futures: Bridging Realities."
+                    },
+                    {
+                        "time": "5:00 PM - 8:30 PM",
+                        "title": "Exhibition Opening: Interactive Futures: Bridging Realities",
+                        "description": "Unveiling of digital art installations merging traditional Nigerian art with innovative technologies, featuring collaborations between artists from Nigeria and Ghana."
+                    }
+                ]
+            },
+            {
+                "day": "Day 2",
+                "date": "Friday, November 8th, 2024",
+                "title": "Workshops and Performances",
+                "sessions": [
+                    {
+                        "time": "9:00 AM - 10:30 AM",
+                        "title": "Fashioning the Future: Merging Art, Technology, and Style in Hybrid Realities",
+                        "description": "This masterclass explores the intersection of fashion, art, and digital technology, focusing on how the boundaries between physical and digital realities are being redefined in the fashion world. Participants will discover how innovations like augmented reality (AR), 3D printing, and digital clothing are transforming design processes, fashion shows, and consumer experiences. The session will also showcase collaborations between artists, technologists, and fashion designers, offering practical insights into creating unique, immersive fashion pieces that blend the virtual with the tangible. Ideal for fashion-forward creatives eager to push the limits of style in the digital era."
+                    },
+                    {
+                        "time": "10:30 AM - 12:00 PM",
+                        "title": "Panel Discussion: The Role of Art in Digital Transformation",
+                        "description": "Exploring how technology is reshaping the creative economy and artistic expressions across Africa."
+                    },
+                    {
+                        "time": "12:00 PM - 2:00 PM",
+                        "title": "Street Eats Gallery: Culinary Art Unveiled",
+                        "description": "A break for attendees to network and discuss the morning sessions over lunch."
+                    },
+                    {
+                        "time": "2:30 PM - 4:00 PM",
+                        "title": "Workshop: Cinematic Art: Crafting Visual Narratives to Captivate Audiences",
+                        "description": "This masterclass delves into the art of videography, focusing on how to craft compelling visual stories that engage and immerse audiences. Tailored for artists and creators, the session explores techniques for blending cinematic visuals with artistic expression, using camera work, editing, and storytelling to evoke emotional and intellectual responses. Participants will learn how to translate artistic concepts into dynamic, moving images, creating videos that resonate with viewers and enhance their experience of visual art. Ideal for videographers and artists interested in expanding their creative toolkit through the power of motion and narrative."
+                    },
+                    {
+                        "time": "4:00 PM - 5:30 PM",
+                        "title": "Interactive Digital Performances: Soundscapes & Motion",
+                        "description": "Performances combining music, dance, and live digital projections, demonstrating the fusion of traditional and modern artistic techniques."
+                    },
+                    {
+                        "time": "5:30 PM - 6:00 PM",
+                        "title": "Daily Wrap-Up and Reflections",
+                        "description": "Recap of the day's activities, feedback from participants, and a preview of Day 3's events."
+                    }
+                ]
+            },
+            {
+                "day": "Day 3",
+                "date": "Saturday, November 9th, 2024",
+                "title": "Open Mic and Barbecue",
+                "sessions": [
+                    {
+                        "time": "4:00 PM - 6:00 PM",
+                        "title": "Open Mic: Emerging Voices in Art and Technology",
+                        "description": "A platform for local and international artists to perform, present, or share their work in a relaxed and informal setting. A small talk by the president of the African Women Banking Initiative."
+                    },
+                    {
+                        "time": "6:00 PM - 7:00 PM",
+                        "title": "Festival Barbecue and Closing Ceremony",
+                        "description": "A casual and celebratory barbecue to close the festival, including festival highlights, awards presentations for outstanding participants, and an announcement of plans for the 2025 edition of the Cavic Festival."
+                    }
+                ]
+            }
+        ],
+        "speakers": [
+            {
+                "name": "Lailay Ali Othman",
+                "bio": "CEO L&N Group of Companies",
+                "image": "/speakers/alice-johnson.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/alicejohnson",
+                    "linkedin": "https://linkedin.com/in/alicejohnson"
+                }
+            },
+            {
+                "name": "Nurdin Temitayo Busari",
+                "bio": "Publisher Amab Books",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Alex Byanyiko",
+                "bio": "Award winning author",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Chio Zoe",
+                "bio": "Fantasy Writer, Celebrated Author",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": " Dr Strings",
+                "bio": "Violininst",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Sam Doga",
+                "bio": "Floutist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Aush Oroko",
+                "bio": "Guitarist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": " Daniel Bako",
+                "bio": "Rhythmic Artist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            }
+        ],
+        "highlights": [
+            {
+                "title": "5G Experience Zone",
+                "description": "Test the speed and capabilities of 5G technology",
+                "images": [
+                    "/highlights/5g-zone1.jpg",
+                    "/highlights/5g-zone2.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "thumbnail": "/thumbnails/5g-zone.jpg"
+            },
+            {
+                "title": "Smart City Showcase",
+                "description": "Experience the future of urban living",
+                "images": [
+                    "/highlights/smart-city1.jpg",
+                    "/highlights/smart-city2.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "thumbnail": "/thumbnails/smart-city.jpg"
+            }
+        ],
+        "exhibitions": [
+            {
+                "name": "Connected Home",
+                "description": "Explore the latest in smart home technology",
+                "image": "/exhibitions/connected-home.jpg"
+            },
+            {
+                "name": "Future of Work",
+                "description": "Discover how technology is reshaping the workplace",
+                "image": "/exhibitions/future-work.jpg"
+            }
+        ],
+        "gallery": [
+            {
+                "image": "/gallery/festival2024-1.jpg",
+                "alt": "5G Demo"
+            },
+            {
+                "image": "/gallery/festival2024-2.jpg",
+                "alt": "IoT Showcase"
+            },
+            {
+                "image": "/gallery/festival2024-3.jpg",
+                "alt": "Panel Discussion"
+            },
+            {
+                "image": "/gallery/festival2024-4.jpg",
+                "alt": "Networking Lounge"
+            }
+        ],
+        "pressCoverage": [
+            {
+                "title": "CAVIC Festival 2024 Highlights the Connected Future",
+                "url": "https://techcrunch.com/tech-festival-2024",
+                "source": "TechCrunch",
+                "date": "2024-09-20",
+                "excerpt": "CAVIC Festival 2024 showcased the latest advancements in connectivity technologies, highlighting the potential of 5G and the Internet of Things."
+            },
+            {
+                "title": "CAVIC Festival 2024 Showcases the Power of 5G",
+                "url": "https://forbes.com/tech-festival-2024",
+                "source": "Forbes",
+                "date": "2024-09-22",
+                "excerpt": "Forbes explores the key takeaways from CAVIC Festival 2024, focusing on the transformative power of 5G and its impact on various industries."
+            },
+            {
+                "title": "IoT Innovations at CAVIC Festival 2024",
+                "url": "https://wired.com/tech-festival-2024",
+                "source": "Wired",
+                "date": "2024-09-25",
+                "excerpt": "Wired highlights the most innovative IoT applications and solutions presented at CAVIC Festival 2024."
+            }
+        ]
+    },
+    "2023": {
+        "status": "past",
+        "title": "CAVIC Festival 2024",
+        "date": "2024-09-20T09:00:00.000Z",
+        "location": "Tech City Convention Center",
+        "theme": "Connecting the Digital World",
+        "brief": "CAVIC Festival 2024 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "schedule": [
+            {
+                "day": "Day 1",
+                "title": "The Connected Future",
+                "sessions": [
+                    {
+                        "time": "9:00 AM - 10:30 AM",
+                        "title": "Keynote: The Internet of Everything",
+                        "speaker": "Sarah Lee",
+                        "location": "Main Stage",
+                        "description": "Sarah Lee discusses how IoT is revolutionizing industries and our daily lives."
+                    },
+                    {
+                        "time": "11:00 AM - 12:30 PM",
+                        "title": "Panel Discussion: 5G and Beyond",
+                        "location": "Panel Room A",
+                        "description": "Industry leaders explore the potential of 5G and future connectivity technologies."
+                    }
+                ]
+            }
+        ],
+        "speakers": [
+            {
+                "name": "Lailay Ali Othman",
+                "bio": "CEO L&N Group of Companies",
+                "image": "/speakers/alice-johnson.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/alicejohnson",
+                    "linkedin": "https://linkedin.com/in/alicejohnson"
+                }
+            },
+            {
+                "name": "Nurdin Temitayo Busari",
+                "bio": "Publisher Amab Books",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Alex Byanyiko",
+                "bio": "Award winning author",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Salamatu Sule",
+                "bio": "Publisher",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Chio Zoe",
+                "bio": "Fantasy Writer, Celebrated Author",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": " Dr Strings",
+                "bio": "Violininst",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Sam Doga",
+                "bio": "Floutist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Aush Oroko",
+                "bio": "Guitarist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": " Daniel Bako",
+                "bio": "Rhythmic Artist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            }
+        ],
+        "highlights": [
+            {
+                "title": "5G Experience Zone",
+                "description": "Test the speed and capabilities of 5G technology",
+                "images": [
+                    "/highlights/5g-zone1.jpg",
+                    "/highlights/5g-zone2.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "thumbnail": "/thumbnails/5g-zone.jpg"
+            },
+            {
+                "title": "Smart City Showcase",
+                "description": "Experience the future of urban living",
+                "images": [
+                    "/highlights/smart-city1.jpg",
+                    "/highlights/smart-city2.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "thumbnail": "/thumbnails/smart-city.jpg"
+            }
+        ],
+        "exhibitions": [
+            {
+                "name": "Connected Home",
+                "description": "Explore the latest in smart home technology",
+                "image": "/exhibitions/connected-home.jpg"
+            },
+            {
+                "name": "Future of Work",
+                "description": "Discover how technology is reshaping the workplace",
+                "image": "/exhibitions/future-work.jpg"
+            }
+        ],
+        "gallery": [
+            {
+                "image": "/gallery/festival2024-1.jpg",
+                "alt": "5G Demo"
+            },
+            {
+                "image": "/gallery/festival2024-2.jpg",
+                "alt": "IoT Showcase"
+            },
+            {
+                "image": "/gallery/festival2024-3.jpg",
+                "alt": "Panel Discussion"
+            },
+            {
+                "image": "/gallery/festival2024-4.jpg",
+                "alt": "Networking Lounge"
+            }
+        ],
+        "pressCoverage": [
+            {
+                "title": "CAVIC Festival 2024 Highlights the Connected Future",
+                "url": "https://techcrunch.com/tech-festival-2024",
+                "source": "TechCrunch",
+                "date": "2024-09-20",
+                "excerpt": "CAVIC Festival 2024 showcased the latest advancements in connectivity technologies, highlighting the potential of 5G and the Internet of Things."
+            },
+            {
+                "title": "CAVIC Festival 2024 Showcases the Power of 5G",
+                "url": "https://forbes.com/tech-festival-2024",
+                "source": "Forbes",
+                "date": "2024-09-22",
+                "excerpt": "Forbes explores the key takeaways from CAVIC Festival 2024, focusing on the transformative power of 5G and its impact on various industries."
+            },
+            {
+                "title": "IoT Innovations at CAVIC Festival 2024",
+                "url": "https://wired.com/tech-festival-2024",
+                "source": "Wired",
+                "date": "2024-09-25",
+                "excerpt": "Wired highlights the most innovative IoT applications and solutions presented at CAVIC Festival 2024."
+            }
+        ]
+    }
+}
