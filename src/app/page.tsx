@@ -9,6 +9,8 @@ import { GalleryModal } from "../components/GalleryModal";
 import { PressCoverage } from "../components/PressCoverage";
 import { SponsorCarousel } from "../components/SponsorCarousel";
 import { SlideIn } from "../components/SlideIn";
+import Countdown from "react-countdown";
+import { PixelatedFade } from "@/components/PixelatedFade";
 
 export default function Home() {
     const upcomingEvent =
@@ -16,34 +18,40 @@ export default function Home() {
     const eventDate = new Date(homeData.eventDate);
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 lg:px-12 py-8">
             {/* Hero with countdown */}
             <SlideIn>
-                <section className="relative text-center py-20 mb-12 rounded-lg overflow-hidden">
+                <section className="relative overflow-hidden shadow-lg rounded-lg mb-12 max-w-6xl lg:p-[12px] mx-auto  bg-gradient-to-r from-orange-600/75 to-orange-400/75 p-[5px] border-gray-400 border ">
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-400 opacity-75"></div>
-                    <Image
-                        src="/hero-image.jpg"
-                        alt="Tech Festival Hero"
-                        layout="fill"
-                        objectFit="cover"
-                        className="absolute inset-0 z-0"
-                    />
-                    <div className="relative z-10">
-                        <h1 className="text-4xl font-bold mb-4 text-white">
-                            {homeData.heroTitle}
-                        </h1>
-                        <p className="text-xl mb-8 text-white">
-                            {homeData.heroSubtitle}
-                        </p>
-                        <div className="text-6xl font-bold mb-8 text-white">
-                            <CountdownTimer targetDate={eventDate} />
+                    <div className="relative z-10 flex flex-col lg:flex-row">
+                        <div className=" filter grayscale-[40%]  w-full lg:w-2/5 h-64 sm:h-56 md:h-64 lg:h-auto relative">
+                            <Image
+                                src={homeData.heroImage}
+                                alt="Tech Festival Hero"
+                                layout="fill"
+                                objectFit="cover"
+                                className="object-[right_top] lg:object-[left_20%] rounded-md"
+                            />
                         </div>
-                        <Button
-                            size="lg"
-                            className="bg-accent text-accent-foreground hover:bg-accent"
-                        >
-                            Register Now
-                        </Button>
+                        {/* <PixelatedFade direction="right" /> */}
+                        <div className="w-full lg:w-3/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+                            <h1 className="text-2xl lg:text-4xl pl-4 font-bold mb-2 sm:mb-4 text-white">
+                                {homeData.heroTitle}
+                            </h1>
+                            <p className="text-sm sm:text-xl mb-4 pl-4 sm:mb-6 text-white">
+                                {homeData.heroSubtitle}
+                            </p>
+                            <div className="text-4xl sm:text-5xl pl-4 lg:text-4xl font-bold mb-4 sm:mb-6 text-white">
+                                {/* <CountdownTimer targetDate={eventDate} /> */}
+                                <p>Coming Soon!</p>
+                            </div>
+                            <Button
+                                size="lg"
+                                className="bg-black ml-4 text-white hover:shadow-md"
+                            >
+                                Register Now
+                            </Button>
+                        </div>
                     </div>
                 </section>
             </SlideIn>
@@ -52,7 +60,7 @@ export default function Home() {
             <SlideIn direction="right" delay={0.2}>
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-center">
-                        Our Sponsors
+                        Our Partners:
                     </h2>
                     <SponsorCarousel sponsors={homeData.sponsors} />
                 </section>
@@ -60,15 +68,17 @@ export default function Home() {
 
             {/* About Festival */}
             <SlideIn direction="left" delay={0.3}>
-                <section className="mb-12">
+                <section className="mb-12 ">
                     <Card>
                         <CardHeader>
-                            <CardTitle className="text-accent">
+                            <CardTitle className="text-accent text-4xl">
                                 About the Festival
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p>{homeData.aboutFestival}</p>
+                            <p className="lg:text-xl">
+                                {homeData.aboutFestival}
+                            </p>
                         </CardContent>
                     </Card>
                 </section>
@@ -78,11 +88,12 @@ export default function Home() {
             <SlideIn direction="right" delay={0.4}>
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6">
-                        Previous Festivals
+                        Previous Festivals:
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {Object.entries(festivalsData).map(
-                            ([year, festival], index) => (
+                        {Object.entries(festivalsData)
+                            .slice(0, -1) // Exclude the last entry
+                            .map(([year, festival], index) => (
                                 <SlideIn
                                     key={year}
                                     direction="up"
@@ -103,7 +114,7 @@ export default function Home() {
                                                 alt={festival.title}
                                                 width={300}
                                                 height={200}
-                                                className="rounded-lg mb-4"
+                                                className="rounded-lg mb-4 aspect-square object-cover"
                                             />
                                             <p className="line-clamp-3">
                                                 {festival.brief}
@@ -117,8 +128,7 @@ export default function Home() {
                                         </CardContent>
                                     </Card>
                                 </SlideIn>
-                            )
-                        )}
+                            ))}
                     </div>
                 </section>
             </SlideIn>
@@ -128,19 +138,42 @@ export default function Home() {
                 <section className="mb-12">
                     <Card>
                         <CardHeader>
-                            <CardTitle className="text-accent">
+                            <CardTitle className="text-accent text-4xl">
                                 About the Workshop
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p>{homeData.aboutWorkshop}</p>
+                            <div className="flex flex-col lg:flex-row gap-8">
+                                <div className="lg:w-2/3">
+                                    <p className="lg:text-xl mb-4">
+                                        {homeData.aboutWorkshop}
+                                    </p>
+                                    <Link href="/workshop/2024" passHref>
+                                        <Button
+                                            variant="outline"
+                                            className="mt-4 bg-accent lg:mt-20"
+                                        >
+                                            Learn More
+                                        </Button>
+                                    </Link>
+                                </div>
+                                <div className="lg:w-1/3 order-first lg:order-last mb-6 lg:mb-0">
+                                    <Image
+                                        src="https://i.ibb.co/Q3bmGzyW/wsp.jpg"
+                                        alt="Workshop preview"
+                                        width={400}
+                                        height={300}
+                                        className="rounded-lg object-cover w-full h-auto border"
+                                    />
+                                </div>
+                            </div>
                         </CardContent>
                     </Card>
                 </section>
             </SlideIn>
 
             {/* Previous Workshops */}
-            <SlideIn direction="right" delay={0.6}>
+            {/* <SlideIn direction="right" delay={0.6}>
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6">
                         Previous Workshops
@@ -186,7 +219,7 @@ export default function Home() {
                         )}
                     </div>
                 </section>
-            </SlideIn>
+            </SlideIn> */}
 
             {/* Press Coverage */}
             <SlideIn direction="left" delay={0.7}>
@@ -195,13 +228,15 @@ export default function Home() {
 
             {/* Call to Collaborators */}
             <SlideIn direction="right" delay={0.8}>
-                <section className="mb-12 bg-accent/10 p-8 rounded-lg">
-                    <h2 className="text-3xl font-bold mb-4 text-accent">
+                <section className="mb-12 bg-accent/20 p-8 rounded-lg">
+                    <h2 className="text-3xl font-bold mb-4 ">
                         {homeData.callToAction.title}
                     </h2>
                     <p className="mb-6">{homeData.callToAction.description}</p>
                     <Button className="bg-accent text-accent-foreground hover:bg-accent">
-                        {homeData.callToAction.buttonText}
+                        <a href="/contact">
+                            {homeData.callToAction.buttonText}
+                        </a>
                     </Button>
                 </section>
             </SlideIn>
@@ -223,7 +258,7 @@ export default function Home() {
                                         alt={item.alt}
                                         width={300}
                                         height={300}
-                                        className="rounded-lg object-cover w-full h-full"
+                                        className="rounded-lg object-cover w-full h-full aspect-square"
                                     />
                                 </div>
                             </GalleryModal>
@@ -237,5 +272,5 @@ export default function Home() {
 
 function CountdownTimer({ targetDate }) {
     // Implement countdown logic here
-    return <div>00:00:00:00</div>;
+    return <div>00:00:00</div>;
 }

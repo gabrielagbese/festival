@@ -59,16 +59,18 @@ export default function Festival({ params }: { params: { year: string } }) {
             <section className="mb-12">
                 <Card>
                     <CardHeader>
-                        <CardTitle>Festival Details</CardTitle>
+                        <CardTitle className="text-3xl">
+                            Festival Details
+                        </CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p>
+                        <p className="text-lg">
                             <strong>Location:</strong> {festival.location}
                         </p>
-                        <p>
+                        <p className="text-lg">
                             <strong>Theme:</strong> {festival.theme}
                         </p>
-                        <p>
+                        <p className="text-lg">
                             <strong>Brief:</strong> {festival.brief}
                         </p>
                     </CardContent>
@@ -118,9 +120,7 @@ export default function Festival({ params }: { params: { year: string } }) {
 
             {/* Speakers section */}
             <section className="mb-12">
-                <h2 className="text-3xl font-bold mb-6">
-                    Featured Speakers and Performers
-                </h2>
+                <h2 className="text-3xl font-bold mb-6">Featured Speakers</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {festival.speakers.map((speaker, index) => (
                         <Card key={index}>
@@ -130,37 +130,36 @@ export default function Festival({ params }: { params: { year: string } }) {
                                     alt={speaker.name}
                                     width={100}
                                     height={100}
-                                    className="rounded-full"
+                                    className="rounded-full object-cover aspect-square object-[center_top]"
                                 />
                                 <CardTitle>{speaker.name}</CardTitle>
                                 <CardDescription>{speaker.bio}</CardDescription>
                             </CardHeader>
-                            {/* <CardContent>
-                                <div className="flex space-x-4">
-                                    <a
-                                        href={speaker.socials.twitter}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline" size="sm">
-                                            Twitter
-                                        </Button>
-                                    </a>
-                                    <a
-                                        href={speaker.socials.linkedin}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Button variant="outline" size="sm">
-                                            LinkedIn
-                                        </Button>
-                                    </a>
-                                </div>
-                            </CardContent> */}
                         </Card>
                     ))}
                 </div>
             </section>
+
+            {/* <section className="mb-12">
+                <h2 className="text-3xl font-bold mb-6">Featured Performers</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {festival.artists.map((artist, index) => (
+                        <Card key={index}>
+                            <CardHeader>
+                                <Image
+                                    src={artist.image || "/placeholder.svg"}
+                                    alt={artist.name}
+                                    width={100}
+                                    height={100}
+                                    className="rounded-full"
+                                />
+                                <CardTitle>{artist.name}</CardTitle>
+                                <CardDescription>{artist.bio}</CardDescription>
+                            </CardHeader>
+                        </Card>
+                    ))}
+                </div>
+            </section> */}
 
             {isPastEvent && (
                 <>
@@ -183,9 +182,9 @@ export default function Festival({ params }: { params: { year: string } }) {
                                                     "/placeholder.svg"
                                                 }
                                                 alt={highlight.title}
-                                                width={100}
-                                                height={100}
-                                                className="rounded-lg mb-2"
+                                                width={300}
+                                                height={300}
+                                                className=" rounded-sm brightness-120 border border-gray-500/40 shadow-md h-h-64 w-64 mb-2 aspect-square object-cover object-[center_top]"
                                             />
                                             <CardTitle>
                                                 {highlight.title}
@@ -203,7 +202,7 @@ export default function Festival({ params }: { params: { year: string } }) {
                     </section>
 
                     {/* Exhibition section */}
-                    <section className="mb-12">
+                    {/* <section className="mb-12">
                         <h2 className="text-3xl font-bold mb-6">Exhibitions</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {festival.exhibitions.map((exhibition, index) => (
@@ -234,7 +233,7 @@ export default function Festival({ params }: { params: { year: string } }) {
                                 </ExhibitionModal>
                             ))}
                         </div>
-                    </section>
+                    </section> */}
 
                     {/* General gallery */}
                     <section className="mb-12">
@@ -246,14 +245,14 @@ export default function Festival({ params }: { params: { year: string } }) {
                                     images={festival.gallery}
                                     initialSlide={index}
                                 >
-                                    <div className="cursor-pointer">
+                                    <div className="cursor-pointer aspect-square">
                                         <Image
                                             src={
                                                 item.image || "/placeholder.svg"
                                             }
                                             alt={item.alt}
-                                            width={300}
-                                            height={300}
+                                            width={500}
+                                            height={500}
                                             className="rounded-lg object-cover w-full h-full"
                                         />
                                     </div>
@@ -264,9 +263,7 @@ export default function Festival({ params }: { params: { year: string } }) {
 
                     {/* Mentions in press */}
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold mb-6">
-                            Press Coverage
-                        </h2>
+                        <h2 className="text-3xl font-bold mb-6"></h2>
                         <PressCoverage articles={festival.pressCoverage} />
                     </section>
                 </>

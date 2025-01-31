@@ -54,13 +54,16 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b border-border/40">
+        <header className="bg-background/95 backdrop-blur-lg shadow-md supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b border-border/40">
             <div className="container mx-auto px-4">
                 <div className="flex h-20 items-center justify-between">
                     <div className="flex items-center">
-                        <Link href="/" className="flex items-center space-x-2">
-                            <span className="font-bold text-xl">
-                                CAVIC Festival
+                        <Link
+                            href="/"
+                            className="flex items-center space-x-2 p-2"
+                        >
+                            <span className="font-bold ">
+                                CAVIC Festival <br /> of Creativity & Technology
                             </span>
                         </Link>
                     </div>

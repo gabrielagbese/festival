@@ -2,34 +2,102 @@
     "heroTitle": "Welcome to CAVIC Festival 2025",
     "heroSubtitle": "Exploring the Future of Technology",
     "eventDate": "2025-09-15T09:00:00.000Z",
+    "heroImage": "https://i.ibb.co/vsg2JHj/Whats-App-Image-2025-01-27-at-13-23-35.jpg",
     "sponsors": [
         {
-            "name": "TechCorp",
-            "logo": "/logos/techcorp.svg"
+            "name": "Lightway Academy",
+            "logo": "https://i.ibb.co/yhKW5jP/lwa.jpg"
         },
         {
-            "name": "InnovateTech",
-            "logo": "/logos/innovatetech.svg"
+            "name": "Bingham University",
+            "logo": "https://i.ibb.co/jk7h6LvJ/b2.png"
         },
         {
-            "name": "FutureSystems",
-            "logo": "/logos/futuresystems.svg"
+            "name": "Afrilabs",
+            "logo": "https://i.ibb.co/j5pw9mB/afrl.jpg"
+        },
+        {
+            "name": "British Council",
+            "logo": "https://i.ibb.co/3M5cdk7/bc.png"
+        },
+        {
+            "name": "National Gallery of Art",
+            "logo": "https://i.ibb.co/rc4HVgm/nga.jpg"
+        },
+        {
+            "name": "Ukranian Embassy",
+            "logo": "https://i.ibb.co/bWmC3jk/ukr.jpg"
+        },
+        {
+            "name": "ASNA",
+            "logo": "https://i.ibb.co/gwNVw8G/asna.jpg"
+        },
+        {
+            "name": "Hapa Space",
+            "logo": "https://i.ibb.co/jRBJ72N/hpsp.jpg"
+        },
+        {
+            "name": "Society of Nigerian Artists",
+            "logo": "https://i.ibb.co/K2TCnjp/sna.jpg"
+        },
+        {
+            "name": "Walk the Plank",
+            "logo": "https://i.ibb.co/CMR1c7h/walkplank.jpg"
+        },
+        {
+            "name": "Elpee Consults",
+            "logo": "https://i.ibb.co/8s9vtKS/elpee.jpg"
+        },
+        {
+            "name": "Fahimta",
+            "logo": "https://i.ibb.co/JcPmnqq/fah.jpg"
+        },
+        {
+            "name": "Iyannu",
+            "logo": "https://i.ibb.co/bmLVNPC/iyannu.jpg"
+        },
+        {
+            "name": "AWBI",
+            "logo": "https://i.ibb.co/VWKR3yg/awbi.jpg"
         }
     ],
-    "aboutFestival": "CAVIC Festival is an annual celebration of innovation and technology. Join us for inspiring talks, hands-on workshops, and networking opportunities with industry leaders.",
-    "aboutWorkshop": "Our annual workshop offers intensive, hands-on learning experiences led by industry experts. Dive deep into cutting-edge technologies and emerging trends.",
+    "aboutFestival": "A vibrant gathering of creatives and tech enthusiasts, the festival celebrates collaboration and innovation under the theme Interactive Futures: Bridging Realities. Experience a dynamic blend of art and technology through immersive exhibitions, interactive workshops, thought-provoking discussions, and live performances. It’s a space where ideas merge, connections thrive, and the future of creativity is reimagined.",
+    "aboutWorkshop": "Dive into a transformative learning experience where creativity meets technology. The Cavic Workshop brings together industry experts, visionary panelists, and passionate participants to explore cutting-edge ideas and skills. Through hands-on sessions, masterclasses, and thought-provoking discussions, you'll gain insights into the latest innovations in art, design, and tech. This is your chance to collaborate, learn from the best, and push the boundaries of your creative and technical potential.",
     "pressAppearances": [
         {
-            "title": "CAVIC Festival Featured in TechCrunch",
-            "url": "https://techcrunch.com/tech-festival-feature"
+            "title": "Cavic Art And Tech Launches App To Enhance National Cultural Heritage",
+            "url": "https://von.gov.ng/cavic-art-and-tech-launches-app-to-enhance-national-cultural-heritage/",
+            "source": "Voice Of Nigeria",
+            "date": "2024-11-08",
+            "excerpt": "The Cavic Art and Tech has launched an Application known as Ojiraeyi APP to enhance National Cultural Heritage World Wide."
         },
         {
-            "title": "Wired Magazine Highlights CAVIC Festival Innovations",
-            "url": "https://wired.com/tech-festival-innovations"
+            "title": "Art meets tech at CAVIC 2024 festival",
+            "url": "https://dailytrust.com/art-meets-tech-at-cavic-2024-festival/",
+            "source": "Daily Trust",
+            "date": "2024-11-09",
+            "excerpt": "It was a vibrant sight of culture, art, and technology at the 2024 creativity and technology festival, which was held in Abuja on Thursday evening and hosted by the Creative Arts and Visual Imagery Centre CAVIC."
         },
         {
-            "title": "Forbes: CAVIC Festival Shaping the Future of Technology",
-            "url": "https://forbes.com/tech-festival-future"
+            "title": "NGA, NICO pledges support for CAVIC to synergise Arts, technology, communication",
+            "url": "https://dailylegendng.com/2024/11/09/nga-nico-pledges-support-for-cavic-to-synergise-arts-technology-communication/#google_vignett",
+            "source": "Daily Legend",
+            "date": "2024-11-2095",
+            "excerpt": "The National Gallery of  Arts (NGA) and National Institute for Cultural Orientation (NICO) has pledged its support for Creative Arts  and Visual Imaginery Centre (CAVIC) to synergise Arts and technology to enhance communication."
+        },
+        {
+            "title": "Cavic Art And Tech Launches App To Enhance National Cultural Heritage",
+            "url": "https://www.hammertimes.com.ng/art-technology-national-gallery-of-art-seeks-private-sector-collaboration/",
+            "source": "Hammer Times",
+            "date": "2023-14-08",
+            "excerpt": "The National Gallery of Art (NGA) has expressed its readiness to collaborate with the private sector using arts and technology to create employment and boost the economy. The Director General of NGA, Mr Ebeten William Ivara stated this at the Maiden edition of the Creative Arts and Visual Imagery Centre’s (CAVIC) Festival of Art and Technology in Abuja."
+        },
+        {
+            "title": "Art Technology: National Gallery of Art seeks private sector collaboration",
+            "url": "https://nannews.ng/2023/11/14/art-technology-national-gallery-of-art-seeks-private-sector-collaboration/",
+            "source": "NAN News",
+            "date": "2023-11-09",
+            "excerpt": "The National Gallery of Art (NGA) has expressed its readiness to collaborate with the private sector using arts and technology to create employment and boost the economy. The Director General of NGA, Mr Ebeten William Ivara stated this at the Maiden edition of the Creative Arts and Visual Imagery Centre’s (CAVIC) Festival of Art and Technology in Abuja."
         }
     ],
     "callToAction": {
@@ -39,20 +107,36 @@
     },
     "gallery": [
         {
-            "image": "/images/gallery1.jpg",
-            "alt": "CAVIC Festival Keynote"
+            "image": "https://i.ibb.co/vsXx71f/IMG-5681.jpg",
+            "alt": "Festival"
         },
         {
-            "image": "/images/gallery2.jpg",
-            "alt": "Workshop Session"
+            "image": "https://i.ibb.co/6YY6Kxc/IMG-E5696.jpg",
+            "alt": "IoT Showcase"
         },
         {
-            "image": "/images/gallery3.jpg",
-            "alt": "Networking Event"
+            "image": "https://i.ibb.co/7gN81Vb/IMG-E5648.jpg",
+            "alt": "Panel Discussion"
         },
         {
-            "image": "/images/gallery4.jpg",
-            "alt": "Exhibition Hall"
+            "image": "https://i.ibb.co/jMdcX87/IMG-E5638.jpg",
+            "alt": "Networking Lounge"
+        },
+        {
+            "image": "https://i.ibb.co/z52prWd/IMG-0051.jpg",
+            "alt": "external"
+        },
+        {
+            "image": "https://i.ibb.co/K5VxjYb/IMG-0096.jpg",
+            "alt": "IoT Showcase"
+        },
+        {
+            "image": "https://i.ibb.co/N7pGD18/IMG-0536.jpg",
+            "alt": "Panel Discussion"
+        },
+        {
+            "image": "https://i.ibb.co/zSgPq7K/IMG-0531.jpg",
+            "alt": "Networking Lounge"
         }
     ]
 }

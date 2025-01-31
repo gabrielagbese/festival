@@ -125,11 +125,12 @@
     },
     "2024": {
         "status": "past",
+        "thumbnail": "https://i.ibb.co/vsXx71f/IMG-5681.jpg",
         "title": "CAVIC Festival 2024",
         "date": "2024-11-07T09:00:00.000Z",
-        "location": "Tech City Convention Center",
+        "location": "30, Agadez Crescent, Abuja",
         "theme": "Interactive Futures: Bridging Realities",
-        "brief": "CAVIC Festival 2024 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
             {
                 "day": "Day 1",
@@ -210,17 +211,74 @@
         ],
         "speakers": [
             {
-                "name": "Lailay Ali Othman",
-                "bio": "CEO L&N Group of Companies",
-                "image": "/speakers/alice-johnson.jpg",
+                "name": "Masha Bekh",
+                "bio": "Fashion Designer",
+                "image": "https://i.ibb.co/10y6zwD/280642747-5115619861840778-8109918981676401415-n.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/alicejohnson",
                     "linkedin": "https://linkedin.com/in/alicejohnson"
                 }
             },
             {
-                "name": "Nurdin Temitayo Busari",
-                "bio": "Publisher Amab Books",
+                "name": "Nikita Glushchenko",
+                "bio": "Film Maker",
+                "image": "https://i.ibb.co/HF0QzDW/niki.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/alicejohnson",
+                    "linkedin": "https://linkedin.com/in/alicejohnson"
+                }
+            },
+            {
+                "name": "Gideon Brefo",
+                "bio": "CEO, HapaSpace Ghana",
+                "image": "https://i.ibb.co/v3RBnhM/images.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Maryam Talmon",
+                "bio": "Culinary Artist",
+                "image": "https://i.ibb.co/S5Qd14K/Screenshot-2025-01-22-143656.png",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Esther Adelana",
+                "bio": "",
+                "image": "https://i.ibb.co/5WVGmD2/ade-1.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Six Foot Plus",
+                "bio": "Artiste",
+                "image": "https://i.ibb.co/RjwLmZQ/Six-Foot-Plus.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            }
+        ],
+        "artists": [
+            {
+                "name": "Amarii",
+                "bio": "Artiste",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+
+            {
+                "name": "Confido",
+                "bio": "Spoken Word / Performance Artist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -228,8 +286,8 @@
                 }
             },
             {
-                "name": "Alex Byanyiko",
-                "bio": "Award winning author",
+                "name": "Justin MuziQ",
+                "bio": "Musician/Performance Artsist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -237,8 +295,8 @@
                 }
             },
             {
-                "name": "Chio Zoe",
-                "bio": "Fantasy Writer, Celebrated Author",
+                "name": "Nickelle",
+                "bio": "Musician/Performance Artsist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -246,8 +304,8 @@
                 }
             },
             {
-                "name": " Dr Strings",
-                "bio": "Violininst",
+                "name": "Benny Ats",
+                "bio": "Musician/Performance Artsist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -255,8 +313,8 @@
                 }
             },
             {
-                "name": "Sam Doga",
-                "bio": "Floutist",
+                "name": "Heynicole",
+                "bio": "Musician/Performance Artsist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -264,8 +322,8 @@
                 }
             },
             {
-                "name": "Aush Oroko",
-                "bio": "Guitarist",
+                "name": "Cedric",
+                "bio": "Musician/Performance Artsist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -273,8 +331,17 @@
                 }
             },
             {
-                "name": " Daniel Bako",
-                "bio": "Rhythmic Artist",
+                "name": "Shekwolo",
+                "bio": "Musician/Performance Artsist",
+                "image": "/speakers/mike-chen.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Wana",
+                "bio": "Musician/Performance Artsist",
                 "image": "/speakers/mike-chen.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
@@ -284,24 +351,76 @@
         ],
         "highlights": [
             {
-                "title": "5G Experience Zone",
-                "description": "Test the speed and capabilities of 5G technology",
+                "title": "Life Painting",
+                "description": "Team Bingham, comprised of Barka Fori, Monica Emetu, and Kankara Trinity, has brought an innovative twist to the world of art and technology through their project, Neural Style Transfer Live Painting. This creative endeavor merged artificial intelligence and artistic expression to redefine how we experience and interact with visual art in real-time.",
                 "images": [
-                    "/highlights/5g-zone1.jpg",
-                    "/highlights/5g-zone2.jpg"
+                    "https://i.ibb.co/4FKNLZG/IMG-5564.jpg",
+                    "https://i.ibb.co/gP8C65Y/IMG-5717.jpg",
+                    "https://i.ibb.co/XYP9LxF/IMG-5839.jpg",
+                    "https://i.ibb.co/vYYb92L/IMG-5952.jpg"
                 ],
                 "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                "thumbnail": "/thumbnails/5g-zone.jpg"
+                "thumbnail": "https://i.ibb.co/4FKNLZG/IMG-5564.jpg"
             },
             {
-                "title": "Smart City Showcase",
-                "description": "Experience the future of urban living",
+                "title": "Soundsacpe",
+                "description": "This installation combines physical musical instruments with virtual reality technology. Visitors can play instruments that directly interact with and influence a virtual environment, creating a unique fusion of musical performance and digital visualization. The experience demonstrates the potential for merging traditional musical expression with contemporary digital technology.",
                 "images": [
-                    "/highlights/smart-city1.jpg",
-                    "/highlights/smart-city2.jpg"
+                    "https://i.ibb.co/c34pSZq/IMG-5624.jpg",
+                    "https://i.ibb.co/sPNcK2W/IMG-5622.jpg",
+                    "https://i.ibb.co/JpNym5G/IMG-5556.jpg",
+                    "https://i.ibb.co/gzkgFfW/IMG-5621.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/_cy8Na2s9Qc?si=sI6fGSMtDSjiS8bS",
+                "thumbnail": "https://i.ibb.co/c34pSZq/IMG-5624.jpg"
+            },
+            {
+                "title": "Nok Storybook",
+                "description": "This AR application enhances a physical picture book about Nok Art with digital overlays. When viewers point their mobile devices' Google Lens at the book, it projects three-dimensional representations of the artifacts being discussed, allowing for an interactive study of these historical pieces from multiple angles.",
+                "images": [
+                    "https://i.ibb.co/wLRTYPY/IMG-5860.jpg",
+                    "https://i.ibb.co/cXfyKkt/IMG-5710.jpg",
+                    "https://i.ibb.co/MMjZ1mb/IMG-E5940.jpg",
+                    "https://i.ibb.co/x7ZTYyp/IMG-5720.jpg"
                 ],
                 "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                "thumbnail": "/thumbnails/smart-city.jpg"
+                "thumbnail": "https://i.ibb.co/wLRTYPY/IMG-5860.jpg"
+            },
+            {
+                "title": "Nok VR Experience",
+                "description": "This immersive VR exhibition transports visitors into a virtual gallery space where they can encounter five six-foot-tall Nok artifacts at life size. Through VR headsets, viewers can walk around and observe these ancient artworks as if they were physically present, offering an unprecedented way to experience these historical pieces.",
+                "images": [
+                    "https://i.ibb.co/FYysCbF/IMG-E5681.jpg",
+                    "https://i.ibb.co/z53TLrr/IMG-E5947.jpg",
+                    "https://i.ibb.co/CwX3CBb/IMG-5912.jpg",
+                    "https://i.ibb.co/PxLWwSf/IMG-5697.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/7d5pWnmizaA?si=-0_Gayt9VTtFSPVQ",
+                "thumbnail": "https://i.ibb.co/FYysCbF/IMG-E5681.jpg"
+            },
+            {
+                "title": "Body Dysmorphia",
+                "description": "This interactive multimedia installation creates an immersive experience addressing body dysmorphia. Visitors wear headsets to hear real testimonies from individuals living with body dysmorphia. The installation features a mirror that transforms into a 3D semi-abstract painting depicting two grappling bodies. This experience aims to foster empathy and promote kindness by allowing viewers to understand the experiences of body dysmorphia survivors.",
+                "images": [
+                    "https://i.ibb.co/LNkkSsp/IMG-E5638.jpg",
+                    "https://i.ibb.co/FHC7gzs/IMG-5675.jpg",
+                    "https://i.ibb.co/bXBkMky/IMG-5670.jpg",
+                    "https://i.ibb.co/GvNzy6z/IMG-5726.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/lt0kLe1Q69w?si=1ANAgCMoyWHlQiTi",
+                "thumbnail": "https://i.ibb.co/LNkkSsp/IMG-E5638.jpg"
+            },
+            {
+                "title": "Projection Mapping",
+                "description": "This installation creates an immersive experience centered around northern Nigerian folklore. Viewers enter a space where constellations are projected on the walls, transforming into architectural designs typical of northern Nigeria. The installation tells the story of 'Bayajidda', a legendary figure who defeated a python to provide clean drinking water for his community. A QR code accompanies the installation, offering a printed version of the folktale for visitors.",
+                "images": [
+                    "https://i.ibb.co/KX7vK46/IMG-E5920.jpg",
+                    "https://i.ibb.co/GMJSY7p/IMG-5687.jpg",
+                    "https://i.ibb.co/1JbMpq6/IMG-5704.jpg",
+                    "https://i.ibb.co/B3xznf0/IMG-5921.jpg"
+                ],
+                "video": "https://www.youtube.com/embed/XOI1HPGDyeM?si=Wow_lE-gEnMFQ-dd",
+                "thumbnail": "https://i.ibb.co/KX7vK46/IMG-E5920.jpg"
             }
         ],
         "exhibitions": [
@@ -318,70 +437,150 @@
         ],
         "gallery": [
             {
-                "image": "/gallery/festival2024-1.jpg",
-                "alt": "5G Demo"
+                "image": "https://i.ibb.co/vsXx71f/IMG-5681.jpg",
+                "alt": "Festival"
             },
             {
-                "image": "/gallery/festival2024-2.jpg",
+                "image": "https://i.ibb.co/6YY6Kxc/IMG-E5696.jpg",
                 "alt": "IoT Showcase"
             },
             {
-                "image": "/gallery/festival2024-3.jpg",
+                "image": "https://i.ibb.co/7gN81Vb/IMG-E5648.jpg",
                 "alt": "Panel Discussion"
             },
             {
-                "image": "/gallery/festival2024-4.jpg",
+                "image": "https://i.ibb.co/jMdcX87/IMG-E5638.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/pycd2Jf/IMG-E5600.jpg",
+                "alt": "other"
+            },
+            {
+                "image": "https://i.ibb.co/jyrSbgy/IMG-5596.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/P4YxyLZ/IMG-E5809.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/myGrmpc/IMG-E5783.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/sjTDMf0/IMG-E5624.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/DkHBgt0/IMG-E5768.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/qrt8HJT/IMG-5574.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/PcZNhSk/IMG-5758.jpg",
                 "alt": "Networking Lounge"
             }
         ],
         "pressCoverage": [
             {
-                "title": "CAVIC Festival 2024 Highlights the Connected Future",
-                "url": "https://techcrunch.com/tech-festival-2024",
-                "source": "TechCrunch",
-                "date": "2024-09-20",
-                "excerpt": "CAVIC Festival 2024 showcased the latest advancements in connectivity technologies, highlighting the potential of 5G and the Internet of Things."
+                "title": "Cavic Art And Tech Launches App To Enhance National Cultural Heritage",
+                "url": "https://von.gov.ng/cavic-art-and-tech-launches-app-to-enhance-national-cultural-heritage/",
+                "source": "Voice Of Nigeria",
+                "date": "2024-11-08",
+                "excerpt": "The Cavic Art and Tech has launched an Application known as Ojiraeyi APP to enhance National Cultural Heritage World Wide."
             },
             {
-                "title": "CAVIC Festival 2024 Showcases the Power of 5G",
-                "url": "https://forbes.com/tech-festival-2024",
-                "source": "Forbes",
-                "date": "2024-09-22",
-                "excerpt": "Forbes explores the key takeaways from CAVIC Festival 2024, focusing on the transformative power of 5G and its impact on various industries."
+                "title": "Art meets tech at CAVIC 2024 festival",
+                "url": "https://dailytrust.com/art-meets-tech-at-cavic-2024-festival/",
+                "source": "Daily Trust",
+                "date": "2024-11-09",
+                "excerpt": "It was a vibrant sight of culture, art, and technology at the 2024 creativity and technology festival, which was held in Abuja on Thursday evening and hosted by the Creative Arts and Visual Imagery Centre CAVIC."
             },
             {
-                "title": "IoT Innovations at CAVIC Festival 2024",
-                "url": "https://wired.com/tech-festival-2024",
-                "source": "Wired",
-                "date": "2024-09-25",
-                "excerpt": "Wired highlights the most innovative IoT applications and solutions presented at CAVIC Festival 2024."
+                "title": "NGA, NICO pledges support for CAVIC to synergise Arts, technology, communication",
+                "url": "https://dailylegendng.com/2024/11/09/nga-nico-pledges-support-for-cavic-to-synergise-arts-technology-communication/#google_vignett",
+                "source": "Daily Legend",
+                "date": "2024-11-2095",
+                "excerpt": "The National Gallery of  Arts (NGA) and National Institute for Cultural Orientation (NICO) has pledged its support for Creative Arts  and Visual Imaginery Centre (CAVIC) to synergise Arts and technology to enhance communication."
             }
         ]
     },
     "2023": {
         "status": "past",
-        "title": "CAVIC Festival 2024",
-        "date": "2024-09-20T09:00:00.000Z",
-        "location": "Tech City Convention Center",
-        "theme": "Connecting the Digital World",
-        "brief": "CAVIC Festival 2024 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "title": "CAVIC Festival 2023",
+        "thumbnail": "https://i.ibb.co/xqdKny5/artech-x2-180.jpg",
+        "date": "2023-11-07T09:00:00.000Z",
+        "location": "30, Agadez Crescent, Abuja",
+        "theme": "Unveiling Abuja's Grand Tapestry of Creativity",
+        "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
             {
                 "day": "Day 1",
-                "title": "The Connected Future",
+                "date": "November 1st, 2023",
+                "title": "Opening Day",
                 "sessions": [
                     {
-                        "time": "9:00 AM - 10:30 AM",
-                        "title": "Keynote: The Internet of Everything",
-                        "speaker": "Sarah Lee",
-                        "location": "Main Stage",
-                        "description": "Sarah Lee discusses how IoT is revolutionizing industries and our daily lives."
+                        "time": "2:00 PM - 3:00 PM",
+                        "title": "Registration & Welcome",
+                        "description": "Arrival and registration of guests for the CAVIC Art and Tech Festival."
                     },
                     {
-                        "time": "11:00 AM - 12:30 PM",
-                        "title": "Panel Discussion: 5G and Beyond",
-                        "location": "Panel Room A",
-                        "description": "Industry leaders explore the potential of 5G and future connectivity technologies."
+                        "time": "3:00 PM - 4:30 PM",
+                        "title": "Opening Ceremony",
+                        "description": "Official opening of the festival featuring the unveiling of the exhibitions including the Interactive Kinetic Sculpture (KST6), Data Couture, and AI installations."
+                    },
+                    {
+                        "time": "4:30 PM - 7:00 PM",
+                        "title": "Exhibition Viewing",
+                        "description": "Guided tours of the art-tech installations with demonstrations from the artists and creators."
+                    }
+                ]
+            },
+            {
+                "day": "Day 2",
+                "date": "November 2nd, 2023",
+                "title": "Discussions & Performances",
+                "sessions": [
+                    {
+                        "time": "2:00 PM - 4:00 PM",
+                        "title": "Panel Discussions",
+                        "description": "Industry experts discuss the intersection of art and technology in Nigeria's creative sector."
+                    },
+                    {
+                        "time": "4:00 PM - 6:00 PM",
+                        "title": "Open Mic Session",
+                        "description": "Creative performances featuring local artists and technologists sharing their work and experiences."
+                    },
+                    {
+                        "time": "6:00 PM - 7:00 PM",
+                        "title": "Exhibition Viewing",
+                        "description": "Open viewing of all installations."
+                    }
+                ]
+            },
+            {
+                "day": "Day 3",
+                "date": "November 3rd, 2023",
+                "title": "Poetry & Closing Day",
+                "sessions": [
+                    {
+                        "time": "2:00 PM - 3:30 PM",
+                        "title": "Poetry Reading by Salamatu Sule",
+                        "description": "Special poetry performance exploring themes of technology and tradition."
+                    },
+                    {
+                        "time": "3:30 PM - 6:00 PM",
+                        "title": "Final Exhibition Viewing",
+                        "description": "Last opportunity to experience the art-tech installations and interact with the creators."
+                    },
+                    {
+                        "time": "6:00 PM - 7:00 PM",
+                        "title": "Closing Ceremony",
+                        "description": "Festival wrap-up and acknowledgments of participating artists and technologists."
                     }
                 ]
             }
@@ -390,7 +589,7 @@
             {
                 "name": "Lailay Ali Othman",
                 "bio": "CEO L&N Group of Companies",
-                "image": "/speakers/alice-johnson.jpg",
+                "image": "https://i.ibb.co/T4xgC59/hq720.jpg",
                 "socials": {
                     "twitter": "https://twitter.com/alicejohnson",
                     "linkedin": "https://linkedin.com/in/alicejohnson"
@@ -399,7 +598,7 @@
             {
                 "name": "Nurdin Temitayo Busari",
                 "bio": "Publisher Amab Books",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/cDxVq1p/nurdin.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -408,7 +607,7 @@
             {
                 "name": "Alex Byanyiko",
                 "bio": "Award winning author",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/9NHHvFZ/alex.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -417,7 +616,7 @@
             {
                 "name": "Salamatu Sule",
                 "bio": "Publisher",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/747QBwc/sule.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -426,7 +625,7 @@
             {
                 "name": "Chio Zoe",
                 "bio": "Fantasy Writer, Celebrated Author",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/2n1rw93/chio.pngg",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -435,7 +634,7 @@
             {
                 "name": " Dr Strings",
                 "bio": "Violininst",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/3s6BPBK/string.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -444,7 +643,7 @@
             {
                 "name": "Sam Doga",
                 "bio": "Floutist",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/jrJdDgJ/doga.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -453,7 +652,7 @@
             {
                 "name": "Aush Oroko",
                 "bio": "Guitarist",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/tbjBtJ4/aush.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -462,7 +661,7 @@
             {
                 "name": " Daniel Bako",
                 "bio": "Rhythmic Artist",
-                "image": "/speakers/mike-chen.jpg",
+                "image": "https://i.ibb.co/ZJz1X9r/arush.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
@@ -471,24 +670,52 @@
         ],
         "highlights": [
             {
-                "title": "5G Experience Zone",
-                "description": "Test the speed and capabilities of 5G technology",
+                "title": "Interactive Kinetic Sculpture - KST6",
+                "description": "This kinetic sculpture focuses on Sustainable Development Goal 4 (Quality Education). Created with fiber material chosen specifically for its electrical conductivity compatibility, the sculpture modelled by Anyanwu Emmanuel features mechanical movements programmed by 16-year-old automation engineer Anolue Chukwuemeka Patrick. The choice of fiber as the medium demonstrates a thoughtful integration of artistic materials with technological requirements.",
                 "images": [
-                    "/highlights/5g-zone1.jpg",
-                    "/highlights/5g-zone2.jpg"
+                    "https://i.ibb.co/xqdKny5/artech-x2-180.jpg",
+                    "https://i.ibb.co/mtKthXr/artech-x2-179.jpg",
+                    "https://i.ibb.co/N7pGD18/IMG-0536.jpg",
+                    "https://i.ibb.co/HNkkTKt/IMG-0526.jpg"
                 ],
-                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                "thumbnail": "/thumbnails/5g-zone.jpg"
+                "video": "https://www.youtube.com/embed/fnnRLEuBPIg?si=TMtdm59XqaEKR8Eg",
+                "thumbnail": "https://i.ibb.co/vDgBx0G/KST6.png"
             },
             {
-                "title": "Smart City Showcase",
-                "description": "Experience the future of urban living",
+                "title": "Data Couture Collection",
+                "description": "This wearable technology collection combines fashion with practical technology solutions, featuring: Wearable tech fashion pieces, Solar rechargeable backpacks, Data protective wallets. The collection demonstrates how fashion can be both functional and protective in the digital age.",
                 "images": [
-                    "/highlights/smart-city1.jpg",
-                    "/highlights/smart-city2.jpg"
+                    "https://i.ibb.co/YjYhP42/artech-x2-32.jpg",
+                    "https://i.ibb.co/4Wv0pqm/artech-x2-26.jpg",
+                    "https://i.ibb.co/TgM8CWr/artech-x2-25.jpg",
+                    "https://i.ibb.co/KDGY8XL/artech-x2-23.jpg"
                 ],
-                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                "thumbnail": "/thumbnails/smart-city.jpg"
+                "video": "https://youtube.com/embed/3Oj_IFg58QE?si=FBvRf1jwTtQUsfTR",
+                "thumbnail": "https://i.ibb.co/YjYhP42/artech-x2-32.jpg"
+            },
+            {
+                "title": "AI Animation Installation",
+                "description": "This original animation installation focuses on SDG 3 (Good Health and Well-being), exploring the connection between health and wealth. The piece leverages artificial intelligence to create an innovative narrative about health's importance to prosperity.",
+                "images": [
+                    "https://i.ibb.co/V0HMV0vn/tedq.png",
+                    "https://i.ibb.co/fz6G597X/artech-x3-3.jpg",
+                    "https://i.ibb.co/fz6G597X/artech-x3-3.jpg",
+                    "https://i.ibb.co/fz6G597X/artech-x3-3.jpg"
+                ],
+                "video": "https://youtube.com/embed/l943Ml9wkkk?feature=share",
+                "thumbnail": "https://i.ibb.co/V0HMV0vn/tedq.png"
+            },
+            {
+                "title": "AI-Infused Paintings",
+                "description": "This exhibition combines traditional painting with artificial intelligence, featuring static artworks that extend into animated videos. The pieces demonstrate how traditional art mediums can be enhanced and transformed through digital technology.",
+                "images": [
+                    "https://i.ibb.co/fYpNGr5h/artech-x2-170.jpg",
+                    "https://i.ibb.co/tpv27QzH/artech-x2-34.jpg",
+                    "https://i.ibb.co/xSWtNFh8/artech-x2-192.jpg",
+                    "https://i.ibb.co/wN07GDgL/artech-x2-171.jpg"
+                ],
+                "video": "https://youtube.com/embed/qbu-V3PnB8A?feature=share",
+                "thumbnail": "https://i.ibb.co/fYpNGr5h/artech-x2-170.jpg"
             }
         ],
         "exhibitions": [
@@ -505,43 +732,52 @@
         ],
         "gallery": [
             {
-                "image": "/gallery/festival2024-1.jpg",
-                "alt": "5G Demo"
+                "image": "https://i.ibb.co/z52prWd/IMG-0051.jpg",
+                "alt": "external"
             },
             {
-                "image": "/gallery/festival2024-2.jpg",
+                "image": "https://i.ibb.co/K5VxjYb/IMG-0096.jpg",
                 "alt": "IoT Showcase"
             },
             {
-                "image": "/gallery/festival2024-3.jpg",
+                "image": "https://i.ibb.co/N7pGD18/IMG-0536.jpg",
                 "alt": "Panel Discussion"
             },
             {
-                "image": "/gallery/festival2024-4.jpg",
+                "image": "https://i.ibb.co/zSgPq7K/IMG-0531.jpg",
+                "alt": "Networking Lounge"
+            },
+            {
+                "image": "https://i.ibb.co/r3Sn0Hk/20241108-093519.jpg",
+                "alt": "external"
+            },
+            {
+                "image": "https://i.ibb.co/vD33SK9/IMG-0476.jpg",
+                "alt": "IoT Showcase"
+            },
+            {
+                "image": "https://i.ibb.co/85t1Mjt/IMG-0474.jpg",
+                "alt": "Panel Discussion"
+            },
+            {
+                "image": "https://i.ibb.co/8X5gxYJ/IMG-0480.jpg",
                 "alt": "Networking Lounge"
             }
         ],
         "pressCoverage": [
             {
-                "title": "CAVIC Festival 2024 Highlights the Connected Future",
-                "url": "https://techcrunch.com/tech-festival-2024",
-                "source": "TechCrunch",
-                "date": "2024-09-20",
-                "excerpt": "CAVIC Festival 2024 showcased the latest advancements in connectivity technologies, highlighting the potential of 5G and the Internet of Things."
+                "title": "Cavic Art And Tech Launches App To Enhance National Cultural Heritage",
+                "url": "https://www.hammertimes.com.ng/art-technology-national-gallery-of-art-seeks-private-sector-collaboration/",
+                "source": "Hammer Times",
+                "date": "2023-14-08",
+                "excerpt": "The National Gallery of Art (NGA) has expressed its readiness to collaborate with the private sector using arts and technology to create employment and boost the economy. The Director General of NGA, Mr Ebeten William Ivara stated this at the Maiden edition of the Creative Arts and Visual Imagery Centre’s (CAVIC) Festival of Art and Technology in Abuja."
             },
             {
-                "title": "CAVIC Festival 2024 Showcases the Power of 5G",
-                "url": "https://forbes.com/tech-festival-2024",
-                "source": "Forbes",
-                "date": "2024-09-22",
-                "excerpt": "Forbes explores the key takeaways from CAVIC Festival 2024, focusing on the transformative power of 5G and its impact on various industries."
-            },
-            {
-                "title": "IoT Innovations at CAVIC Festival 2024",
-                "url": "https://wired.com/tech-festival-2024",
-                "source": "Wired",
-                "date": "2024-09-25",
-                "excerpt": "Wired highlights the most innovative IoT applications and solutions presented at CAVIC Festival 2024."
+                "title": "Art Technology: National Gallery of Art seeks private sector collaboration",
+                "url": "https://nannews.ng/2023/11/14/art-technology-national-gallery-of-art-seeks-private-sector-collaboration/",
+                "source": "NAN News",
+                "date": "2023-11-09",
+                "excerpt": "The National Gallery of Art (NGA) has expressed its readiness to collaborate with the private sector using arts and technology to create employment and boost the economy. The Director General of NGA, Mr Ebeten William Ivara stated this at the Maiden edition of the Creative Arts and Visual Imagery Centre’s (CAVIC) Festival of Art and Technology in Abuja."
             }
         ]
     }

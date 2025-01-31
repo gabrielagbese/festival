@@ -1,64 +1,64 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
-import Image from 'next/image'
+import * as React from "react";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 interface Sponsor {
-  name: string
-  logo: string
+    name: string;
+    logo: string;
 }
 
 interface SponsorCarouselProps {
-  sponsors: Sponsor[]
+    sponsors: Sponsor[];
 }
 
 export function SponsorCarousel({ sponsors }: SponsorCarouselProps) {
-  const containerRef = useRef<HTMLDivElement>(null)
+    const plugin = React.useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    );
 
-  useEffect(() => {
-    const container = containerRef.current
-    if (!container) return
-
-    const scrollWidth = container.scrollWidth
-    const clientWidth = container.clientWidth
-
-    let scrollPosition = 0
-    const scrollSpeed = 0.5 // Adjust this value to change the scroll speed
-
-    const scroll = () => {
-      scrollPosition += scrollSpeed
-      if (scrollPosition >= scrollWidth / 2) {
-        scrollPosition = 0
-      }
-      container.scrollLeft = scrollPosition
-      requestAnimationFrame(scroll)
-    }
-
-    const animation = requestAnimationFrame(scroll)
-
-    return () => cancelAnimationFrame(animation)
-  }, [sponsors])
-
-  return (
-    <div className="overflow-hidden" style={{ maxWidth: '100%' }}>
-      <div
-        ref={containerRef}
-        className="flex whitespace-nowrap"
-        style={{ width: `${sponsors.length * 200}px` }}
-      >
-        {[...sponsors, ...sponsors].map((sponsor, index) => (
-          <div key={index} className="inline-block w-48 h-32 mx-4">
-            <Image
-              src={sponsor.logo || "/placeholder.svg"}
-              alt={sponsor.name}
-              width={192}
-              height={128}
-              className="object-contain"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
+    return (
+        <Carousel
+            opts={{
+                align: "start",
+                loop: true,
+            }}
+            plugins={[plugin.current]}
+            className="w-full"
+        >
+            <CarouselContent>
+                {sponsors.map((sponsor, index) => (
+                    <CarouselItem
+                        key={index}
+                        className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
+                    >
+                        <div className="p-1">
+                            <Card className="border-none shadow-none aspect-video flex flex-col items-center justify-center bg-white overflow-clip">
+                                <CardContent className="flex  items-center justify-center p-2 h-12">
+                                    <Image
+                                        src={sponsor.logo || "/placeholder.svg"}
+                                        alt={sponsor.name}
+                                        width={200}
+                                        height={100}
+                                        className="object-contain"
+                                    />
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+        </Carousel>
+    );
 }
-
