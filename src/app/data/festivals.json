@@ -130,7 +130,7 @@
         "date": "2024-11-07T09:00:00.000Z",
         "location": "30, Agadez Crescent, Abuja",
         "theme": "Interactive Futures: Bridging Realities",
-        "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "brief": "CAVIC Festival 2024 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
             {
                 "day": "Day 1",
@@ -511,16 +511,16 @@
     },
     "2023": {
         "status": "past",
-        "title": "CAVIC Festival 2023",
+        "title": "CAVIC Festival 2024",
         "thumbnail": "https://i.ibb.co/xqdKny5/artech-x2-180.jpg",
         "date": "2023-11-07T09:00:00.000Z",
         "location": "30, Agadez Crescent, Abuja",
         "theme": "Unveiling Abuja's Grand Tapestry of Creativity",
-        "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "brief": "CAVIC Festival 2024focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
             {
                 "day": "Day 1",
-                "date": "November 1st, 2023",
+                "date": "November 1st, 2024",
                 "title": "Opening Day",
                 "sessions": [
                     {
@@ -542,7 +542,7 @@
             },
             {
                 "day": "Day 2",
-                "date": "November 2nd, 2023",
+                "date": "November 2nd, 2024",
                 "title": "Discussions & Performances",
                 "sessions": [
                     {
