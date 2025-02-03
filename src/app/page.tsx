@@ -47,9 +47,10 @@ export default function Home() {
                             </div>
                             <Button
                                 size="lg"
-                                className="bg-black ml-4 text-white hover:shadow-md"
+                                className="bg-black ml-4 text-white hover:shadow-md
+                                "
                             >
-                                Register Now
+                                <a href="/2025">Learn More</a>
                             </Button>
                         </div>
                     </div>

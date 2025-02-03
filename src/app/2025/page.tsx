@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import festivalData from "../data/2025.json";
@@ -9,12 +10,24 @@ export default function CavicFestival2025() {
 
     return (
         <div className="container mx-auto px-4 py-8 space-y-12">
-            <Card className="bg-orange-100 text-orange-900">
-                <CardContent className="pt-6">
-                    <h1 className="text-5xl font-bold mb-4 text-center">
+            <Card
+                className="bg-gradient-to-r from-orange-600 to-orange-400 overflow-hidden text-white 
+      flex flex-col lg:flex-row items-center "
+            >
+                <div className="relative h-64 w-[100%] lg:h-80 lg:w-80 p-2 flex justify-center items-center rounded-lg overflow-clip">
+                    <Image
+                        src="https://i.ibb.co/vsg2JHj/Whats-App-Image-2025-01-27-at-13-23-35.jpg"
+                        alt="Cavic Festival 2025"
+                        layout="fill"
+                        className="p-4 object-cover rounded-lg"
+                        objectFit="cover"
+                    />
+                </div>
+                <CardContent className="flex flex-col items-center justify-center p-6 text-center">
+                    <h1 className="text-2xl lg:text-4xl font-bold mb-4">
                         {festivalData.title}
                     </h1>
-                    <h2 className="text-3xl mb-4 text-center">
+                    <h2 className="text-xl lg:text-3xl mb-4">
                         {festivalData.subtitle}
                     </h2>
                 </CardContent>
@@ -82,12 +95,14 @@ function CallToParticipateSection({ data }) {
                                     )}
                                 </ul>
                             )}
-                            <p className="font-semibold text-lg">
-                                How to Apply:
-                            </p>
-                            <p className="text-lg">
-                                {data.workshops.howToApply}
-                            </p>
+                            <div className="bg-orange-50 border-2 border-orange-200 rounded-lg p-4">
+                                <p className="font-semibold text-lg text-orange-900">
+                                    How to Apply:
+                                </p>
+                                <p className="text-lg">
+                                    {data.workshops.howToApply}
+                                </p>
+                            </div>
                         </div>
                     )}
 
@@ -111,12 +126,14 @@ function CallToParticipateSection({ data }) {
                                     )}
                                 </ul>
                             )}
-                            <p className="font-semibold text-lg">
-                                How to Apply:
-                            </p>
-                            <p className="text-lg">
-                                {data.callForArtists.howToApply}
-                            </p>
+                            <div className="bg-orange-50 border-2 border-orange-200 rounded-lg p-4">
+                                <p className="font-semibold text-lg text-orange-900">
+                                    How to Apply:
+                                </p>
+                                <p className="text-lg">
+                                    {data.callForArtists.howToApply}
+                                </p>
+                            </div>
                         </div>
                     )}
                 </div>
