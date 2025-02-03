@@ -587,15 +587,6 @@
         ],
         "speakers": [
             {
-                "name": "Lailay Ali Othman",
-                "bio": "CEO L&N Group of Companies",
-                "image": "https://i.ibb.co/T4xgC59/hq720.jpg",
-                "socials": {
-                    "twitter": "https://twitter.com/alicejohnson",
-                    "linkedin": "https://linkedin.com/in/alicejohnson"
-                }
-            },
-            {
                 "name": "Nurdin Temitayo Busari",
                 "bio": "Publisher Amab Books",
                 "image": "https://i.ibb.co/cDxVq1p/nurdin.png",
@@ -631,15 +622,7 @@
                     "linkedin": "https://linkedin.com/in/mikechen"
                 }
             },
-            {
-                "name": " Dr Strings",
-                "bio": "Violininst",
-                "image": "https://i.ibb.co/3s6BPBK/string.png",
-                "socials": {
-                    "twitter": "https://twitter.com/mikechen",
-                    "linkedin": "https://linkedin.com/in/mikechen"
-                }
-            },
+
             {
                 "name": "Sam Doga",
                 "bio": "Floutist",
@@ -653,15 +636,6 @@
                 "name": "Aush Oroko",
                 "bio": "Guitarist",
                 "image": "https://i.ibb.co/tbjBtJ4/aush.png",
-                "socials": {
-                    "twitter": "https://twitter.com/mikechen",
-                    "linkedin": "https://linkedin.com/in/mikechen"
-                }
-            },
-            {
-                "name": " Daniel Bako",
-                "bio": "Rhythmic Artist",
-                "image": "https://i.ibb.co/ZJz1X9r/arush.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
