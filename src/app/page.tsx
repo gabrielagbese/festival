@@ -92,7 +92,7 @@ export default function Home() {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {Object.entries(festivalsData)
-                            .slice(0, -1) // Exclude the last entry
+                            // Exclude the last entry
                             .map(([year, festival], index) => (
                                 <SlideIn
                                     key={year}
