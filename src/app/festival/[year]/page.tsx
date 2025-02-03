@@ -28,30 +28,42 @@ export default function Festival({ params }: { params: { year: string } }) {
     return (
         <div className="container mx-auto px-4 py-8">
             <SlideIn>
-                <section className="text-center py-12 bg-gradient-to-r from-orange-600 to-orange-400 rounded-lg mb-12">
-                    <h1 className="text-4xl font-bold mb-4 text-white">
-                        {festival.title}
-                    </h1>
-                    {isPastEvent ? (
-                        <div className="text-2xl font-bold mb-8 text-white">
-                            Event Date:{" "}
-                            {new Date(festival.date).toLocaleDateString()}
-                        </div>
-                    ) : (
-                        <>
-                            <div className="text-6xl font-bold mb-8 text-white">
-                                <CountdownTimer
-                                    targetDate={new Date(festival.date)}
-                                />
+                <section className="text-center py-6 bg-gradient-to-r from-orange-600 to-orange-400 rounded-lg mb-12 lg:flex items-center justify-start p-6">
+                    <div>
+                        <Image
+                            src={festival.flyer}
+                            alt={festival.title}
+                            width={400}
+                            height={400}
+                            className="rounded-lg"
+                            unoptimized={true}
+                        ></Image>
+                    </div>
+                    <div className="text-start p-6">
+                        <h1 className="text-4xl font-bold mb-4 text-white">
+                            {festival.title}
+                        </h1>
+                        {isPastEvent ? (
+                            <div className="text-2xl font-bold mb-8 text-white">
+                                Event Date:{" "}
+                                {new Date(festival.date).toLocaleDateString()}
                             </div>
-                            <Button
-                                size="lg"
-                                className="bg-accent text-accent-foreground hover:bg-accent/90"
-                            >
-                                Register Now
-                            </Button>
-                        </>
-                    )}
+                        ) : (
+                            <>
+                                <div className="text-6xl font-bold mb-8 text-white">
+                                    <CountdownTimer
+                                        targetDate={new Date(festival.date)}
+                                    />
+                                </div>
+                                <Button
+                                    size="lg"
+                                    className="bg-accent text-accent-foreground hover:bg-accent/90"
+                                >
+                                    Register Now
+                                </Button>
+                            </>
+                        )}
+                    </div>
                 </section>
             </SlideIn>
 

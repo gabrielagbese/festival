@@ -32,7 +32,7 @@ const Header = () => {
     const years = ["2024", "2023"];
 
     const navItems = [
-        // { name: "Home", href: "/" },
+        { name: "2025", href: "/2025" },
         {
             name: "Festival",
             href: "#",
@@ -69,13 +69,12 @@ const Header = () => {
                                 width={50}
                                 height={50}
                             />
-
-                            <span className="font-bold ">
+                            <span className="font-bold">
                                 CAVIC Festival <br /> of Creativity & Technology
                             </span>
                         </Link>
                     </div>
-                    <nav className="hidden md:flex items-center justify-end  flex-1">
+                    <nav className="hidden md:flex items-center justify-end flex-1">
                         {navItems.map((item) => (
                             <div
                                 key={item.name}
@@ -85,22 +84,32 @@ const Header = () => {
                                 }
                                 onMouseLeave={handleMouseLeave}
                             >
-                                <button
-                                    className={`text-md font-medium transition-colors hover:text-accent flex items-center ${
-                                        pathname.startsWith(item.href)
-                                            ? "text-accent"
-                                            : "text-foreground/60"
-                                    }`}
-                                    onClick={() =>
-                                        item.dropdown &&
-                                        handleDropdownToggle(item.name)
-                                    }
-                                >
-                                    {item.name}
-                                    {item.dropdown && (
+                                {item.dropdown ? (
+                                    <button
+                                        className={`text-md font-medium transition-colors hover:text-accent flex items-center ${
+                                            pathname.startsWith(item.href)
+                                                ? "text-accent"
+                                                : "text-foreground/60"
+                                        }`}
+                                        onClick={() =>
+                                            handleDropdownToggle(item.name)
+                                        }
+                                    >
+                                        {item.name}
                                         <ChevronDown className="ml-1 h-4 w-4" />
-                                    )}
-                                </button>
+                                    </button>
+                                ) : (
+                                    <Link
+                                        href={item.href}
+                                        className={`text-md font-medium transition-colors hover:text-accent flex items-center ${
+                                            pathname.startsWith(item.href)
+                                                ? "text-accent"
+                                                : "text-foreground/60"
+                                        }`}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                )}
                                 {item.subItems && (
                                     <div
                                         className={`absolute top-full left-0 mt-2 w-48 rounded-md shadow-lg bg-background border border-border ${
@@ -126,20 +135,7 @@ const Header = () => {
                             </div>
                         ))}
                     </nav>
-                    {/* <div className="flex items-center">
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            aria-label="Toggle theme"
-                            className="mr-6"
-                            onClick={() =>
-                                setTheme(theme === "dark" ? "light" : "dark")
-                            }
-                        >
-                            <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                            <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                            <span className="sr-only">Toggle theme</span>
-                        </Button>
+                    <div className="flex items-center">
                         <Button
                             variant="ghost"
                             size="icon"
@@ -153,7 +149,7 @@ const Header = () => {
                                 <Menu className="h-6 w-6" />
                             )}
                         </Button>
-                    </div> */}
+                    </div>
                 </div>
             </div>
             {mobileMenuOpen && (

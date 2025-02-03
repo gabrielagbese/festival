@@ -2,9 +2,10 @@
     "2024": {
         "status": "past",
         "thumbnail": "https://i.ibb.co/vsXx71f/IMG-5681.jpg",
+        "flyer": "https://i.ibb.co/ZzJMfZT7/f-2024.png",
         "title": "CAVIC Festival 2024",
         "date": "2024-11-07T09:00:00.000Z",
-        "location": "30, Agadez Crescent, Abuja",
+        "location": "Abuja",
         "theme": "Interactive Futures: Bridging Realities",
         "brief": "CAVIC Festival 2024 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
@@ -389,8 +390,9 @@
         "status": "past",
         "title": "CAVIC Festival 2023",
         "thumbnail": "https://i.ibb.co/xqdKny5/artech-x2-180.jpg",
+        "flyer": "https://i.ibb.co/67B2cgC9/f-2023.jpg",
         "date": "2023-11-07T09:00:00.000Z",
-        "location": "30, Agadez Crescent, Abuja",
+        "location": "Abuja",
         "theme": "Unveiling Abuja's Grand Tapestry of Creativity",
         "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
@@ -463,6 +465,42 @@
         ],
         "speakers": [
             {
+                "name": "Yahaya Maikori",
+                "bio": "Founder, Law Allianz. Co-founder Chocolate City Music",
+                "image": "https://i.ibb.co/GfRSprMW/ym.png",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Ono Faith",
+                "bio": "Business Manager, Aiivon",
+                "image": "https://i.ibb.co/W4vmTN2J/ono.png",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Ruth Aguele",
+                "bio": "Documentary Producer/Broadcaster",
+                "image": "https://i.ibb.co/0jjNZt2X/ruth.png",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
+                "name": "Michaela Moye",
+                "bio": "Film Maker, Actor, Activist",
+                "image": "https://i.ibb.co/q3GSM5zz/michaela.png",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
                 "name": "Nurdin Temitayo Busari",
                 "bio": "Publisher Amab Books",
                 "image": "https://i.ibb.co/cDxVq1p/nurdin.png",
@@ -503,15 +541,6 @@
                 "name": "Sam Doga",
                 "bio": "Floutist",
                 "image": "https://i.ibb.co/jrJdDgJ/doga.png",
-                "socials": {
-                    "twitter": "https://twitter.com/mikechen",
-                    "linkedin": "https://linkedin.com/in/mikechen"
-                }
-            },
-            {
-                "name": "Aush Oroko",
-                "bio": "Guitarist",
-                "image": "https://i.ibb.co/tbjBtJ4/aush.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
