@@ -1,128 +1,4 @@
 {
-    "2025": {
-        "status": "upcoming",
-        "title": "CAVIC Festival 2025",
-        "date": "2025-09-15T09:00:00.000Z",
-        "location": "Tech City Convention Center",
-        "theme": "Shaping the Digital Future",
-        "brief": "Join us for an exciting 3-day festival celebrating the latest advancements in technology. From AI and quantum computing to cybersecurity and digital art, explore how technology is shaping our future across various domains.",
-        "schedule": [
-            {
-                "day": "Day 1",
-                "title": "The Future of Computing",
-                "sessions": [
-                    {
-                        "time": "9:00 AM - 10:30 AM",
-                        "title": "Keynote: Quantum Computing: The Next Frontier",
-                        "speaker": "Dr. Alice Johnson",
-                        "location": "Main Stage",
-                        "description": "Dr. Johnson will explore the potential of quantum computing and its implications for various industries."
-                    },
-                    {
-                        "time": "11:00 AM - 12:30 PM",
-                        "title": "Panel Discussion: The Ethics of AI",
-                        "location": "Panel Room A",
-                        "description": "Leading experts discuss the ethical considerations surrounding the development and deployment of AI technologies."
-                    }
-                ]
-            }
-        ],
-        "speakers": [
-            {
-                "name": "Lailay Ali Othman",
-                "bio": "CEO L&N Group of Companies",
-                "image": "/speakers/alice-johnson.jpg",
-                "socials": {
-                    "twitter": "https://twitter.com/alicejohnson",
-                    "linkedin": "https://linkedin.com/in/alicejohnson"
-                }
-            },
-            {
-                "name": "Bob Williams",
-                "bio": "Cybersecurity Expert",
-                "image": "/speakers/bob-williams.jpg",
-                "socials": {
-                    "twitter": "https://twitter.com/bobwilliams",
-                    "linkedin": "https://linkedin.com/in/bobwilliams"
-                }
-            }
-        ],
-        "highlights": [
-            {
-                "title": "Quantum Computing Demo",
-                "description": "Experience the power of quantum computing firsthand",
-                "images": [
-                    "/highlights/quantum-demo1.jpg",
-                    "/highlights/quantum-demo2.jpg"
-                ],
-                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                "thumbnail": "/thumbnails/quantum-demo.jpg"
-            },
-            {
-                "title": "AI Art Exhibition",
-                "description": "Explore the intersection of AI and creativity",
-                "images": [
-                    "/highlights/ai-art1.jpg",
-                    "/highlights/ai-art2.jpg"
-                ],
-                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                "thumbnail": "/thumbnails/ai-art.jpg"
-            }
-        ],
-        "exhibitions": [
-            {
-                "name": "NOK Exhibition",
-                "description": "Showcasing the latest in Norwegian technology",
-                "image": "/exhibitions/nok.jpg"
-            },
-            {
-                "name": "VR Exhibition",
-                "description": "Immersive virtual reality experiences",
-                "image": "/exhibitions/vr.jpg"
-            }
-        ],
-        "gallery": [
-            {
-                "image": "/gallery/festival2025-1.jpg",
-                "alt": "Opening Ceremony"
-            },
-            {
-                "image": "/gallery/festival2025-2.jpg",
-                "alt": "Keynote Speech"
-            },
-            {
-                "image": "/gallery/festival2025-3.jpg",
-                "alt": "Exhibition Hall"
-            },
-            {
-                "image": "/gallery/festival2025-4.jpg",
-                "alt": "Networking Event"
-            }
-        ],
-        "pressCoverage": [
-            {
-                "title": "CAVIC Festival 2025 Showcases Groundbreaking Innovations",
-                "url": "https://techcrunch.com/tech-festival-2025",
-                "source": "TechCrunch",
-                "date": "2025-09-20",
-                "excerpt": "The annual CAVIC Festival once again proves to be at the forefront of technological innovation, with quantum computing and AI taking center stage."
-            },
-            {
-                "title": "How CAVIC Festival 2025 is Redefining the Future of Technology",
-                "url": "https://forbes.com/tech-festival-2025",
-                "source": "Forbes",
-                "date": "2025-09-22",
-                "excerpt": "From AI-powered art to quantum computing demonstrations, CAVIC Festival 2025 offers a glimpse into the future of technology across various industries."
-            },
-            {
-                "title": "Emerging Trends Spotted at CAVIC Festival 2025",
-                "url": "https://wired.com/tech-festival-2025",
-                "source": "Wired",
-                "date": "2025-09-25",
-                "excerpt": "Wired's technology experts break down the most exciting trends and innovations showcased at this year's CAVIC Festival."
-            }
-        ]
-    },
     "2024": {
         "status": "past",
         "thumbnail": "https://i.ibb.co/vsXx71f/IMG-5681.jpg",
@@ -511,12 +387,12 @@
     },
     "2023": {
         "status": "past",
-        "title": "CAVIC Festival 2024",
+        "title": "CAVIC Festival 2023",
         "thumbnail": "https://i.ibb.co/xqdKny5/artech-x2-180.jpg",
         "date": "2023-11-07T09:00:00.000Z",
         "location": "30, Agadez Crescent, Abuja",
         "theme": "Unveiling Abuja's Grand Tapestry of Creativity",
-        "brief": "CAVIC Festival 2024focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
+        "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
         "schedule": [
             {
                 "day": "Day 1",

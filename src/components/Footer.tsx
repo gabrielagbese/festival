@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="bg-background border-t border-border/40">
             <div className="container py-8 px-4 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div>
+                    {/* <div>
                         <h3 className="text-lg font-semibold mb-4">About Us</h3>
                         <p className="text-sm text-muted-foreground">
                             A vibrant gathering of creatives and tech
@@ -19,7 +19,7 @@ const Footer = () => {
                             where ideas merge, connections thrive, and the
                             future of creativity is reimagined.
                         </p>
-                    </div>
+                    </div> */}
 
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact</h3>
@@ -27,7 +27,7 @@ const Footer = () => {
                             Email: submissions@cavicfestival.africa
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Phone: +2348035901047
+                            Phone: +2349028346940
                         </p>
                         <p className="text-sm text-muted-foreground">
                             Address: No. 30, Agadez Cres., Wuse ll, Abuja,

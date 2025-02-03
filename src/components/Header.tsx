@@ -7,6 +7,7 @@ import { Moon, Sun, Menu, X, ChevronDown } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
         setOpenDropdown(null);
     };
 
-    const years = ["2025", "2024", "2023"];
+    const years = ["2024", "2023"];
 
     const navItems = [
         // { name: "Home", href: "/" },
@@ -62,6 +63,13 @@ const Header = () => {
                             href="/"
                             className="flex items-center space-x-2 p-2"
                         >
+                            <Image
+                                src="/logo.png"
+                                alt="CAVIC Festival Logo"
+                                width={50}
+                                height={50}
+                            />
+
                             <span className="font-bold ">
                                 CAVIC Festival <br /> of Creativity & Technology
                             </span>
@@ -118,7 +126,7 @@ const Header = () => {
                             </div>
                         ))}
                     </nav>
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                         <Button
                             variant="ghost"
                             size="icon"
@@ -145,7 +153,7 @@ const Header = () => {
                                 <Menu className="h-6 w-6" />
                             )}
                         </Button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {mobileMenuOpen && (

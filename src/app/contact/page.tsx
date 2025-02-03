@@ -20,7 +20,7 @@ export default function Contact() {
                     </div>
                     <div>
                         <h2 className="text-lg font-semibold mb-2">Phone</h2>
-                        <p className="text-foreground/70">+2348035901047</p>
+                        <p className="text-foreground/70">+2349028346940</p>
                     </div>
                     <div>
                         <h2 className="text-lg font-semibold mb-2">Email</h2>
