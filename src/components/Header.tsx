@@ -70,7 +70,7 @@ const Header = () => {
                                 height={50}
                             />
                             <span className="font-bold">
-                                CAVIC Festival <br /> of Creativity & Technology
+                                Cavic Festival <br /> of Creativity & Technology
                             </span>
                         </Link>
                     </div>
