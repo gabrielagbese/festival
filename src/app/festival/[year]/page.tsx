@@ -28,7 +28,7 @@ export default function Festival({ params }: { params: { year: string } }) {
     return (
         <div className="container mx-auto px-4 py-8">
             <SlideIn>
-                <section className="text-center py-6 bg-gradient-to-r from-orange-600 to-orange-400 rounded-lg mb-12 lg:flex items-center justify-start p-6">
+                <section className="text-center py-6 bg-gradient-to-r from-orange-600 to-orange-400 rounded-lg mb-12 lg:flex items-center justify-between p-6">
                     <div>
                         <Image
                             src={festival.flyer}
@@ -39,7 +39,7 @@ export default function Festival({ params }: { params: { year: string } }) {
                             unoptimized={true}
                         ></Image>
                     </div>
-                    <div className="text-start p-6">
+                    <div className="text-center p-6">
                         <h1 className="text-4xl font-bold mb-4 text-white">
                             {festival.title}
                         </h1>
@@ -63,6 +63,15 @@ export default function Festival({ params }: { params: { year: string } }) {
                                 </Button>
                             </>
                         )}
+                    </div>
+                    <div className=" w-[150px] h-[150px] mx-auto lg:mx-0 lg:w-[350px] h-[350px] flex items-center justify-center  lg:border-l">
+                        <Image
+                            src="/logo.png"
+                            alt="hero"
+                            width={200}
+                            height={200}
+                            className="rounded-lg"
+                        />
                     </div>
                 </section>
             </SlideIn>
