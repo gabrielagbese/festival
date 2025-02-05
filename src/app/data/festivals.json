@@ -474,6 +474,15 @@
                 }
             },
             {
+                "name": "Cindy McWhorter",
+                "bio": "Unicef innovation specialist",
+                "image": "https://i.ibb.co/ccJYpS11/cindy.jpg",
+                "socials": {
+                    "twitter": "https://twitter.com/mikechen",
+                    "linkedin": "https://linkedin.com/in/mikechen"
+                }
+            },
+            {
                 "name": "Ono Faith",
                 "bio": "Business Manager, Aiivon",
                 "image": "https://i.ibb.co/W4vmTN2J/ono.png",
@@ -644,13 +653,6 @@
             }
         ],
         "pressCoverage": [
-            {
-                "title": "Cavic Art And Tech Launches App To Enhance National Cultural Heritage",
-                "url": "https://www.hammertimes.com.ng/art-technology-national-gallery-of-art-seeks-private-sector-collaboration/",
-                "source": "Hammer Times",
-                "date": "2023-14-08",
-                "excerpt": "The National Gallery of Art (NGA) has expressed its readiness to collaborate with the private sector using arts and technology to create employment and boost the economy. The Director General of NGA, Mr Ebeten William Ivara stated this at the Maiden edition of the Creative Arts and Visual Imagery Centre’s (CAVIC) Festival of Art and Technology in Abuja."
-            },
             {
                 "title": "Art Technology: National Gallery of Art seeks private sector collaboration",
                 "url": "https://nannews.ng/2023/11/14/art-technology-national-gallery-of-art-seeks-private-sector-collaboration/",

@@ -16,7 +16,7 @@ export default function CavicFestival2025() {
             >
                 <div className="relative h-64 w-[100%] lg:h-80 lg:w-80 p-2 flex justify-center items-center rounded-lg overflow-clip">
                     <Image
-                        src="https://i.ibb.co/vsg2JHj/Whats-App-Image-2025-01-27-at-13-23-35.jpg"
+                        src="https://i.ibb.co/S465WfDy/Whats-App-Image-2025-02-04-at-14-56-06.jpg"
                         alt="Cavic Festival 2025"
                         layout="fill"
                         className="p-4 object-cover rounded-lg"
