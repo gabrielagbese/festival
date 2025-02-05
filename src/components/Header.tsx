@@ -78,7 +78,7 @@ const Header = () => {
                         {navItems.map((item) => (
                             <div
                                 key={item.name}
-                                className="relative group px-3"
+                                className="relative group px-3 h-20  flex items-center"
                                 onMouseEnter={() =>
                                     item.dropdown && handleMouseEnter(item.name)
                                 }
@@ -112,11 +112,12 @@ const Header = () => {
                                 )}
                                 {item.subItems && (
                                     <div
-                                        className={`absolute top-full left-0 mt-2 w-48 rounded-md shadow-lg bg-background border border-border ${
+                                        className={`absolute top-[80px] left-0 w-48 rounded-md shadow-lg bg-background border border-border ${
                                             openDropdown === item.name
                                                 ? "block"
                                                 : "hidden"
                                         }`}
+                                        style={{ marginTop: "-1px" }} // Remove gap between nav and dropdown
                                     >
                                         {item.subItems.map((subItem) => (
                                             <Link

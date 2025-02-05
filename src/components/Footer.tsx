@@ -52,6 +52,19 @@ const Footer = () => {
                             >
                                 <Instagram size={20} />
                             </a>
+
+                            <a
+                                href="https://www.linkedin.com/company/creative-arts-and-visual-imagery-centre/people/"
+                                className="text-muted-foreground hover:text-accent"
+                            >
+                                <Linkedin size={20} />
+                            </a>
+                            <a
+                                href="https://x.com/cavicng"
+                                className="text-muted-foreground hover:text-accent"
+                            >
+                                <Twitter size={20} />
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -56,6 +56,16 @@ export default function Home() {
                     </div>
                 </section>
             </SlideIn>
+            <section className="flex justify-center my-4 bg-gray-100 lg:p-4">
+                <div className="w-full lg:w-1/2 h-auto  flex justify-center">
+                    <Image
+                        src="https://i.ibb.co/S465WfDy/Whats-App-Image-2025-02-04-at-14-56-06.jpg"
+                        alt="hero"
+                        width={600}
+                        height={600}
+                    />
+                </div>
+            </section>
 
             {/* Sponsors Carousel */}
             <SlideIn direction="right" delay={0.2}>

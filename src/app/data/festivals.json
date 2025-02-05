@@ -236,11 +236,11 @@
                     "https://i.ibb.co/XYP9LxF/IMG-5839.jpg",
                     "https://i.ibb.co/vYYb92L/IMG-5952.jpg"
                 ],
-                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "video": "https://youtube.com/embed/JvkuonckETk?si=lvuZ_ljmbrxY5oug",
                 "thumbnail": "https://i.ibb.co/4FKNLZG/IMG-5564.jpg"
             },
             {
-                "title": "Soundsacpe",
+                "title": "Soundscape",
                 "description": "This installation combines physical musical instruments with virtual reality technology. Visitors can play instruments that directly interact with and influence a virtual environment, creating a unique fusion of musical performance and digital visualization. The experience demonstrates the potential for merging traditional musical expression with contemporary digital technology.",
                 "images": [
                     "https://i.ibb.co/c34pSZq/IMG-5624.jpg",
@@ -260,7 +260,7 @@
                     "https://i.ibb.co/MMjZ1mb/IMG-E5940.jpg",
                     "https://i.ibb.co/x7ZTYyp/IMG-5720.jpg"
                 ],
-                "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "video": "https://youtube.com/embed/OuciSiRQM2E?si=0Bm1oSGttiNhxDee",
                 "thumbnail": "https://i.ibb.co/wLRTYPY/IMG-5860.jpg"
             },
             {
@@ -391,7 +391,7 @@
         "title": "CAVIC Festival 2023",
         "thumbnail": "https://i.ibb.co/xqdKny5/artech-x2-180.jpg",
         "flyer": "https://i.ibb.co/67B2cgC9/f-2023.jpg",
-        "date": "2023-11-07T09:00:00.000Z",
+        "date": "2023-11-09T09:00:00.000Z",
         "location": "Abuja",
         "theme": "Unveiling Abuja's Grand Tapestry of Creativity",
         "brief": "CAVIC Festival 2023 focuses on the interconnectedness of our digital world. Explore how emerging technologies are bridging gaps and creating new opportunities across industries.",
@@ -486,15 +486,6 @@
                 "name": "Ono Faith",
                 "bio": "Business Manager, Aiivon",
                 "image": "https://i.ibb.co/W4vmTN2J/ono.png",
-                "socials": {
-                    "twitter": "https://twitter.com/mikechen",
-                    "linkedin": "https://linkedin.com/in/mikechen"
-                }
-            },
-            {
-                "name": "Ruth Aguele",
-                "bio": "Documentary Producer/Broadcaster",
-                "image": "https://i.ibb.co/0jjNZt2X/ruth.png",
                 "socials": {
                     "twitter": "https://twitter.com/mikechen",
                     "linkedin": "https://linkedin.com/in/mikechen"
