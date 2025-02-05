@@ -64,7 +64,7 @@ export default function Festival({ params }: { params: { year: string } }) {
                             </>
                         )}
                     </div>
-                    <div className=" w-[150px] h-[150px] mx-auto lg:mx-0 lg:w-[350px] h-[350px] flex items-center justify-center  lg:border-l">
+                    <div className=" w-[150px] h-[150px] mx-auto lg:mx-0 lg:w-[350px] h-[350px] flex items-center justify-center  lg:border-l lg:border-gray-800">
                         <Image
                             src="/logo.png"
                             alt="hero"
