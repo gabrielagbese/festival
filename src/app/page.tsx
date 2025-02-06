@@ -34,7 +34,7 @@ export default function Home() {
                             />
                         </div>
                         {/* <PixelatedFade direction="right" /> */}
-                        <div className="w-full lg:w-3/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+                        <div className="w-full lg:w-3/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center items-center  text-center lg:text-left">
                             <h1 className="text-2xl lg:text-4xl pl-4 font-bold mb-2 sm:mb-4 text-white">
                                 {homeData.heroTitle}
                             </h1>
