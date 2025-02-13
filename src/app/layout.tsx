@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Annual Tech Festival",
+    title: "Annual Tech-Art Festival",
     description:
         "Experience the future at our annual tech festival and workshops",
 };
