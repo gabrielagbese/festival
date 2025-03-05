@@ -136,6 +136,26 @@ function CallToParticipateSection({ data }) {
                             </div>
                         </div>
                     )}
+
+                    {data.callForVolunteers && (
+                        <div>
+                            <h4 className="text-2xl font-semibold mb-4">
+                                {data.callForVolunteers.title}
+                            </h4>
+                            <p className="text-lg mb-4">
+                                {data.callForVolunteers.content}
+                            </p>
+
+                            <div className="bg-orange-50 border-2 border-orange-200 rounded-lg p-4">
+                                <p className="font-semibold text-lg text-orange-900">
+                                    How to Apply:
+                                </p>
+                                <p className="text-lg">
+                                    {data.callForVolunteers.howToApply}
+                                </p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </CardContent>
         </Card>
