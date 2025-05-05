@@ -102,6 +102,10 @@ function CallToParticipateSection({ data }) {
                                 <p className="text-lg">
                                     {data.workshops.howToApply}
                                 </p>
+                                <p>
+                                    Apply via the following{" "}
+                                    <a href=" https://bit.ly/4ioTspV">link </a>{" "}
+                                </p>
                             </div>
                         </div>
                     )}
