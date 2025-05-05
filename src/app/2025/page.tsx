@@ -108,7 +108,7 @@ function CallToParticipateSection({ data }) {
                                         href=" https://bit.ly/4ioTspV"
                                         className="underline text-amber-700 text-xl"
                                     >
-                                        link{" "}
+                                        link.{" "}
                                     </a>{" "}
                                 </p>
                             </div>
