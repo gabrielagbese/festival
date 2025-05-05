@@ -104,7 +104,12 @@ function CallToParticipateSection({ data }) {
                                 </p>
                                 <p>
                                     Apply via the following{" "}
-                                    <a href=" https://bit.ly/4ioTspV">link </a>{" "}
+                                    <a
+                                        href=" https://bit.ly/4ioTspV"
+                                        className="underline text-amber-700 text-xl"
+                                    >
+                                        link{" "}
+                                    </a>{" "}
                                 </p>
                             </div>
                         </div>
