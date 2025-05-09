@@ -18,7 +18,10 @@
                 "AI for Music: Compose music rooted in African rhythms and scales using artificial intelligence.",
                 "Interactive Installations: Design installations that combine traditional sculpture with motion sensors to explore hybrid realities."
             ],
-            "howToApply": "Submit your portfolio or project proposal to workshops@cavicfestival.africa by May 31, 2025. Selected participants will receive free access to workshops, mentorship from industry leaders, and the opportunity to showcase their work at the main festival in November 2025."
+            "howToApply": {
+                "benefits": "Participants will receive free access to workshops, mentorship from industry leaders, and the opportunity to showcase their work at the main festival in November 2025.",
+                "link": "https://bit.ly/4ioTspV"
+            }
         },
         "callForArtists": {
             "title": "Call for Artists and Technologists",
@@ -102,5 +105,110 @@
                 ]
             }
         ]
-    }
+    },
+    "speakers": [
+        {
+            "name": "Samuel Nnitiwe Theophilus",
+            "role": "AI Engineer & Founder of Nnitiwe.io",
+            "image": "https://i.ibb.co/xtcGgPwh/Whats-App-Image-2025-05-09-at-09-44-08-541b8cee.jpg",
+            "socials": {
+                "blog": "https://blog.nnitiwe.io",
+                "website": "https://www.nnitiwe.io"
+            },
+            "bio": "Experience the fusion of tradition and technology!\n\nMeet Samuel Nnitiwe Theophilus, a seasoned AI Engineer and digital storyteller with over six years of experience in building scalable machine learning models and AI solutions. His work focuses on preserving African culture through motion, transforming folktales into contemporary animated visuals using AI-enhanced techniques.\n\nFeatured Workshop:\n\"Animate the Magic of African Folktales with Cutting-Edge Tools\"\nIn this immersive session, Samuel will guide you through the transformation of oral narratives into compelling animated visuals using AI-assisted tools and modern workflows.\n\nWorkshop Highlights:\n• Storyboarding and animating African folktales with authenticity\n• Utilizing AI and digital tools for solo or team production\n• Bringing characters, environments, and emotions to life\n• Preserving culture while innovating new storytelling formats\n\nTarget Audience:\nWhether you're a digital artist, creative educator, animator, or simply passionate about Africa's storytelling legacy, this workshop offers hands-on insights from a leader who lives and breathes this craft.\n\nProfessional Background:\nSamuel brings years of experience in cultural animation, having mentored over 200 professionals across six countries and led pan-African creative labs. His unique ability to bridge tradition and technology makes this session one of the most anticipated of the festival.\n\nEvent Details:\nJoin us at the Cavic Pre-Festival Workshops 2025, this June at Cavic Hub."
+        },
+        {
+            "name": "Dr. Lanre Phillips",
+            "role": "Business Strategy & Development Expert",
+            "image": "https://i.ibb.co/FqYGnGKs/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986.jpg",
+            "bio": "Dr. Lanre Phillips is a seasoned professional with over 25 years of experience spanning FMCG, Banking, and Telecommunications industries. His expertise in social enterprise has led him to work with numerous business hubs, incubators, and accelerators across Africa, particularly in Nigeria.\n\nDr. Phillips holds a passionate belief in small business growth through human capacity development and strategic business implementation. His approach focuses on operational excellence and value creation through people-centered strategies.\n\nAs a faculty member of several training organizations, he specializes in:\n• Business Strategy\n• Storytelling\n• Organisational Behaviour\n• Business Branding\n• Customer Service\n• Leadership\n• Sales Techniques\n• Entrepreneurship\n\nHis notable achievements include:\n• Member of the Global Entrepreneurship Network, Nigeria team\n• Board member of the Integrated Institute of Professional Management (IIPM)\n• Key contributor to projects like You WIN, World Bank's Women X Programme, and the Road to Growth by the Cherie Blaire Foundation\n\nEducation:\n• Doctorate in Business Administration (DBA) - Swiss Management Centre\n• MSc Economics - University of Jos\n• MBA - University of Jos\n• Bachelor's in Economics - University of Ibadan (1995)",
+            "credentials": {
+                "education": [
+                    "DBA - Swiss Management Centre",
+                    "MSc Economics - University of Jos",
+                    "MBA - University of Jos",
+                    "BSc Economics - University of Ibadan"
+                ],
+                "expertise": [
+                    "Business Strategy",
+                    "Entrepreneurship Development",
+                    "Organizational Development",
+                    "Training & Capacity Building"
+                ]
+            }
+        },
+        {
+            "name": "Ntiense Tom",
+            "role": "Multi-disciplinary Artist",
+            "image": "https://i.ibb.co/DDR9PLzJ/Whats-App-Image-2025-05-09-at-09-47-40-4cc116ed.jpg",
+            "bio": "Ntiense Tom is a multi-disciplinary artist born in Nigeria, whose artistic journey began in childhood through comic storytelling and creative exploration of found objects. Her formal education includes bachelor's and master's degrees in fine arts.\n\nDrawing influence from her milieu, gender, and nostalgic experiences, Ntiense champions the self-awareness of African women, highlighting their potential and societal impact. Her diverse artistic practice encompasses:\n• Poetry\n• Digital Arts\n• Traditional Paintings\n\nHer work focuses on themes of:\n• Women's empowerment\n• Cultural expression\n• Environmental consciousness\n\nRecent works feature a unique fusion of digital and conventional painting techniques, incorporating:\n• Geometric shapes\n• Flat tones\n• Bold saturations\n• Abstract expressions inspired by Cubism\n\nNotable Exhibitions:\n• Lambert Archives' Historic and Contemporary African Women (London, 2024)\n• The 1952 Arts Accelerator Exhibition (2022)\n• Edo meets Lagos, \"Edo at 30\" Arts, Food and Culture Fair (2021)\n• Victor Uwafios Creative Hub Exhibition (2021)\n\nBeyond her artistic practice, Ntiense is committed to social impact through art, particularly in art therapy for children and young adults, including programs for children with special needs.",
+            "expertise": [
+                "Digital Arts",
+                "Traditional Painting",
+                "Poetry",
+                "Art Therapy",
+                "Children's Art Education"
+            ],
+            "exhibitions": {
+                "recent": [
+                    "Lambert Archives' Exhibition, London (2024)",
+                    "The 1952 Arts Accelerator (2022)",
+                    "Edo meets Lagos (2021)",
+                    "Victor Uwafios Creative Hub (2021)"
+                ]
+            }
+        },
+        {
+            "name": "Oluwaseun Odukoya",
+            "role": "Storyteller & Theatre Arts Fellow (FTA)",
+            "alias": "Aunty Shine-Shine",
+            "image": "https://i.ibb.co/vGR5Vh6/Whats-App-Image-2025-05-09-at-09-48-35-8a14d8b4.jpg",
+            "credentials": {
+                "title": "Deputy President, National Association of Nigerian Theatre Arts Practitioners (NANTAP)",
+                "awards": ["Fellow of Theatre Arts (FTA)"]
+            },
+            "bio": "What do you get when you mix theatre, radio, three languages, a sprinkle of sparkle — and decades of storytelling genius?\nYou get Aunty Shine-Shine the Storyteller — aka Oluwaseun Odukoya fta — and she's bringing the fire to Cavic Pre-Festival Workshops 2025.\n\nAs the Creative Lead at SASH – Storytime with Aunty Shine-Shine, she's been inspiring young minds and families through unforgettable performances that blend story, song, and cultural wisdom. But make no mistake — Aunty Shine-Shine is not just for the kids.\n\nShe's a stage-tested actor, a radio drama queen, a children's theatre guru, and now, Deputy President of the National Association of Nigerian Theatre Arts Practitioners (NANTAP) — where she was recently honored with a prestigious Fellow of Theatre Arts (fta) title.\n\nFrom Wole Soyinka's Death and the King's Horseman to directing Ken Saro-Wiwa's The Wheel, from voicing Gbagam Gbagam on radio to rocking international festivals in Germany, South Africa, and the USA — this woman doesn't just tell stories. She lives them.",
+            "workshop": {
+                "title": "Storytelling as a Gateway to Creativity",
+                "description": "A high-energy, hands-on session designed to help you tap into your story — and turn it into a powerful tool for communication, creation, and confidence.",
+                "learning_outcomes": [
+                    "How to shape stories that inspire, move, and connect",
+                    "Performance techniques from stage, radio, and youth theatre",
+                    "How to write, speak, and lead with cultural authenticity",
+                    "Ways to use story for branding, education, and empowerment"
+                ],
+                "audience": "Everyone — educators, artists, writers, techies, and dreamers.\nIf you speak, write, perform, or pitch — this session is for you."
+            },
+            "achievements": [
+                "Trained 100+ youth in the Creative Youth Boot Camp by Street Project Foundation",
+                "Represented Nigeria at ASSITEJ South Africa",
+                "Performed at AITAFA",
+                "Competed in World Storytelling Championships"
+            ]
+        },
+        {
+            "name": "Arome Ibrahim",
+            "role": "Immersive Technologist & Programs Director",
+            "image": "https://i.ibb.co/wNTWCfWF/Whats-App-Image-2025-05-09-at-09-53-40-6937b26b.jpg",
+            "organization": "Immersive Tech Africa",
+            "bio": "Arome Ibrahim is an Immersive Technologist and Virtual Reality expert with over 7 years of industry experience. As Programs Director at Immersive Tech Africa, he leads initiatives to democratize access to Extended Reality (XR) and AI through education, training, and research.\n\nHis work focuses on building an inclusive creative tech community in Africa, with particular emphasis on VR for Arts, Culture, and Heritage Digitization.",
+            "expertise": [
+                "Virtual Reality (VR)",
+                "Augmented Reality (AR)",
+                "Extended Reality (XR)",
+                "Heritage Digitization",
+                "Immersive Storytelling"
+            ],
+            "workshop": {
+                "title": "Virtual Reality Storytelling: Crafting Immersive Cultural Narratives",
+                "description": "A hands-on workshop exploring the intersection of VR/AR technologies with cultural storytelling and artistic expression.",
+                "focus_areas": [
+                    "VR for Cultural Heritage Preservation",
+                    "Immersive Art Creation",
+                    "Interactive Storytelling Techniques",
+                    "XR Technology Implementation"
+                ]
+            }
+        }
+    ]
 }
