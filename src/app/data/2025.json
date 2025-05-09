@@ -120,7 +120,10 @@
         {
             "name": "Dr. Lanre Phillips",
             "role": "Business Strategy & Development Expert",
-            "image": "https://i.ibb.co/FqYGnGKs/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986.jpg",
+            "image": "https://i.ibb.co/nMhFPxBp/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986-Photoroom-1.png",
+            "socials": {
+                "website": "https://drlanrephillips.com/"
+            },
             "bio": "Dr. Lanre Phillips is a seasoned professional with over 25 years of experience spanning FMCG, Banking, and Telecommunications industries. His expertise in social enterprise has led him to work with numerous business hubs, incubators, and accelerators across Africa, particularly in Nigeria.\n\nDr. Phillips holds a passionate belief in small business growth through human capacity development and strategic business implementation. His approach focuses on operational excellence and value creation through people-centered strategies.\n\nAs a faculty member of several training organizations, he specializes in:\n• Business Strategy\n• Storytelling\n• Organisational Behaviour\n• Business Branding\n• Customer Service\n• Leadership\n• Sales Techniques\n• Entrepreneurship\n\nHis notable achievements include:\n• Member of the Global Entrepreneurship Network, Nigeria team\n• Board member of the Integrated Institute of Professional Management (IIPM)\n• Key contributor to projects like You WIN, World Bank's Women X Programme, and the Road to Growth by the Cherie Blaire Foundation\n\nEducation:\n• Doctorate in Business Administration (DBA) - Swiss Management Centre\n• MSc Economics - University of Jos\n• MBA - University of Jos\n• Bachelor's in Economics - University of Ibadan (1995)",
             "credentials": {
                 "education": [
@@ -141,6 +144,9 @@
             "name": "Ntiense Tom",
             "role": "Multi-disciplinary Artist",
             "image": "https://i.ibb.co/DDR9PLzJ/Whats-App-Image-2025-05-09-at-09-47-40-4cc116ed.jpg",
+            "socials": {
+                "linktree": "https://linktr.ee/ntgoldbest"
+            },
             "bio": "Ntiense Tom is a multi-disciplinary artist born in Nigeria, whose artistic journey began in childhood through comic storytelling and creative exploration of found objects. Her formal education includes bachelor's and master's degrees in fine arts.\n\nDrawing influence from her milieu, gender, and nostalgic experiences, Ntiense champions the self-awareness of African women, highlighting their potential and societal impact. Her diverse artistic practice encompasses:\n• Poetry\n• Digital Arts\n• Traditional Paintings\n\nHer work focuses on themes of:\n• Women's empowerment\n• Cultural expression\n• Environmental consciousness\n\nRecent works feature a unique fusion of digital and conventional painting techniques, incorporating:\n• Geometric shapes\n• Flat tones\n• Bold saturations\n• Abstract expressions inspired by Cubism\n\nNotable Exhibitions:\n• Lambert Archives' Historic and Contemporary African Women (London, 2024)\n• The 1952 Arts Accelerator Exhibition (2022)\n• Edo meets Lagos, \"Edo at 30\" Arts, Food and Culture Fair (2021)\n• Victor Uwafios Creative Hub Exhibition (2021)\n\nBeyond her artistic practice, Ntiense is committed to social impact through art, particularly in art therapy for children and young adults, including programs for children with special needs.",
             "expertise": [
                 "Digital Arts",
@@ -191,6 +197,9 @@
             "role": "Immersive Technologist",
             "image": "https://i.ibb.co/wNTWCfWF/Whats-App-Image-2025-05-09-at-09-53-40-6937b26b.jpg",
             "organization": "Immersive Tech Africa",
+            "socials": {
+                "linktree": "https://linktr.ee/aromeibrahim"
+            },
             "bio": "Arome Ibrahim is an Immersive Technologist and Virtual Reality expert with over 7 years of industry experience. As Programs Director at Immersive Tech Africa, he leads initiatives to democratize access to Extended Reality (XR) and AI through education, training, and research.\n\nHis work focuses on building an inclusive creative tech community in Africa, with particular emphasis on VR for Arts, Culture, and Heritage Digitization.",
             "expertise": [
                 "Virtual Reality (VR)",

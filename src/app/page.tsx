@@ -1,16 +1,28 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import homeData from "./data/home.json";
 import festivalsData from "./data/festivals.json";
 import workshopsData from "./data/workshops.json";
+import festivalData from "./data/2025.json";
 import { GalleryModal } from "../components/GalleryModal";
 import { PressCoverage } from "../components/PressCoverage";
 import { SponsorCarousel } from "../components/SponsorCarousel";
 import { SlideIn } from "../components/SlideIn";
 import Countdown from "react-countdown";
 import { PixelatedFade } from "@/components/PixelatedFade";
+import { useState } from "react";
+import { Globe, BookOpen, Link as LinkIcon } from "lucide-react";
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+} from "@/components/ui/dialog";
 
 export default function Home() {
     const upcomingEvent =
@@ -183,54 +195,11 @@ export default function Home() {
                 </section>
             </SlideIn>
 
-            {/* Previous Workshops */}
-            {/* <SlideIn direction="right" delay={0.6}>
-                <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6">
-                        Previous Workshops
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {Object.entries(workshopsData).map(
-                            ([year, workshop], index) => (
-                                <SlideIn
-                                    key={year}
-                                    direction="up"
-                                    delay={0.1 * index}
-                                >
-                                    <Card className="hover:shadow-lg transition-shadow">
-                                        <CardHeader>
-                                            <CardTitle>
-                                                {workshop.title}
-                                            </CardTitle>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <Image
-                                                src={
-                                                    workshop.thumbnail ||
-                                                    "/placeholder.svg"
-                                                }
-                                                alt={workshop.title}
-                                                width={300}
-                                                height={200}
-                                                className="rounded-lg mb-4"
-                                            />
-                                            <p className="line-clamp-3">
-                                                {workshop.brief}
-                                            </p>
-                                            <Link
-                                                href={`/workshop/${year}`}
-                                                className="text-accent hover:underline mt-2 inline-block"
-                                            >
-                                                Learn more
-                                            </Link>
-                                        </CardContent>
-                                    </Card>
-                                </SlideIn>
-                            )
-                        )}
-                    </div>
-                </section>
-            </SlideIn> */}
+            <Separator className="my-12" />
+
+            <SlideIn direction="left" delay={0.6}>
+                <PreFestivalSpeakersSection />
+            </SlideIn>
 
             {/* Press Coverage */}
             <SlideIn direction="left" delay={0.7}>
@@ -284,4 +253,154 @@ export default function Home() {
 function CountdownTimer({ targetDate }) {
     // Implement countdown logic here
     return <div>00:00:00</div>;
+}
+
+function PreFestivalSpeakersSection() {
+    const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+
+    return (
+        <Card>
+            <CardHeader>
+                <CardTitle className="text-3xl font-bold text-orange-900">
+                    2025 Pre-Festival Workshop Speakers
+                </CardTitle>
+            </CardHeader>
+            <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    {festivalData.speakers.map((speaker, index) => (
+                        <div
+                            key={index}
+                            className="cursor-pointer hover:scale-105 transition-transform"
+                            onClick={() => setSelectedSpeaker(speaker)}
+                        >
+                            <div className="aspect-square relative mb-4">
+                                <Image
+                                    src={speaker.image || "/placeholder.svg"}
+                                    alt={speaker.name}
+                                    fill
+                                    className="object-cover rounded-lg object-[center_top]"
+                                />
+                            </div>
+                            <h3 className="text-lg font-semibold text-center">
+                                {speaker.name}
+                            </h3>
+                            <p className="text-center text-gray-600 text-sm">
+                                {speaker.role}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </CardContent>
+
+            <Dialog
+                open={!!selectedSpeaker}
+                onOpenChange={() => setSelectedSpeaker(null)}
+            >
+                {selectedSpeaker && (
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                        <DialogHeader>
+                            <DialogTitle className="text-xl font-bold mb-2">
+                                {selectedSpeaker.name}
+                                {selectedSpeaker.alias && (
+                                    <span className="text-orange-600 block text-base">
+                                        "{selectedSpeaker.alias}"
+                                    </span>
+                                )}
+                            </DialogTitle>
+                            <DialogDescription className="text-base text-orange-600 font-medium">
+                                {selectedSpeaker.role}
+                            </DialogDescription>
+                        </DialogHeader>
+                        <div className="flex flex-col md:flex-row gap-6 p-4">
+                            <div className="md:w-1/3 flex-shrink-0">
+                                <div className="aspect-[3/4] relative rounded-lg overflow-hidden shadow-lg">
+                                    <Image
+                                        src={
+                                            selectedSpeaker.image ||
+                                            "/placeholder.svg"
+                                        }
+                                        alt={selectedSpeaker.name}
+                                        fill
+                                        className="object-cover object-[center_top]"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
+                                {selectedSpeaker.socials && (
+                                    <div className="mt-4 flex gap-4 items-center justify-center">
+                                        {selectedSpeaker.socials.website && (
+                                            <a
+                                                href={
+                                                    selectedSpeaker.socials
+                                                        .website
+                                                }
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 text-orange-600 hover:text-orange-700"
+                                            >
+                                                <Globe className="h-4 w-4" />
+                                                <span className="text-sm">
+                                                    Website
+                                                </span>
+                                            </a>
+                                        )}
+                                        {selectedSpeaker.socials.blog && (
+                                            <a
+                                                href={
+                                                    selectedSpeaker.socials.blog
+                                                }
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 text-orange-600 hover:text-orange-700"
+                                            >
+                                                <BookOpen className="h-4 w-4" />
+                                                <span className="text-sm">
+                                                    Blog
+                                                </span>
+                                            </a>
+                                        )}
+                                        {selectedSpeaker.socials.linktree && (
+                                            <a
+                                                href={
+                                                    selectedSpeaker.socials
+                                                        .linktree
+                                                }
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 text-orange-600 hover:text-orange-700"
+                                            >
+                                                <LinkIcon className="h-4 w-4" />
+                                                <span className="text-sm">
+                                                    Links
+                                                </span>
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                            <div className="md:w-2/3">
+                                <div className="prose prose-orange max-w-none text-sm">
+                                    <p className="whitespace-pre-line text-gray-700">
+                                        {selectedSpeaker.bio}
+                                    </p>
+                                    {selectedSpeaker.workshop && (
+                                        <div className="mt-4">
+                                            <h4 className="text-lg font-semibold text-orange-900">
+                                                {selectedSpeaker.workshop.title}
+                                            </h4>
+                                            <p className="text-gray-700">
+                                                {
+                                                    selectedSpeaker.workshop
+                                                        .description
+                                                }
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </DialogContent>
+                )}
+            </Dialog>
+        </Card>
+    );
 }

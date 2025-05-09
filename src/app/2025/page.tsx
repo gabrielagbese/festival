@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Globe, BookOpen } from "lucide-react";
+import { Globe, BookOpen, Link } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -362,6 +362,20 @@ function SpeakersSection({ data }) {
                                             >
                                                 <BookOpen className="h-5 w-5" />
                                                 <span>Blog</span>
+                                            </a>
+                                        )}
+                                        {selectedSpeaker.socials.linktree && (
+                                            <a
+                                                href={
+                                                    selectedSpeaker.socials
+                                                        .linktree
+                                                }
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 text-orange-600 hover:text-orange-700"
+                                            >
+                                                <Link className="h-5 w-5" />
+                                                <span>Links</span>
                                             </a>
                                         )}
                                     </div>
