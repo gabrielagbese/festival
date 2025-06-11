@@ -192,32 +192,6 @@
                 "Competed in World Storytelling Championships"
             ]
         },
-        {
-            "name": "Arome Ibrahim",
-            "role": "Immersive Technologist",
-            "image": "https://i.ibb.co/wNTWCfWF/Whats-App-Image-2025-05-09-at-09-53-40-6937b26b.jpg",
-            "organization": "Immersive Tech Africa",
-            "socials": {
-                "linktree": "https://linktr.ee/aromeibrahim"
-            },
-            "bio": "Arome Ibrahim is an Immersive Technologist and Virtual Reality expert with over 7 years of industry experience. As Programs Director at Immersive Tech Africa, he leads initiatives to democratize access to Extended Reality (XR) and AI through education, training, and research.\n\nHis work focuses on building an inclusive creative tech community in Africa, with particular emphasis on VR for Arts, Culture, and Heritage Digitization.",
-            "expertise": [
-                "Virtual Reality (VR)",
-                "Augmented Reality (AR)",
-                "Extended Reality (XR)",
-                "Heritage Digitization",
-                "Immersive Storytelling"
-            ],
-            "workshop": {
-                "title": "Virtual Reality Storytelling: Crafting Immersive Cultural Narratives",
-                "description": "A hands-on workshop exploring the intersection of VR/AR technologies with cultural storytelling and artistic expression.",
-                "focus_areas": [
-                    "VR for Cultural Heritage Preservation",
-                    "Immersive Art Creation",
-                    "Interactive Storytelling Techniques",
-                    "XR Technology Implementation"
-                ]
-            }
-        }
+        
     ]
 }
