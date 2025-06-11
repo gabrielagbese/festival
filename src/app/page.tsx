@@ -23,6 +23,7 @@ import {
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog";
+import { SplashCursor } from "@/components/ui/splash-cursor";
 
 export default function Home() {
     const upcomingEvent =
@@ -31,6 +32,7 @@ export default function Home() {
 
     return (
         <div className="container mx-auto px-4 lg:px-12 py-8">
+            sa
             {/* Hero with countdown */}
             <SlideIn>
                 <section className="relative overflow-hidden shadow-lg rounded-lg mb-12 max-w-6xl lg:p-[12px] mx-auto  bg-gradient-to-r from-orange-600/75 to-orange-400/75 p-[5px] border-gray-400 border ">
@@ -78,7 +80,6 @@ export default function Home() {
                     />
                 </div>
             </section>
-
             {/* Sponsors Carousel */}
             <SlideIn direction="right" delay={0.2}>
                 <section className="mb-12">
@@ -88,7 +89,6 @@ export default function Home() {
                     <SponsorCarousel sponsors={homeData.sponsors} />
                 </section>
             </SlideIn>
-
             {/* About Festival */}
             <SlideIn direction="left" delay={0.3}>
                 <section className="mb-12 ">
@@ -106,7 +106,6 @@ export default function Home() {
                     </Card>
                 </section>
             </SlideIn>
-
             {/* Previous Festivals */}
             <SlideIn direction="right" delay={0.4}>
                 <section className="mb-12">
@@ -155,7 +154,6 @@ export default function Home() {
                     </div>
                 </section>
             </SlideIn>
-
             {/* About Workshop */}
             <SlideIn direction="left" delay={0.5}>
                 <section className="mb-12">
@@ -194,18 +192,14 @@ export default function Home() {
                     </Card>
                 </section>
             </SlideIn>
-
             <Separator className="my-12" />
-
             <SlideIn direction="left" delay={0.6}>
                 <PreFestivalSpeakersSection />
             </SlideIn>
-
             {/* Press Coverage */}
             <SlideIn direction="left" delay={0.7}>
                 <PressCoverage articles={homeData.pressAppearances} />
             </SlideIn>
-
             {/* Call to Collaborators */}
             <SlideIn direction="right" delay={0.8}>
                 <section className="mb-12 bg-accent/20 p-8 rounded-lg">
@@ -220,7 +214,6 @@ export default function Home() {
                     </Button>
                 </section>
             </SlideIn>
-
             {/* Gallery */}
             <SlideIn direction="up" delay={0.9}>
                 <section className="mb-12">
