@@ -79,7 +79,7 @@ export default function CavicFestival2025() {
 			</Card>
 
 			<IntroductionSection data={festivalData.introduction} />
-			<Separator className="my-13" />
+			<Separator className="my-12" />
 			<SpeakersSection data={festivalData.speakers} />
 			<CallToParticipateSection data={festivalData.callToParticipate} />
 			<Separator className="my-12" />
