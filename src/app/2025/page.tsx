@@ -14,7 +14,7 @@ import { useState, useRef, useEffect } from "react";
 import festivalData from "../data/2025.json";
 
 export default function CavicFestival2025() {
-	const [isMuted, setIsMuted] = useState(true);
+	const [isMuted, setIsMuted] = useState(false);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 	const videoRef = useRef(null);
