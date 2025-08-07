@@ -23,7 +23,6 @@ import {
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog";
-import { SplashCursor } from "@/components/ui/splash-cursor";
 
 export default function Home() {
     const upcomingEvent =
@@ -32,7 +31,6 @@ export default function Home() {
 
     return (
         <div className="container mx-auto px-4 lg:px-12 py-8">
-            sa
             {/* Hero with countdown */}
             <SlideIn>
                 <section className="relative overflow-hidden shadow-lg rounded-lg mb-12 max-w-6xl lg:p-[12px] mx-auto  bg-gradient-to-r from-orange-600/75 to-orange-400/75 p-[5px] border-gray-400 border ">
