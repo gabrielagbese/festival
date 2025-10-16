@@ -156,6 +156,8 @@ export default function CavicFestival2025() {
 			<IntroductionSection data={festivalData.introduction} />
 			<Separator className="my-12" />
 			<SpeakersSection data={festivalData.speakers} />
+			<Separator className="my-12" />
+			<FestivalSpeakersSection />
 			<CallToParticipateSection data={festivalData.callToParticipate} />
 			<Separator className="my-12" />
 			<KeyActivitiesSection data={festivalData.keyActivities} />
@@ -179,6 +181,132 @@ function IntroductionSection({ data }) {
 			<CardContent>
 				<p className="text-lg whitespace-pre-line">{data.content}</p>
 			</CardContent>
+		</Card>
+	);
+}
+
+function FestivalSpeakersSection() {
+    const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+
+    const festivalSpeakers = [
+        {
+            name: "Yene",
+            role: "Vocalist & Guitarist",
+            image: "/fest-speaker/yene.png",
+            bio: "Yene is a vocalist and guitarist based in Abuja, exploring the blend of her voice and instrument. Inspired by soul, jazz, RnB, afro, and gospel, she thrives on live performances that deepen her connection with audiences. Known for her \"big voice\" and \"powerful vocals\"."
+        },
+        {
+            name: "Oluwadayo",
+            role: "Singer, Songwriter & Stage Performer",
+            image: "/fest-speaker/oluwadayo.png",
+            bio: "Oluwadayo is a multifaceted artist - a professional singer, songwriter, and stage performer dedicated to spreading positivity, hope, and faith through her craft. With experience performing for diverse audiences on various stages, she skillfully connects with her fans through heartfelt artistry."
+        },
+        {
+            name: "Friday Ramses Onoja, SAN",
+            role: "Litigation Attorney & Art Enthusiast",
+            image: "/fest-speaker/onoja.jpg",
+            bio: "Friday Ramses Onoja, SAN, distinguished litigation attorney and art enthusiast, brings decades of legal expertise and a deep passion for photography to the CAVIC Festival 2025 panel on \"AI and the Arts – Possibilities, Ethics, and Future Pathways.\" His unique legal-artistic perspective bridges creativity, technology, and ethical discourse."
+        },
+        {
+            name: "Nana Sule",
+            role: "Writer, Editor & Communications Strategist",
+            image: "/fest-speaker/sule.jpg",
+            bio: "Nana Sule is a Writer, Editor, and Communications Strategist working at the intersections of art, literature, feminism, environmental advocacy, and decolonial knowledge. With experience in brand messaging, digital content, and community engagement, she is also skilled in design, newsletter curation, podcasting, public speaking, and team management."
+        },
+        {
+            name: "Marina El Chalouhi",
+            role: "Creative Producer",
+            image: "/fest-speaker/marina.png",
+            bio: "Marina El Chalouhi is a Belgian creative producer with Lebanese and Armenian roots. At Gang Group, she drives strategic content for global brands, while as co-founder of Maison Kimia, she amplifies diasporic and Afro-descendant narratives through arts and culture."
+        },
+        {
+            name: "Habiba Nur Alkali",
+            role: "Author & Civil Servant",
+            image: "/fest-speaker/alkali.jpg",
+            bio: "Habiba Nur Alkali is a Nigerian author and seasoned civil servant with 18 years in public service. Her debut novel, The Phantom Army, based on the Northeast insurgency, is taught in tertiary institutions. Her second book, Forty Winks, a poetry collection, was released in June 2025."
+        },
+        {
+            name: "Busola Perez-Folayan",
+            role: "Head of NASENI Innovation Hub",
+            image: "/fest-speaker/busola.jpg",
+            bio: "Busola Perez-Folayan, Head of NASENI Innovation Hub and a powerhouse in Africa's innovation ecosystem! A strategic management expert and startup mentor, she has empowered over 5,000 entrepreneurs across sectors. At CAVIC Festival 2025, she joins our panel to explore how innovation and technology can transform Africa's creative future."
+        }
+    ];
+
+	return (
+		<Card>
+			<CardHeader>
+				<CardTitle className="text-4xl font-bold text-orange-900">
+					Festival Speakers
+				</CardTitle>
+			</CardHeader>
+			<CardContent>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					{festivalSpeakers.map((speaker, index) => (
+						<div
+							key={index}
+							className="cursor-pointer hover:scale-105 transition-transform"
+							onClick={() => setSelectedSpeaker(speaker)}
+						>
+							<div className="aspect-square relative mb-4">
+								<Image
+									src={speaker.image || "/placeholder.svg"}
+									alt={speaker.name}
+									fill
+									className="object-cover rounded-lg object-top"
+								/>
+							</div>
+							<h3 className="text-xl font-semibold text-center">
+								{speaker.name}
+							</h3>
+							<p className="text-center text-gray-600">
+								{speaker.role}
+							</p>
+						</div>
+					))}
+				</div>
+			</CardContent>
+
+			<Dialog
+				open={!!selectedSpeaker}
+				onOpenChange={() => setSelectedSpeaker(null)}
+			>
+				{selectedSpeaker && (
+					<DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+						<DialogHeader>
+							<DialogTitle className="text-2xl font-bold mb-2">
+								{selectedSpeaker.name}
+							</DialogTitle>
+							<DialogDescription className="text-lg text-orange-600 font-medium">
+								{selectedSpeaker.role}
+							</DialogDescription>
+						</DialogHeader>
+						<div className="flex flex-col md:flex-row gap-6 p-4">
+							<div className="md:w-1/3 flex-shrink-0">
+								<div className="aspect-[3/4] relative rounded-lg overflow-hidden object-top shadow-lg">
+									<Image
+										src={
+											selectedSpeaker.image ||
+											"/placeholder.svg"
+										}
+										alt={selectedSpeaker.name}
+										fill
+										className="object-cover"
+										sizes="(max-width: 768px) 100vw, 33vw"
+									/>
+								</div>
+							</div>
+							<div className="md:w-2/3">
+								<div className="prose prose-orange max-w-none">
+									<p className="whitespace-pre-line text-gray-700">
+										{selectedSpeaker.bio}
+									</p>
+								</div>
+							</div>
+						</div>
+					</DialogContent>
+				)}
+			</Dialog>
 		</Card>
 	);
 }
@@ -388,7 +516,7 @@ function SpeakersSection({ data }) {
 		<Card>
 			<CardHeader>
 				<CardTitle className="text-4xl font-bold text-orange-900">
-					Featured Speakers
+					Workshop Speakers
 				</CardTitle>
 			</CardHeader>
 			<CardContent>
