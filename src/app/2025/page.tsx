@@ -1,6 +1,14 @@
 "use client";
 import Image from "next/image";
-import { Globe, BookOpen, Link, Play, Maximize, Volume2, VolumeX } from "lucide-react";
+import {
+	Globe,
+	BookOpen,
+	Link,
+	Play,
+	Maximize,
+	Volume2,
+	VolumeX,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -25,11 +33,18 @@ export default function CavicFestival2025() {
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
-					if (entry.isIntersecting && !hasPlayedOnce && videoRef.current) {
-						videoRef.current.play().then(() => {
-							setIsPlaying(true);
-							setHasPlayedOnce(true);
-						}).catch(console.error);
+					if (
+						entry.isIntersecting &&
+						!hasPlayedOnce &&
+						videoRef.current
+					) {
+						videoRef.current
+							.play()
+							.then(() => {
+								setIsPlaying(true);
+								setHasPlayedOnce(true);
+							})
+							.catch(console.error);
 					}
 				});
 			},
@@ -49,10 +64,13 @@ export default function CavicFestival2025() {
 				videoRef.current.pause();
 				setIsPlaying(false);
 			} else {
-				videoRef.current.play().then(() => {
-					setIsPlaying(true);
-					setHasPlayedOnce(true);
-				}).catch(console.error);
+				videoRef.current
+					.play()
+					.then(() => {
+						setIsPlaying(true);
+						setHasPlayedOnce(true);
+					})
+					.catch(console.error);
 			}
 		}
 	};
@@ -76,8 +94,6 @@ export default function CavicFestival2025() {
 		}
 	};
 
-
-	
 	if (!festivalData) {
 		return <div>Loading...</div>;
 	}
@@ -88,30 +104,35 @@ export default function CavicFestival2025() {
 				className="bg-gradient-to-r from-orange-600 to-orange-400 overflow-hidden text-white 
       flex flex-col lg:flex-row items-center "
 			>
-				<div 
+				<div
 					ref={videoContainerRef}
 					className="relative w-full max-w-sm mx-auto aspect-square p-2 flex justify-center items-center rounded-lg overflow-clip"
 				>
 					<video
 						ref={videoRef}
 						src="/video.mp4"
-						loop
 						muted={isMuted}
 						playsInline
 						className="p-4 object-cover rounded-lg w-full h-full"
 						onPlay={() => setIsPlaying(true)}
 						onPause={() => setIsPlaying(false)}
 					/>
-					
+
 					{/* Video Controls */}
 					<div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
 						<button
 							onClick={togglePlay}
 							className="bg-black bg-opacity-70 text-white p-4 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-110"
-							aria-label={isPlaying ? "Pause video" : "Play video"}
+							aria-label={
+								isPlaying ? "Pause video" : "Play video"
+							}
 						>
 							{isPlaying ? (
-								<svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+								<svg
+									className="w-8 h-8"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+								>
 									<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
 								</svg>
 							) : (
@@ -133,7 +154,7 @@ export default function CavicFestival2025() {
 								<Volume2 className="w-4 h-4" />
 							)}
 						</button>
-						
+
 						<button
 							onClick={toggleFullscreen}
 							className="bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
@@ -186,52 +207,58 @@ function IntroductionSection({ data }) {
 }
 
 function FestivalSpeakersSection() {
-    const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+	const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
-    const festivalSpeakers = [
-        {
-            name: "Yene",
-            role: "Vocalist & Guitarist",
-            image: "/fest-speaker/yene.png",
-            bio: "Yene is a vocalist and guitarist based in Abuja, exploring the blend of her voice and instrument. Inspired by soul, jazz, RnB, afro, and gospel, she thrives on live performances that deepen her connection with audiences. Known for her \"big voice\" and \"powerful vocals\"."
-        },
-        {
-            name: "Oluwadayo",
-            role: "Singer, Songwriter & Stage Performer",
-            image: "/fest-speaker/oluwadayo.png",
-            bio: "Oluwadayo is a multifaceted artist - a professional singer, songwriter, and stage performer dedicated to spreading positivity, hope, and faith through her craft. With experience performing for diverse audiences on various stages, she skillfully connects with her fans through heartfelt artistry."
-        },
-        {
-            name: "Friday Ramses Onoja, SAN",
-            role: "Litigation Attorney & Art Enthusiast",
-            image: "/fest-speaker/onoja.jpg",
-            bio: "Friday Ramses Onoja, SAN, distinguished litigation attorney and art enthusiast, brings decades of legal expertise and a deep passion for photography to the CAVIC Festival 2025 panel on \"AI and the Arts – Possibilities, Ethics, and Future Pathways.\" His unique legal-artistic perspective bridges creativity, technology, and ethical discourse."
-        },
-        {
-            name: "Nana Sule",
-            role: "Writer, Editor & Communications Strategist",
-            image: "/fest-speaker/sule.jpg",
-            bio: "Nana Sule is a Writer, Editor, and Communications Strategist working at the intersections of art, literature, feminism, environmental advocacy, and decolonial knowledge. With experience in brand messaging, digital content, and community engagement, she is also skilled in design, newsletter curation, podcasting, public speaking, and team management."
-        },
-        {
-            name: "Marina El Chalouhi",
-            role: "Creative Producer",
-            image: "/fest-speaker/marina.png",
-            bio: "Marina El Chalouhi is a Belgian creative producer with Lebanese and Armenian roots. At Gang Group, she drives strategic content for global brands, while as co-founder of Maison Kimia, she amplifies diasporic and Afro-descendant narratives through arts and culture."
-        },
-        {
-            name: "Habiba Nur Alkali",
-            role: "Author & Civil Servant",
-            image: "/fest-speaker/alkali.jpg",
-            bio: "Habiba Nur Alkali is a Nigerian author and seasoned civil servant with 18 years in public service. Her debut novel, The Phantom Army, based on the Northeast insurgency, is taught in tertiary institutions. Her second book, Forty Winks, a poetry collection, was released in June 2025."
-        },
-        {
-            name: "Busola Perez-Folayan",
-            role: "Head of NASENI Innovation Hub",
-            image: "/fest-speaker/busola.jpg",
-            bio: "Busola Perez-Folayan, Head of NASENI Innovation Hub and a powerhouse in Africa's innovation ecosystem! A strategic management expert and startup mentor, she has empowered over 5,000 entrepreneurs across sectors. At CAVIC Festival 2025, she joins our panel to explore how innovation and technology can transform Africa's creative future."
-        }
-    ];
+	const festivalSpeakers = [
+		{
+			name: "Yene",
+			role: "Vocalist & Guitarist",
+			image: "/fest-speaker/yene.png",
+			bio: 'Yene is a vocalist and guitarist based in Abuja, exploring the blend of her voice and instrument. Inspired by soul, jazz, RnB, afro, and gospel, she thrives on live performances that deepen her connection with audiences. Known for her "big voice" and "powerful vocals".',
+		},
+		{
+			name: "Oluwadayo",
+			role: "Singer, Songwriter & Stage Performer",
+			image: "/fest-speaker/oluwadayo.png",
+			bio: "Oluwadayo is a multifaceted artist - a professional singer, songwriter, and stage performer dedicated to spreading positivity, hope, and faith through her craft. With experience performing for diverse audiences on various stages, she skillfully connects with her fans through heartfelt artistry.",
+		},
+		{
+			name: "Friday Ramses Onoja, SAN",
+			role: "Litigation Attorney & Art Enthusiast",
+			image: "/fest-speaker/onoja.jpg",
+			bio: 'Friday Ramses Onoja, SAN, distinguished litigation attorney and art enthusiast, brings decades of legal expertise and a deep passion for photography to the CAVIC Festival 2025 panel on "AI and the Arts – Possibilities, Ethics, and Future Pathways." His unique legal-artistic perspective bridges creativity, technology, and ethical discourse.',
+		},
+		{
+			name: "Nana Sule",
+			role: "Writer, Editor & Communications Strategist",
+			image: "/fest-speaker/sule.jpg",
+			bio: "Nana Sule is a Writer, Editor, and Communications Strategist working at the intersections of art, literature, feminism, environmental advocacy, and decolonial knowledge. With experience in brand messaging, digital content, and community engagement, she is also skilled in design, newsletter curation, podcasting, public speaking, and team management.",
+		},
+		{
+			name: "Marina El Chalouhi",
+			role: "Account Director & Producer",
+			image: "/fest-speaker/marina.png",
+			bio: "Marina El Chalouhi is a Belgian account director and producer with Lebanese and Armenian roots. At Gang Group, she drives strategic content for global brands, while as co-founder of Maison Kimia, she amplifies diasporic and Afro-descendant narratives through arts and culture.",
+		},
+		{
+			name: "Habiba Nur Alkali",
+			role: "Author",
+			image: "/fest-speaker/alkali.jpg",
+			bio: "Habiba Nur Alkali is a Nigerian author and seasoned civil servant with 18 years in public service. Her debut novel, The Phantom Army, based on the Northeast insurgency, is taught in tertiary institutions. Her second book, Forty Winks, a poetry collection, was released in June 2025.",
+		},
+		{
+			name: "Busola Perez-Folayan",
+			role: "Head of NASENI Innovation Hub",
+			image: "/fest-speaker/busola.jpg",
+			bio: "Busola Perez-Folayan, Head of NASENI Innovation Hub and a powerhouse in Africa's innovation ecosystem! A strategic management expert and startup mentor, she has empowered over 5,000 entrepreneurs across sectors. At CAVIC Festival 2025, she joins our panel to explore how innovation and technology can transform Africa's creative future.",
+		},
+		{
+			name: "Attah Samson Igoche",
+			role: "Founder, CEO of Aiivon Innovation Hub",
+			image: "/fest-speaker/samson.png",
+			bio: "Sam brings over 15 years of expertise in the creative-tech ecosystem, enterprise development, and capacity building to the Cavic Festival 2025. As the visionary behind Aiivon Innovation Hub, He executes impactful entrepreneurship programs nationwide, through strategic collaborations with organizations such as JICA, GAIN, AFDB, AFD, CBN, NIRSAL, USAID, Ford Foundation, and the British Council. He has developed and delivered incubation frameworks that have empowered hundreds of businesses across Nigeria.",
+		},
+	];
 
 	return (
 		<Card>
@@ -502,15 +529,15 @@ function KeyActivitiesSection({ data }) {
 }
 
 function SpeakersSection({ data }) {
-    const [selectedSpeaker, setSelectedSpeaker] = useState(null);
+	const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
-    if (!data) {
-        return null;
-    }
-    
-    if (!Array.isArray(data)) {
-        return null;
-    }
+	if (!data) {
+		return null;
+	}
+
+	if (!Array.isArray(data)) {
+		return null;
+	}
 
 	return (
 		<Card>

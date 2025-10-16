@@ -1,196 +1,195 @@
 {
-    "title": "Cavic Festival 2025: Merged Realms – Beyond Boundaries",
-    "subtitle": "A Celebration of Innovation, Creativity, and Cross-Cultural Exchange",
-    "introduction": {
-        "title": "Welcome!",
-        "content": "The Cavic Festival 2025 is set to be a groundbreaking event that celebrates the fusion of art, technology, and culture under the theme \"Merged Realms: Beyond Boundaries.\" This year's festival will explore how digital and physical realities are converging to reshape our understanding of art, culture, and technology. By bringing together artists, technologists, and thought leaders from around the world, the festival aims to create a space for innovation, collaboration, and cross-cultural dialogue.\n\nThe festival will span several months, beginning with pre-festival workshops and hackathons in June 2025, culminating in the main event in November 2025. These activities will provide opportunities for participants to experiment, learn, and create hybrid experiences that transcend traditional boundaries. The Cavic Festival 2025 is not just an event; it's a movement to inspire and engage audiences from all walks of life, leaving a lasting impact on both local and global creative communities."
-    },
-    "callToParticipate": {
-        "title": "Call to Participate",
-        "subtitle": "Join the Cavic Festival 2025: Be Part of the Movement!",
-        "content": "The Cavic Festival 2025 invites artists, technologists, cultural experts, and creatives from around the world to participate in this transformative event. Whether you're an animator, musician, coder, designer, or storyteller, your unique skills and perspectives are needed to bring the theme \"Merged Realms: Beyond Boundaries\" to life.",
-        "workshops": {
-            "title": "Call for Workshop Participants",
-            "content": "Are you passionate about merging art and technology? Do you want to collaborate with like-minded innovators to create groundbreaking projects? Join our pre-festival workshops and hackathons in September 2025!",
-            "opportunities": [
-                "Animating Heritage: Create short animated films inspired by African folktales using tools like Blender and Toon Boom.",
-                "Virtual Reality Storytelling: Craft immersive narratives around themes like identity and displacement using VR technology.",
-                "AI for Music: Compose music rooted in African rhythms and scales using artificial intelligence.",
-                "Interactive Installations: Design installations that combine traditional sculpture with motion sensors to explore hybrid realities."
-            ],
-            "howToApply": {
-                "benefits": "Participants will receive free access to workshops, mentorship from industry leaders, and the opportunity to showcase their work at the main festival in November 2025.",
-                "link": "https://bit.ly/4ioTspV"
-            }
-        },
-        "callForArtists": {
-            "title": "Call for Artists and Technologists",
-            "content": "We are seeking artists and technologists whose work resonates with the theme \"Merged Realms: Beyond Boundaries.\" If your work explores the intersection of art, technology, and culture, we want to hear from you!",
-            "areasOfInterest": [
-                "Digital art, VR/AR experiences, and interactive installations.",
-                "Music, dance, and performance art that incorporate technology.",
-                "Projects that preserve or reimagine African cultural heritage using modern tools.",
-                "Innovative solutions that address cultural preservation, education, or access."
-            ],
-            "howToApply": "Submit your work or project proposal to submissions@cavicfestival.africa by September 30, 2025. Selected participants will have the opportunity to exhibit or perform at the festival, connect with global audiences, and collaborate with leading creatives and technologists."
-        },
-        "callForVolunteers": {
-            "title": "Call for Volunteers",
-            "content": "Transform your passion into action! The Cavic Festival 2025 is seeking dedicated volunteers who want to be at the forefront of a global cultural and technological celebration.",
-            "roles": [
-                "Event Coordination: Support festival logistics, workshops, and participant management",
-                "Technical Support: Assist with audiovisual setup and digital installations",
-                "Community Engagement: Guide attendees and facilitate cultural exchange",
-                "Creative Assistance: Help artists and technologists with project preparations"
-            ],
-            "benefits": [
-                "Free festival access",
-                "Professional development opportunities",
-                "Networking with global artists and technologists",
-                "Certificate of participation",
-                "Potential recommendation letters"
-            ],
-            "howToApply": "Submit an application or CV to submissions@cavicfestival.africa by September 30, 2025. "
-        }
-    },
-    "keyActivities": {
-        "title": "Key Festival Activities",
-        "activities": [
-            {
-                "title": "1. Workshops and Hackathons (June 2025)",
-                "content": "The pre-festival workshops and hackathons will serve as a launchpad for innovation, offering participants the chance to collaborate and create prototypes that will be showcased during the main event. These activities will focus on merging traditional African culture with futuristic technologies, fostering creativity and experimentation.",
-                "highlights": [
-                    {
-                        "title": "Workshop Highlights",
-                        "items": [
-                            "Animating Heritage: Participants will create short animated films inspired by African folktales using tools like Blender and Toon Boom. ",
-                            "Virtual Reality Storytelling: This session will explore how VR can be used to craft immersive narratives around themes like identity and displacement. ",
-                            "AI for Music: A workshop on using artificial intelligence to compose music rooted in African rhythms and scales. ",
-                            "Interactive Installations: Guided by experienced artists, participants will design installations that combine traditional sculpture with motion sensors to explore hybrid realities. "
-                        ]
-                    },
-                    {
-                        "title": "Hackathon Highlights",
-                        "items": [
-                            "Cultural Conservation Hack: A challenge to develop innovative solutions for preserving and digitizing African cultural heritage.",
-                            "Art-Tech Synergy: A challenge to create prototypes that blend artistic creativity with technological innovation, such as augmented reality (AR) murals or wearable tech."
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "2. Exhibitions and Performances (November 6–8, 2025)",
-                "content": "The main festival will feature a diverse range of curated exhibitions, live performances, and interactive installations. These events will showcase how contemporary African art is blending with modern technology to create immersive experiences.",
-                "themes": [
-                    "Digital Diasporas: Exploring the intersection of African identity and digital culture.",
-                    "The Fabric of Time: Weaving traditional African textiles with digital art and wearable technology.",
-                    "Echoes of the Ancestors: Using augmented reality to bring ancient African stories and artifacts to life."
-                ]
-            },
-            {
-                "title": "3. Seminars and Cultural Forums",
-                "content": "The festival will host thought-provoking seminars and panel discussions featuring artists, technologists, and thought leaders. These sessions will explore pressing topics at the intersection of art, technology, and culture.",
-                "panelTopics": [
-                    "The Ethics of Using AI in Cultural Preservation: A discussion on the role of AI in preserving African cultural heritage, including potential risks and ethical challenges.",
-                    "Technology and Cultural Access: Exploring how technology can bridge gaps in access to arts education and cultural experiences across Africa.",
-                    "Opportunities for African Creatives in the Global Digital Economy: A look at how African creatives can leverage technology to expand their reach and create global impact."
-                ]
-            },
-            {
-                "title": "4. Networking and Collaboration Events",
-                "content": "The festival will provide ample opportunities for participants to connect with potential collaborators, sponsors, and cultural institutions. These events will encourage interaction between the worlds of art, technology, and business, fostering future partnerships.",
-                "highlights": [
-                    "Speed Networking for Artists and Technologists: A fast-paced session where participants can quickly meet and discuss potential collaborations. Similar formats, like those at Cannes Lions, have proven effective in fostering creative partnerships.",
-                    "Meet-and-Greet with Sponsors and Partners: An opportunity for participants to establish relationships with festival sponsors and partners."
-                ]
-            }
-        ]
-    },
-    "speakers": [
-        {
-            "name": "Samuel Nnitiwe Theophilus",
-            "role": "AI Engineer & Founder of Nnitiwe.io",
-            "image": "https://i.ibb.co/xtcGgPwh/Whats-App-Image-2025-05-09-at-09-44-08-541b8cee.jpg",
-            "socials": {
-                "blog": "https://blog.nnitiwe.io",
-                "website": "https://www.nnitiwe.io"
-            },
-            "bio": "Experience the fusion of tradition and technology!\n\nMeet Samuel Nnitiwe Theophilus, a seasoned AI Engineer and digital storyteller with over six years of experience in building scalable machine learning models and AI solutions. His work focuses on preserving African culture through motion, transforming folktales into contemporary animated visuals using AI-enhanced techniques.\n\nFeatured Workshop:\n\"Animate the Magic of African Folktales with Cutting-Edge Tools\"\nIn this immersive session, Samuel will guide you through the transformation of oral narratives into compelling animated visuals using AI-assisted tools and modern workflows.\n\nWorkshop Highlights:\n• Storyboarding and animating African folktales with authenticity\n• Utilizing AI and digital tools for solo or team production\n• Bringing characters, environments, and emotions to life\n• Preserving culture while innovating new storytelling formats\n\nTarget Audience:\nWhether you're a digital artist, creative educator, animator, or simply passionate about Africa's storytelling legacy, this workshop offers hands-on insights from a leader who lives and breathes this craft.\n\nProfessional Background:\nSamuel brings years of experience in cultural animation, having mentored over 200 professionals across six countries and led pan-African creative labs. His unique ability to bridge tradition and technology makes this session one of the most anticipated of the festival.\n\nEvent Details:\nJoin us at the Cavic Pre-Festival Workshops 2025, this June at Cavic Hub."
-        },
-        {
-            "name": "Dr. Lanre Phillips",
-            "role": "Business Strategy & Development Expert",
-            "image": "https://i.ibb.co/nMhFPxBp/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986-Photoroom-1.png",
-            "socials": {
-                "website": "https://drlanrephillips.com/"
-            },
-            "bio": "Dr. Lanre Phillips is a seasoned professional with over 25 years of experience spanning FMCG, Banking, and Telecommunications industries. His expertise in social enterprise has led him to work with numerous business hubs, incubators, and accelerators across Africa, particularly in Nigeria.\n\nDr. Phillips holds a passionate belief in small business growth through human capacity development and strategic business implementation. His approach focuses on operational excellence and value creation through people-centered strategies.\n\nAs a faculty member of several training organizations, he specializes in:\n• Business Strategy\n• Storytelling\n• Organisational Behaviour\n• Business Branding\n• Customer Service\n• Leadership\n• Sales Techniques\n• Entrepreneurship\n\nHis notable achievements include:\n• Member of the Global Entrepreneurship Network, Nigeria team\n• Board member of the Integrated Institute of Professional Management (IIPM)\n• Key contributor to projects like You WIN, World Bank's Women X Programme, and the Road to Growth by the Cherie Blaire Foundation\n\nEducation:\n• Doctorate in Business Administration (DBA) - Swiss Management Centre\n• MSc Economics - University of Jos\n• MBA - University of Jos\n• Bachelor's in Economics - University of Ibadan (1995)",
-            "credentials": {
-                "education": [
-                    "DBA - Swiss Management Centre",
-                    "MSc Economics - University of Jos",
-                    "MBA - University of Jos",
-                    "BSc Economics - University of Ibadan"
-                ],
-                "expertise": [
-                    "Business Strategy",
-                    "Entrepreneurship Development",
-                    "Organizational Development",
-                    "Training & Capacity Building"
-                ]
-            }
-        },
-        {
-            "name": "Ntiense Tom",
-            "role": "Multi-disciplinary Artist",
-            "image": "https://i.ibb.co/DDR9PLzJ/Whats-App-Image-2025-05-09-at-09-47-40-4cc116ed.jpg",
-            "socials": {
-                "linktree": "https://linktr.ee/ntgoldbest"
-            },
-            "bio": "Ntiense Tom is a multi-disciplinary artist born in Nigeria, whose artistic journey began in childhood through comic storytelling and creative exploration of found objects. Her formal education includes bachelor's and master's degrees in fine arts.\n\nDrawing influence from her milieu, gender, and nostalgic experiences, Ntiense champions the self-awareness of African women, highlighting their potential and societal impact. Her diverse artistic practice encompasses:\n• Poetry\n• Digital Arts\n• Traditional Paintings\n\nHer work focuses on themes of:\n• Women's empowerment\n• Cultural expression\n• Environmental consciousness\n\nRecent works feature a unique fusion of digital and conventional painting techniques, incorporating:\n• Geometric shapes\n• Flat tones\n• Bold saturations\n• Abstract expressions inspired by Cubism\n\nNotable Exhibitions:\n• Lambert Archives' Historic and Contemporary African Women (London, 2024)\n• The 1952 Arts Accelerator Exhibition (2022)\n• Edo meets Lagos, \"Edo at 30\" Arts, Food and Culture Fair (2021)\n• Victor Uwafios Creative Hub Exhibition (2021)\n\nBeyond her artistic practice, Ntiense is committed to social impact through art, particularly in art therapy for children and young adults, including programs for children with special needs.",
-            "expertise": [
-                "Digital Arts",
-                "Traditional Painting",
-                "Poetry",
-                "Art Therapy",
-                "Children's Art Education"
-            ],
-            "exhibitions": {
-                "recent": [
-                    "Lambert Archives' Exhibition, London (2024)",
-                    "The 1952 Arts Accelerator (2022)",
-                    "Edo meets Lagos (2021)",
-                    "Victor Uwafios Creative Hub (2021)"
-                ]
-            }
-        },
-        {
-            "name": "Oluwaseun Odukoya",
-            "role": "Storyteller & Theatre Arts Fellow (FTA)",
-            "alias": "Aunty Shine-Shine",
-            "image": "https://i.ibb.co/vGR5Vh6/Whats-App-Image-2025-05-09-at-09-48-35-8a14d8b4.jpg",
-            "credentials": {
-                "title": "Deputy President, National Association of Nigerian Theatre Arts Practitioners (NANTAP)",
-                "awards": ["Fellow of Theatre Arts (FTA)"]
-            },
-            "bio": "What do you get when you mix theatre, radio, three languages, a sprinkle of sparkle — and decades of storytelling genius?\nYou get Aunty Shine-Shine the Storyteller — aka Oluwaseun Odukoya fta — and she's bringing the fire to Cavic Pre-Festival Workshops 2025.\n\nAs the Creative Lead at SASH – Storytime with Aunty Shine-Shine, she's been inspiring young minds and families through unforgettable performances that blend story, song, and cultural wisdom. But make no mistake — Aunty Shine-Shine is not just for the kids.\n\nShe's a stage-tested actor, a radio drama queen, a children's theatre guru, and now, Deputy President of the National Association of Nigerian Theatre Arts Practitioners (NANTAP) — where she was recently honored with a prestigious Fellow of Theatre Arts (fta) title.\n\nFrom Wole Soyinka's Death and the King's Horseman to directing Ken Saro-Wiwa's The Wheel, from voicing Gbagam Gbagam on radio to rocking international festivals in Germany, South Africa, and the USA — this woman doesn't just tell stories. She lives them.",
-            "workshop": {
-                "title": "Storytelling as a Gateway to Creativity",
-                "description": "A high-energy, hands-on session designed to help you tap into your story — and turn it into a powerful tool for communication, creation, and confidence.",
-                "learning_outcomes": [
-                    "How to shape stories that inspire, move, and connect",
-                    "Performance techniques from stage, radio, and youth theatre",
-                    "How to write, speak, and lead with cultural authenticity",
-                    "Ways to use story for branding, education, and empowerment"
-                ],
-                "audience": "Everyone — educators, artists, writers, techies, and dreamers.\nIf you speak, write, perform, or pitch — this session is for you."
-            },
-            "achievements": [
-                "Trained 100+ youth in the Creative Youth Boot Camp by Street Project Foundation",
-                "Represented Nigeria at ASSITEJ South Africa",
-                "Performed at AITAFA",
-                "Competed in World Storytelling Championships"
-            ]
-        }
-    ]
+	"title": "Cavic Festival 2025: Merged Realms – Beyond Boundaries",
+	"subtitle": "A Celebration of Innovation, Creativity, and Cross-Cultural Exchange",
+	"introduction": {
+		"title": "Welcome!",
+		"content": "The Cavic Festival 2025 is set to be a groundbreaking event that celebrates the fusion of art, technology, and culture under the theme \"Merged Realms: Beyond Boundaries.\" This year's festival will explore how digital and physical realities are converging to reshape our understanding of art, culture, and technology. By bringing together artists, technologists, and thought leaders from around the world, the festival aims to create a space for innovation, collaboration, and cross-cultural dialogue.\n\nThe festival will span several months, beginning with pre-festival workshops and hackathons in June 2025, culminating in the main event in November 2025. These activities will provide opportunities for participants to experiment, learn, and create hybrid experiences that transcend traditional boundaries. The Cavic Festival 2025 is not just an event; it's a movement to inspire and engage audiences from all walks of life, leaving a lasting impact on both local and global creative communities."
+	},
+	"callToParticipate": {
+		"title": "Call to Participate",
+		"subtitle": "Join the Cavic Festival 2025: Be Part of the Movement!",
+		"content": "The Cavic Festival 2025 invites artists, technologists, cultural experts, and creatives from around the world to participate in this transformative event. Whether you're an animator, musician, coder, designer, or storyteller, your unique skills and perspectives are needed to bring the theme \"Merged Realms: Beyond Boundaries\" to life.",
+		"workshops": {
+			"title": "Call for Workshop Participants",
+			"content": "Are you passionate about merging art and technology? Do you want to collaborate with like-minded innovators to create groundbreaking projects? Join our pre-festival workshops and hackathons in September 2025!",
+			"opportunities": [
+				"Animating Heritage: Create short animated films inspired by African folktales using tools like Blender and Toon Boom.",
+				"Virtual Reality Storytelling: Craft immersive narratives around themes like identity and displacement using VR technology.",
+				"AI for Music: Compose music rooted in African rhythms and scales using artificial intelligence.",
+				"Interactive Installations: Design installations that combine traditional sculpture with motion sensors to explore hybrid realities."
+			],
+			"howToApply": {
+				"benefits": "Participants will receive free access to workshops, mentorship from industry leaders, and the opportunity to showcase their work at the main festival in November 2025.",
+				"link": "https://bit.ly/4ioTspV"
+			}
+		},
+		"callForArtists": {
+			"title": "Call for Artists and Technologists",
+			"content": "We are seeking artists and technologists whose work resonates with the theme \"Merged Realms: Beyond Boundaries.\" If your work explores the intersection of art, technology, and culture, we want to hear from you!",
+			"areasOfInterest": [
+				"Digital art, VR/AR experiences, and interactive installations.",
+				"Music, dance, and performance art that incorporate technology.",
+				"Projects that preserve or reimagine African cultural heritage using modern tools.",
+				"Innovative solutions that address cultural preservation, education, or access."
+			],
+			"howToApply": "Submit your work or project proposal to submissions@cavicfestival.africa by September 30, 2025. Selected participants will have the opportunity to exhibit or perform at the festival, connect with global audiences, and collaborate with leading creatives and technologists."
+		},
+		"callForVolunteers": {
+			"title": "Call for Volunteers",
+			"content": "Transform your passion into action! The Cavic Festival 2025 is seeking dedicated volunteers who want to be at the forefront of a global cultural and technological celebration.",
+			"roles": [
+				"Event Coordination: Support festival logistics, workshops, and participant management",
+				"Technical Support: Assist with audiovisual setup and digital installations",
+				"Community Engagement: Guide attendees and facilitate cultural exchange",
+				"Creative Assistance: Help artists and technologists with project preparations"
+			],
+			"benefits": [
+				"Free festival access",
+				"Professional development opportunities",
+				"Networking with global artists and technologists",
+				"Certificate of participation",
+				"Potential recommendation letters"
+			],
+			"howToApply": "Submit an application or CV to submissions@cavicfestival.africa by September 30, 2025. "
+		}
+	},
+	"keyActivities": {
+		"title": "Key Festival Activities",
+		"activities": [
+			{
+				"title": "1. Workshops and Hackathons (June 2025)",
+				"content": "The pre-festival workshops and hackathons will serve as a launchpad for innovation, offering participants the chance to collaborate and create prototypes that will be showcased during the main event. These activities will focus on merging traditional African culture with futuristic technologies, fostering creativity and experimentation.",
+				"highlights": [
+					{
+						"title": "Workshop Highlights",
+						"items": [
+							"Animating Heritage: Participants will create short animated films inspired by African folktales using tools like Blender and Toon Boom. ",
+							"Virtual Reality Storytelling: This session will explore how VR can be used to craft immersive narratives around themes like identity and displacement. ",
+							"AI for Music: A workshop on using artificial intelligence to compose music rooted in African rhythms and scales. ",
+							"Interactive Installations: Guided by experienced artists, participants will design installations that combine traditional sculpture with motion sensors to explore hybrid realities. "
+						]
+					},
+					{
+						"title": "Hackathon Highlights",
+						"items": [
+							"Cultural Conservation Hack: A challenge to develop innovative solutions for preserving and digitizing African cultural heritage.",
+							"Art-Tech Synergy: A challenge to create prototypes that blend artistic creativity with technological innovation, such as augmented reality (AR) murals or wearable tech."
+						]
+					}
+				]
+			},
+			{
+				"title": "2. Exhibitions and Performances (November 6–8, 2025)",
+				"content": "The main festival will feature a diverse range of curated exhibitions, live performances, and interactive installations. These events will showcase how contemporary African art is blending with modern technology to create immersive experiences.",
+				"themes": [
+					"Digital Diasporas: Exploring the intersection of African identity and digital culture.",
+					"Echoes of the Ancestors: Using augmented reality to bring ancient African stories and artifacts to life."
+				]
+			},
+			{
+				"title": "3. Seminars and Cultural Forums",
+				"content": "The festival will host thought-provoking seminars and panel discussions featuring artists, technologists, and thought leaders. These sessions will explore pressing topics at the intersection of art, technology, and culture.",
+				"panelTopics": [
+					"The Ethics of Using AI in Cultural Preservation: A discussion on the role of AI in preserving African cultural heritage, including potential risks and ethical challenges.",
+					"Technology and Cultural Access: Exploring how technology can bridge gaps in access to arts education and cultural experiences across Africa.",
+					"Opportunities for African Creatives in the Global Digital Economy: A look at how African creatives can leverage technology to expand their reach and create global impact."
+				]
+			},
+			{
+				"title": "4. Networking and Collaboration Events",
+				"content": "The festival will provide ample opportunities for participants to connect with potential collaborators, sponsors, and cultural institutions. These events will encourage interaction between the worlds of art, technology, and business, fostering future partnerships.",
+				"highlights": [
+					"Speed Networking for Artists and Technologists: A fast-paced session where participants can quickly meet and discuss potential collaborations. Similar formats, like those at Cannes Lions, have proven effective in fostering creative partnerships.",
+					"Meet-and-Greet with Sponsors and Partners: An opportunity for participants to establish relationships with festival sponsors and partners."
+				]
+			}
+		]
+	},
+	"speakers": [
+		{
+			"name": "Samuel Nnitiwe Theophilus",
+			"role": "AI Engineer & Founder of Nnitiwe.io",
+			"image": "https://i.ibb.co/xtcGgPwh/Whats-App-Image-2025-05-09-at-09-44-08-541b8cee.jpg",
+			"socials": {
+				"blog": "https://blog.nnitiwe.io",
+				"website": "https://www.nnitiwe.io"
+			},
+			"bio": "Experience the fusion of tradition and technology!\n\nMeet Samuel Nnitiwe Theophilus, a seasoned AI Engineer and digital storyteller with over six years of experience in building scalable machine learning models and AI solutions. His work focuses on preserving African culture through motion, transforming folktales into contemporary animated visuals using AI-enhanced techniques.\n\nFeatured Workshop:\n\"Animate the Magic of African Folktales with Cutting-Edge Tools\"\nIn this immersive session, Samuel will guide you through the transformation of oral narratives into compelling animated visuals using AI-assisted tools and modern workflows.\n\nWorkshop Highlights:\n• Storyboarding and animating African folktales with authenticity\n• Utilizing AI and digital tools for solo or team production\n• Bringing characters, environments, and emotions to life\n• Preserving culture while innovating new storytelling formats\n\nTarget Audience:\nWhether you're a digital artist, creative educator, animator, or simply passionate about Africa's storytelling legacy, this workshop offers hands-on insights from a leader who lives and breathes this craft.\n\nProfessional Background:\nSamuel brings years of experience in cultural animation, having mentored over 200 professionals across six countries and led pan-African creative labs. His unique ability to bridge tradition and technology makes this session one of the most anticipated of the festival.\n\nEvent Details:\nJoin us at the Cavic Pre-Festival Workshops 2025, this June at Cavic Hub."
+		},
+		{
+			"name": "Dr. Lanre Phillips",
+			"role": "Business Strategy & Development Expert",
+			"image": "https://i.ibb.co/nMhFPxBp/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986-Photoroom-1.png",
+			"socials": {
+				"website": "https://drlanrephillips.com/"
+			},
+			"bio": "Dr. Lanre Phillips is a seasoned professional with over 25 years of experience spanning FMCG, Banking, and Telecommunications industries. His expertise in social enterprise has led him to work with numerous business hubs, incubators, and accelerators across Africa, particularly in Nigeria.\n\nDr. Phillips holds a passionate belief in small business growth through human capacity development and strategic business implementation. His approach focuses on operational excellence and value creation through people-centered strategies.\n\nAs a faculty member of several training organizations, he specializes in:\n• Business Strategy\n• Storytelling\n• Organisational Behaviour\n• Business Branding\n• Customer Service\n• Leadership\n• Sales Techniques\n• Entrepreneurship\n\nHis notable achievements include:\n• Member of the Global Entrepreneurship Network, Nigeria team\n• Board member of the Integrated Institute of Professional Management (IIPM)\n• Key contributor to projects like You WIN, World Bank's Women X Programme, and the Road to Growth by the Cherie Blaire Foundation\n\nEducation:\n• Doctorate in Business Administration (DBA) - Swiss Management Centre\n• MSc Economics - University of Jos\n• MBA - University of Jos\n• Bachelor's in Economics - University of Ibadan (1995)",
+			"credentials": {
+				"education": [
+					"DBA - Swiss Management Centre",
+					"MSc Economics - University of Jos",
+					"MBA - University of Jos",
+					"BSc Economics - University of Ibadan"
+				],
+				"expertise": [
+					"Business Strategy",
+					"Entrepreneurship Development",
+					"Organizational Development",
+					"Training & Capacity Building"
+				]
+			}
+		},
+		{
+			"name": "Ntiense Tom",
+			"role": "Multi-disciplinary Artist",
+			"image": "https://i.ibb.co/DDR9PLzJ/Whats-App-Image-2025-05-09-at-09-47-40-4cc116ed.jpg",
+			"socials": {
+				"linktree": "https://linktr.ee/ntgoldbest"
+			},
+			"bio": "Ntiense Tom is a multi-disciplinary artist born in Nigeria, whose artistic journey began in childhood through comic storytelling and creative exploration of found objects. Her formal education includes bachelor's and master's degrees in fine arts.\n\nDrawing influence from her milieu, gender, and nostalgic experiences, Ntiense champions the self-awareness of African women, highlighting their potential and societal impact. Her diverse artistic practice encompasses:\n• Poetry\n• Digital Arts\n• Traditional Paintings\n\nHer work focuses on themes of:\n• Women's empowerment\n• Cultural expression\n• Environmental consciousness\n\nRecent works feature a unique fusion of digital and conventional painting techniques, incorporating:\n• Geometric shapes\n• Flat tones\n• Bold saturations\n• Abstract expressions inspired by Cubism\n\nNotable Exhibitions:\n• Lambert Archives' Historic and Contemporary African Women (London, 2024)\n• The 1952 Arts Accelerator Exhibition (2022)\n• Edo meets Lagos, \"Edo at 30\" Arts, Food and Culture Fair (2021)\n• Victor Uwafios Creative Hub Exhibition (2021)\n\nBeyond her artistic practice, Ntiense is committed to social impact through art, particularly in art therapy for children and young adults, including programs for children with special needs.",
+			"expertise": [
+				"Digital Arts",
+				"Traditional Painting",
+				"Poetry",
+				"Art Therapy",
+				"Children's Art Education"
+			],
+			"exhibitions": {
+				"recent": [
+					"Lambert Archives' Exhibition, London (2024)",
+					"The 1952 Arts Accelerator (2022)",
+					"Edo meets Lagos (2021)",
+					"Victor Uwafios Creative Hub (2021)"
+				]
+			}
+		},
+		{
+			"name": "Oluwaseun Odukoya",
+			"role": "Storyteller & Theatre Arts Fellow (FTA)",
+			"alias": "Aunty Shine-Shine",
+			"image": "https://i.ibb.co/vGR5Vh6/Whats-App-Image-2025-05-09-at-09-48-35-8a14d8b4.jpg",
+			"credentials": {
+				"title": "Deputy President, National Association of Nigerian Theatre Arts Practitioners (NANTAP)",
+				"awards": ["Fellow of Theatre Arts (FTA)"]
+			},
+			"bio": "What do you get when you mix theatre, radio, three languages, a sprinkle of sparkle — and decades of storytelling genius?\nYou get Aunty Shine-Shine the Storyteller — aka Oluwaseun Odukoya fta — and she's bringing the fire to Cavic Pre-Festival Workshops 2025.\n\nAs the Creative Lead at SASH – Storytime with Aunty Shine-Shine, she's been inspiring young minds and families through unforgettable performances that blend story, song, and cultural wisdom. But make no mistake — Aunty Shine-Shine is not just for the kids.\n\nShe's a stage-tested actor, a radio drama queen, a children's theatre guru, and now, Deputy President of the National Association of Nigerian Theatre Arts Practitioners (NANTAP) — where she was recently honored with a prestigious Fellow of Theatre Arts (fta) title.\n\nFrom Wole Soyinka's Death and the King's Horseman to directing Ken Saro-Wiwa's The Wheel, from voicing Gbagam Gbagam on radio to rocking international festivals in Germany, South Africa, and the USA — this woman doesn't just tell stories. She lives them.",
+			"workshop": {
+				"title": "Storytelling as a Gateway to Creativity",
+				"description": "A high-energy, hands-on session designed to help you tap into your story — and turn it into a powerful tool for communication, creation, and confidence.",
+				"learning_outcomes": [
+					"How to shape stories that inspire, move, and connect",
+					"Performance techniques from stage, radio, and youth theatre",
+					"How to write, speak, and lead with cultural authenticity",
+					"Ways to use story for branding, education, and empowerment"
+				],
+				"audience": "Everyone — educators, artists, writers, techies, and dreamers.\nIf you speak, write, perform, or pitch — this session is for you."
+			},
+			"achievements": [
+				"Trained 100+ youth in the Creative Youth Boot Camp by Street Project Foundation",
+				"Represented Nigeria at ASSITEJ South Africa",
+				"Performed at AITAFA",
+				"Competed in World Storytelling Championships"
+			]
+		}
+	]
 }
