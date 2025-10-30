@@ -183,6 +183,8 @@ export default function CavicFestival2025() {
 			<Separator className="my-12" />
 			<KeyActivitiesSection data={festivalData.keyActivities} />
 			<Separator className="my-12" />
+			<RegistrationSection />
+			<Separator className="my-12" />
 		</div>
 	);
 }
@@ -724,6 +726,55 @@ function SpeakersSection({ data }) {
 					</DialogContent>
 				)}
 			</Dialog>
+		</Card>
+	);
+}
+
+function RegistrationSection() {
+	const handleRegistrationClick = () => {
+		window.open('https://docs.google.com/forms/d/e/1FAIpQLSfKJlvZmDwSeRv3dCuM6gCLp9mk8v_ez0jbGO13WDV6QOuZkg/viewform?usp=dialog', '_blank');
+	};
+
+	return (
+		<Card className="bg-gradient-to-r from-orange-50 to-orange-100 border-orange-200">
+			<CardHeader className="text-center">
+				<CardTitle className="text-4xl font-bold text-orange-900 mb-4">
+					Register for CAVIC Festival 2025
+				</CardTitle>
+				<p className="text-lg text-orange-800 max-w-2xl mx-auto">
+					Don't miss out on this incredible celebration of creativity, arts, and innovation. 
+					Secure your spot at the most anticipated cultural event of the year!
+				</p>
+			</CardHeader>
+			<CardContent className="text-center pb-8">
+				<div className="space-y-6">
+					<div className="flex flex-col md:flex-row justify-center items-center gap-4 text-orange-700">
+						<div className="flex items-center gap-2">
+							<Globe className="w-5 h-5" />
+							<span>Interactive Workshops</span>
+						</div>
+						<div className="flex items-center gap-2">
+							<BookOpen className="w-5 h-5" />
+							<span>Expert Speakers</span>
+						</div>
+						<div className="flex items-center gap-2">
+							<Link className="w-5 h-5" />
+							<span>Networking Opportunities</span>
+						</div>
+					</div>
+					
+					<button
+						onClick={handleRegistrationClick}
+						className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+					>
+						Register Now - It's Free!
+					</button>
+					
+					<p className="text-sm text-orange-600 mt-4">
+						Registration is completely free. Limited spots available.
+					</p>
+				</div>
+			</CardContent>
 		</Card>
 	);
 }
