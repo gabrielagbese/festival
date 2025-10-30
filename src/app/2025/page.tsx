@@ -176,14 +176,14 @@ export default function CavicFestival2025() {
 
 			<IntroductionSection data={festivalData.introduction} />
 			<Separator className="my-12" />
+			<RegistrationSection />
+			<Separator className="my-12" />
 			<SpeakersSection data={festivalData.speakers} />
 			<Separator className="my-12" />
 			<FestivalSpeakersSection />
 			<CallToParticipateSection data={festivalData.callToParticipate} />
 			<Separator className="my-12" />
 			<KeyActivitiesSection data={festivalData.keyActivities} />
-			<Separator className="my-12" />
-			<RegistrationSection />
 			<Separator className="my-12" />
 		</div>
 	);
