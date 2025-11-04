@@ -800,7 +800,7 @@ function FilmScreeningHighlightSection() {
 			<CardContent>
 				<div className="grid grid-cols-1 md:grid-cols-1 gap-2 items-center">
 					<div className="space-y-4 order-2 md:order-2">
-						<h2 className="text-6xl md:text-7xl font-extrabold leading-tight text-orange-900">
+						<h2 className="text-4xl md:text-7xl font-extrabold leading-tight text-orange-900">
 							{program}
 						</h2>
 						<p className="text-lg text-orange-900 italic">
