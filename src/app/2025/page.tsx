@@ -8,6 +8,7 @@ import {
 	Maximize,
 	Volume2,
 	VolumeX,
+	ShieldCheck,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -177,6 +178,8 @@ export default function CavicFestival2025() {
 			<IntroductionSection data={festivalData.introduction} />
 			<Separator className="my-12" />
 			<RegistrationSection />
+			<Separator className="my-12" />
+			<FilmScreeningHighlightSection />
 			<Separator className="my-12" />
 			<SpeakersSection data={festivalData.speakers} />
 			<Separator className="my-12" />
@@ -732,7 +735,10 @@ function SpeakersSection({ data }) {
 
 function RegistrationSection() {
 	const handleRegistrationClick = () => {
-		window.open('https://docs.google.com/forms/d/e/1FAIpQLSfKJlvZmDwSeRv3dCuM6gCLp9mk8v_ez0jbGO13WDV6QOuZkg/viewform?usp=dialog', '_blank');
+		window.open(
+			"https://docs.google.com/forms/d/e/1FAIpQLSfKJlvZmDwSeRv3dCuM6gCLp9mk8v_ez0jbGO13WDV6QOuZkg/viewform?usp=dialog",
+			"_blank"
+		);
 	};
 
 	return (
@@ -742,8 +748,9 @@ function RegistrationSection() {
 					Register for CAVIC Festival 2025
 				</CardTitle>
 				<p className="text-lg text-orange-800 max-w-2xl mx-auto">
-					Don't miss out on this incredible celebration of creativity, arts, and innovation. 
-					Secure your spot at the most anticipated cultural event of the year!
+					Don't miss out on this incredible celebration of creativity,
+					arts, and innovation. Secure your spot at the most
+					anticipated cultural event of the year!
 				</p>
 			</CardHeader>
 			<CardContent className="text-center pb-8">
@@ -762,17 +769,72 @@ function RegistrationSection() {
 							<span>Networking Opportunities</span>
 						</div>
 					</div>
-					
+
 					<button
 						onClick={handleRegistrationClick}
 						className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 					>
 						Register Now - It's Free!
 					</button>
-					
+
 					<p className="text-sm text-orange-600 mt-4">
-						Registration is completely free. Limited spots available.
+						Registration is completely free. Limited spots
+						available.
 					</p>
+				</div>
+			</CardContent>
+		</Card>
+	);
+}
+
+function FilmScreeningHighlightSection() {
+	const program = "Young Animations";
+
+	return (
+		<Card className="bg-gradient-to-b from-orange-50 to-white border-orange-200 overflow-hidden">
+			<CardHeader className="pb-2">
+				<CardTitle className="text-xs md:text-sm uppercase tracking-widest text-orange-700">
+					Ars Electronica Animation Festival On Tour
+				</CardTitle>
+			</CardHeader>
+			<CardContent>
+				<div className="grid grid-cols-1 md:grid-cols-1 gap-2 items-center">
+					<div className="space-y-4 order-2 md:order-2">
+						<h2 className="text-6xl md:text-7xl font-extrabold leading-tight text-orange-900">
+							{program}
+						</h2>
+						<p className="text-lg text-orange-900 italic">
+							A collaboration between Ars Electronica and OeAD,
+							curated by Sirikit Amann (AT)
+						</p>
+						<p className="text-lg text-gray-800">
+							Young Animations features a selection of short films
+							by young artists aged 19 and under, submitted to
+							this year’s Prix Ars Electronica in the u19—create
+							your world category, shown as part of the Ars
+							Electronica Animation Festival.
+						</p>
+						<div className="flex flex-wrap gap-2">
+							<span className="inline-flex items-center gap-2 bg-orange-100 text-orange-900 px-3 py-1 rounded-full border border-orange-200 text-sm">
+								<ShieldCheck className="w-4 h-4" /> On-site
+								screening
+							</span>
+							<span className="inline-flex items-center gap-2 bg-orange-100 text-orange-900 px-3 py-1 rounded-full border border-orange-200 text-sm">
+								<Globe className="w-4 h-4" /> Original language
+								+ English subtitles
+							</span>
+						</div>
+					</div>
+					{/* <div className="order-1 md:order-1 flex">
+						<div className="relative rounded-lg overflow-hidden bg-orange-100 shadow-lg aspect-[3/4] w-44 sm:w-56 md:w-64">
+							<Image
+								src="/b2.png"
+								alt="Young Animations poster placeholder"
+								fill
+								className="object-cover"
+							/>
+						</div>
+					</div> */}
 				</div>
 			</CardContent>
 		</Card>
