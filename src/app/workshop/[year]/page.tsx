@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import workshopsData from "../../data/workshops.json";
 
-export default function WorkshopYear({ params }: { params: { year: string } }) {
-    const workshops = workshopsData[params.year];
+export default async function WorkshopYear({ params }: { params: Promise<{ year: string }> }) {
+    const { year } = await params;
+    const workshops = workshopsData[year];
 
     if (!workshops || workshops.length === 0) {
         notFound();

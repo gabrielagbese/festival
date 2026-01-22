@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
                 <div className="mt-8 pt-8 border-t border-border/40 text-center">
                     <p className="text-sm text-muted-foreground">
-                        &copy; 2025 CAVIC Nigeria. All rights reserved.
+                        &copy; 2025 Cavic Nigeria. All rights reserved.
                     </p>
                     <div>
                         <p className="text-gray-500 font-chakra-petch">

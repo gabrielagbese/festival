@@ -231,7 +231,7 @@ function FestivalSpeakersSection() {
 			name: "Friday Ramses Onoja, SAN",
 			role: "Litigation Attorney & Art Enthusiast",
 			image: "/fest-speaker/onoja.jpg",
-			bio: 'Friday Ramses Onoja, SAN, distinguished litigation attorney and art enthusiast, brings decades of legal expertise and a deep passion for photography to the CAVIC Festival 2025 panel on "AI and the Arts – Possibilities, Ethics, and Future Pathways." His unique legal-artistic perspective bridges creativity, technology, and ethical discourse.',
+			bio: 'Friday Ramses Onoja, SAN, distinguished litigation attorney and art enthusiast, brings decades of legal expertise and a deep passion for photography to the Cavic Festival 2025 panel on "AI and the Arts – Possibilities, Ethics, and Future Pathways." His unique legal-artistic perspective bridges creativity, technology, and ethical discourse.',
 		},
 		{
 			name: "Nana Sule",
@@ -255,7 +255,7 @@ function FestivalSpeakersSection() {
 			name: "Busola Perez-Folayan",
 			role: "Head of NASENI Innovation Hub",
 			image: "/fest-speaker/busola.jpg",
-			bio: "Busola Perez-Folayan, Head of NASENI Innovation Hub and a powerhouse in Africa's innovation ecosystem! A strategic management expert and startup mentor, she has empowered over 5,000 entrepreneurs across sectors. At CAVIC Festival 2025, she joins our panel to explore how innovation and technology can transform Africa's creative future.",
+			bio: "Busola Perez-Folayan, Head of NASENI Innovation Hub and a powerhouse in Africa's innovation ecosystem! A strategic management expert and startup mentor, she has empowered over 5,000 entrepreneurs across sectors. At Cavic Festival 2025, she joins our panel to explore how innovation and technology can transform Africa's creative future.",
 		},
 		{
 			name: "Attah Samson Igoche",
@@ -745,7 +745,7 @@ function RegistrationSection() {
 		<Card className="bg-gradient-to-r from-orange-50 to-orange-100 border-orange-200">
 			<CardHeader className="text-center">
 				<CardTitle className="text-4xl font-bold text-orange-900 mb-4">
-					Register for CAVIC Festival 2025
+					Register for Cavic Festival 2025
 				</CardTitle>
 				<p className="text-lg text-orange-800 max-w-2xl mx-auto">
 					Don't miss out on this incredible celebration of creativity,

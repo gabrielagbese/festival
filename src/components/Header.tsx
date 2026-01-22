@@ -65,7 +65,7 @@ const Header = () => {
                         >
                             <Image
                                 src="/logo.png"
-                                alt="CAVIC Festival Logo"
+                                alt="Cavic Festival Logo"
                                 width={50}
                                 height={50}
                             />

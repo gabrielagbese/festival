@@ -10,7 +10,7 @@ export default function Festival2026() {
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
                         <Image
                             src="/2026-festival-flyer.png"
-                            alt="CAVIC Festival 2026"
+                            alt="Cavic Festival 2026"
                             fill
                             className="object-cover"
                             priority
@@ -23,15 +23,15 @@ export default function Festival2026() {
                             Coming 2026
                         </div>
                         <h1 className="text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tight">
-                            CAVIC Festival of Creativity & Technology
+                            Cavic Festival of Creativity & Technology
                         </h1>
                         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-                            Join us for the next edition of the CAVIC Festival – where creativity meets technology. 
+                            Join us for the next edition of the Cavic Festival – where creativity meets technology. 
                             Experience inspiring talks, hands-on workshops, and connect with a vibrant community of innovators.
                         </p>
                         <p className="text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed">
                             Whether you're an artist, developer, designer, or simply curious about the intersection 
-                            of art and technology, there's a place for you at CAVIC 2026.
+                            of art and technology, there's a place for you at Cavic 2026.
                         </p>
 
                         {/* Quick Info */}
@@ -67,10 +67,10 @@ export default function Festival2026() {
                 {/* Registration CTA Section */}
                 <section className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 lg:p-12 text-center text-white shadow-xl">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                        Be Part of CAVIC 2026
+                        Be Part of Cavic 2026
                     </h2>
                     <p className="text-lg text-orange-100 mb-8 max-w-2xl mx-auto">
-                        We're looking for speakers, workshop facilitators, artists, and collaborators 
+                        We're looking for artists, technologists, traditional practitioners, and hybrid creatives working accross art, tech and culture 
                         to make this edition unforgettable. Register your interest today!
                     </p>
                     <a

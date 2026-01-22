@@ -16,8 +16,9 @@ import { ExhibitionModal } from "../../../components/ExhibitionModal";
 import { PressCoverage } from "../../../components/PressCoverage";
 import { SlideIn } from "../../../components/SlideIn";
 
-export default function Festival({ params }: { params: { year: string } }) {
-    const festival = festivalsData[params.year];
+export default async function Festival({ params }: { params: Promise<{ year: string }> }) {
+    const { year } = await params;
+    const festival = festivalsData[year];
 
     if (!festival) {
         notFound();
@@ -43,12 +44,16 @@ export default function Festival({ params }: { params: { year: string } }) {
                                 />
                                 {/* Status Badge */}
                                 <div className="absolute top-4 left-4">
-                                    <span className={`px-3 py-1.5 rounded-full text-sm font-semibold ${
-                                        isPastEvent 
-                                            ? 'bg-zinc-900/80 text-white' 
-                                            : 'bg-orange-500 text-white'
-                                    }`}>
-                                        {isPastEvent ? 'Past Event' : 'Upcoming'}
+                                    <span
+                                        className={`px-3 py-1.5 rounded-full text-sm font-semibold ${
+                                            isPastEvent
+                                                ? "bg-zinc-900/80 text-white"
+                                                : "bg-orange-500 text-white"
+                                        }`}
+                                    >
+                                        {isPastEvent
+                                            ? "Past Event"
+                                            : "Upcoming"}
                                     </span>
                                 </div>
                             </div>
@@ -59,24 +64,25 @@ export default function Festival({ params }: { params: { year: string } }) {
                             <div className="flex items-center gap-4 mb-4">
                                 <Image
                                     src="/logo.png"
-                                    alt="CAVIC Logo"
+                                    alt="Cavic Logo"
                                     width={48}
                                     height={48}
                                     className="rounded-lg"
                                 />
                                 <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
-                                    CAVIC Festival
+                                    Cavic Festival
                                 </span>
                             </div>
-                            
+
                             <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-zinc-900 dark:text-white tracking-tight">
                                 {festival.title}
                             </h1>
-                            
+
                             <div className="inline-block px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-lg mb-6 w-fit">
-                                <span className="font-medium">Theme:</span> {festival.theme}
+                                <span className="font-medium">Theme:</span>{" "}
+                                {festival.theme}
                             </div>
-                            
+
                             <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
                                 {festival.brief}
                             </p>
@@ -84,27 +90,41 @@ export default function Festival({ params }: { params: { year: string } }) {
                             {/* Date & Location Cards */}
                             <div className="grid grid-cols-2 gap-4 mb-6">
                                 <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                                    <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Date</div>
+                                    <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
+                                        Date
+                                    </div>
                                     <div className="font-semibold text-zinc-900 dark:text-white">
-                                        {new Date(festival.date).toLocaleDateString('en-US', { 
-                                            year: 'numeric', 
-                                            month: 'long', 
-                                            day: 'numeric' 
+                                        {new Date(
+                                            festival.date,
+                                        ).toLocaleDateString("en-US", {
+                                            year: "numeric",
+                                            month: "long",
+                                            day: "numeric",
                                         })}
                                     </div>
                                 </div>
                                 <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                                    <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Location</div>
-                                    <div className="font-semibold text-zinc-900 dark:text-white">{festival.location}</div>
+                                    <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
+                                        Location
+                                    </div>
+                                    <div className="font-semibold text-zinc-900 dark:text-white">
+                                        {festival.location}
+                                    </div>
                                 </div>
                             </div>
 
                             {!isPastEvent && (
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <div className="bg-orange-500 text-white px-6 py-3 rounded-xl text-center">
-                                        <div className="text-sm opacity-90">Countdown</div>
+                                        <div className="text-sm opacity-90">
+                                            Countdown
+                                        </div>
                                         <div className="text-xl font-bold">
-                                            <CountdownTimer targetDate={new Date(festival.date)} />
+                                            <CountdownTimer
+                                                targetDate={
+                                                    new Date(festival.date)
+                                                }
+                                            />
                                         </div>
                                     </div>
                                     <Button
