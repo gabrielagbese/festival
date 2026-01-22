@@ -1,9 +1,9 @@
 {
-    "heroTitle": "Welcome to CAVIC Festival 2025",
-    "heroSubtitle": "  ",
+    "heroTitle": "Welcome to CAVIC Festival 2026",
+    "heroSubtitle": "",
     "eventDate": "2025-09-15T09:00:00.000Z",
     "heroImage": "https://i.ibb.co/vsg2JHj/Whats-App-Image-2025-01-27-at-13-23-35.jpg",
-    "flyer": "https://i.ibb.co/vsg2JHj/Whats-App-Image-2025-01-27-at-13-23-35.jpg",
+    "flyer": "https://i.ibb.co/cSMCc1Y8/CFCB5-EC1-2460-4-D58-B1-E8-C3-CC96-E9-E7-FB-1-105-c.jpg",
     "sponsors": [
         {
             "name": "Lightway Academy",
@@ -105,36 +105,36 @@
     },
     "gallery": [
         {
+            "image": "https://i.ibb.co/vx50CFpr/D86-FA339-D115-4945-81-DC-3-C40639-F33-E5-1-105-c.jpg",
+            "alt": "Festival 2025"
+        },
+        {
+            "image": "https://i.ibb.co/spZTfhT0/E4-C279-A0-42-DA-4813-BD05-5-A45-F9-EAFF31-1-105-c.jpg",
+            "alt": "Festival 2025"
+        },
+        {
             "image": "https://i.ibb.co/vsXx71f/IMG-5681.jpg",
-            "alt": "Festival"
+            "alt": "Festival 2024"
         },
         {
             "image": "https://i.ibb.co/6YY6Kxc/IMG-E5696.jpg",
-            "alt": "IoT Showcase"
-        },
-        {
-            "image": "https://i.ibb.co/7gN81Vb/IMG-E5648.jpg",
-            "alt": "Panel Discussion"
-        },
-        {
-            "image": "https://i.ibb.co/jMdcX87/IMG-E5638.jpg",
-            "alt": "Networking Lounge"
+            "alt": "Festival 2024"
         },
         {
             "image": "https://i.ibb.co/z52prWd/IMG-0051.jpg",
-            "alt": "external"
+            "alt": "Festival 2023"
         },
         {
             "image": "https://i.ibb.co/K5VxjYb/IMG-0096.jpg",
-            "alt": "IoT Showcase"
+            "alt": "Festival 2023"
+        },
+        {
+            "image": "https://i.ibb.co/7gN81Vb/IMG-E5648.jpg",
+            "alt": "Festival 2024"
         },
         {
             "image": "https://i.ibb.co/N7pGD18/IMG-0536.jpg",
-            "alt": "Panel Discussion"
-        },
-        {
-            "image": "https://i.ibb.co/zSgPq7K/IMG-0531.jpg",
-            "alt": "Networking Lounge"
+            "alt": "Festival 2023"
         }
     ]
 }

@@ -1,4 +1,35 @@
 {
+    "2025": [
+        {
+            "id": "prefest-2025",
+            "title": "CAVIC Pre-Festival Workshops 2025: Merged Realms",
+            "date": "2025-09-01T09:00:00.000Z",
+            "brief": "The pre-festival workshops and hackathons serve as a launchpad for innovation, offering participants the chance to collaborate and create prototypes. Activities focus on merging traditional African culture with futuristic technologies, fostering creativity and experimentation.",
+            "speakers": [
+                {
+                    "name": "Samuel Nnitiwe Theophilus",
+                    "bio": "AI Engineer & Founder of Nnitiwe.io - Workshop: Animate the Magic of African Folktales with Cutting-Edge Tools",
+                    "image": "https://i.ibb.co/xtcGgPwh/Whats-App-Image-2025-05-09-at-09-44-08-541b8cee.jpg"
+                },
+                {
+                    "name": "Dr. Lanre Phillips",
+                    "bio": "Business Strategy & Development Expert with 25+ years of experience",
+                    "image": "https://i.ibb.co/nMhFPxBp/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986-Photoroom-1.png"
+                },
+                {
+                    "name": "Ntiense Tom",
+                    "bio": "Multi-disciplinary Artist - Digital Arts, Traditional Painting, Poetry & Art Therapy",
+                    "image": "https://i.ibb.co/DDR9PLzJ/Whats-App-Image-2025-05-09-at-09-47-40-4cc116ed.jpg"
+                },
+                {
+                    "name": "Oluwaseun Odukoya (Aunty Shine-Shine)",
+                    "bio": "Storyteller & Theatre Arts Fellow - Workshop: Storytelling as a Gateway to Creativity",
+                    "image": "https://i.ibb.co/vGR5Vh6/Whats-App-Image-2025-05-09-at-09-48-35-8a14d8b4.jpg"
+                }
+            ],
+            "images": []
+        }
+    ],
     "2024": [
         {
             "id": "atc-1-2024",

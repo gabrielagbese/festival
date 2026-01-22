@@ -29,10 +29,10 @@ const Header = () => {
         setOpenDropdown(null);
     };
 
-    const years = ["2024", "2023"];
+    const years = ["2025", "2024", "2023"];
 
     const navItems = [
-        { name: "2025", href: "/2025" },
+        { name: "2026", href: "/2026" },
         {
             name: "Festival",
             href: "#",

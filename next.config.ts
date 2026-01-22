@@ -1,6 +1,6 @@
 const nextConfig = {
     images: {
-        domains: ["i.ibb.co"],
+        domains: ["i.ibb.co", "picsum.photos"],
     },
     eslint: {
         ignoreDuringBuilds: true,

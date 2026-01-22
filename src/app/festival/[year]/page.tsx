@@ -27,76 +27,98 @@ export default function Festival({ params }: { params: { year: string } }) {
 
     return (
         <div className="container mx-auto px-4 py-8">
+            {/* Hero Section - Redesigned */}
             <SlideIn>
-                <section className="text-center py-6 bg-gradient-to-r from-orange-600 to-orange-400 rounded-lg mb-12 lg:flex items-center justify-between p-6">
-                    <div>
-                        <Image
-                            src={festival.flyer}
-                            alt={festival.title}
-                            width={400}
-                            height={400}
-                            className="rounded-lg"
-                            unoptimized={true}
-                        ></Image>
-                    </div>
-                    <div className="text-center p-6">
-                        <h1 className="text-4xl font-bold mb-4 text-white">
-                            {festival.title}
-                        </h1>
-                        {isPastEvent ? (
-                            <div className="text-2xl font-bold mb-8 text-white">
-                                Event Date:{" "}
-                                {new Date(festival.date).toLocaleDateString()}
-                            </div>
-                        ) : (
-                            <>
-                                <div className="text-6xl font-bold mb-8 text-white">
-                                    <CountdownTimer
-                                        targetDate={new Date(festival.date)}
-                                    />
+                <section className="mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                        {/* Left: Image */}
+                        <div className="relative">
+                            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-zinc-200 dark:border-zinc-800">
+                                <Image
+                                    src={festival.flyer}
+                                    alt={festival.title}
+                                    fill
+                                    className="object-cover"
+                                    unoptimized={true}
+                                />
+                                {/* Status Badge */}
+                                <div className="absolute top-4 left-4">
+                                    <span className={`px-3 py-1.5 rounded-full text-sm font-semibold ${
+                                        isPastEvent 
+                                            ? 'bg-zinc-900/80 text-white' 
+                                            : 'bg-orange-500 text-white'
+                                    }`}>
+                                        {isPastEvent ? 'Past Event' : 'Upcoming'}
+                                    </span>
                                 </div>
-                                <Button
-                                    size="lg"
-                                    className="bg-accent text-accent-foreground hover:bg-accent/90"
-                                >
-                                    Register Now
-                                </Button>
-                            </>
-                        )}
-                    </div>
-                    <div className=" w-[150px] h-[150px] mx-auto lg:mx-0 lg:w-[350px] h-[350px] flex items-center justify-center  lg:border-l lg:border-gray-800">
-                        <Image
-                            src="/logo.png"
-                            alt="hero"
-                            width={200}
-                            height={200}
-                            className="rounded-lg"
-                        />
+                            </div>
+                        </div>
+
+                        {/* Right: Content */}
+                        <div className="flex flex-col justify-center">
+                            <div className="flex items-center gap-4 mb-4">
+                                <Image
+                                    src="/logo.png"
+                                    alt="CAVIC Logo"
+                                    width={48}
+                                    height={48}
+                                    className="rounded-lg"
+                                />
+                                <span className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                                    CAVIC Festival
+                                </span>
+                            </div>
+                            
+                            <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-zinc-900 dark:text-white tracking-tight">
+                                {festival.title}
+                            </h1>
+                            
+                            <div className="inline-block px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-lg mb-6 w-fit">
+                                <span className="font-medium">Theme:</span> {festival.theme}
+                            </div>
+                            
+                            <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
+                                {festival.brief}
+                            </p>
+
+                            {/* Date & Location Cards */}
+                            <div className="grid grid-cols-2 gap-4 mb-6">
+                                <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                                    <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Date</div>
+                                    <div className="font-semibold text-zinc-900 dark:text-white">
+                                        {new Date(festival.date).toLocaleDateString('en-US', { 
+                                            year: 'numeric', 
+                                            month: 'long', 
+                                            day: 'numeric' 
+                                        })}
+                                    </div>
+                                </div>
+                                <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                                    <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Location</div>
+                                    <div className="font-semibold text-zinc-900 dark:text-white">{festival.location}</div>
+                                </div>
+                            </div>
+
+                            {!isPastEvent && (
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                    <div className="bg-orange-500 text-white px-6 py-3 rounded-xl text-center">
+                                        <div className="text-sm opacity-90">Countdown</div>
+                                        <div className="text-xl font-bold">
+                                            <CountdownTimer targetDate={new Date(festival.date)} />
+                                        </div>
+                                    </div>
+                                    <Button
+                                        size="lg"
+                                        className="bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200 rounded-lg px-8 h-12"
+                                    >
+                                        Register Now
+                                    </Button>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </section>
             </SlideIn>
-
-            {/* Location, Theme, Brief */}
-            <section className="mb-12">
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="text-3xl">
-                            Festival Details
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-lg">
-                            <strong>Location:</strong> {festival.location}
-                        </p>
-                        <p className="text-lg">
-                            <strong>Theme:</strong> {festival.theme}
-                        </p>
-                        <p className="text-lg">
-                            <strong>Brief:</strong> {festival.brief}
-                        </p>
-                    </CardContent>
-                </Card>
-            </section>
 
             {/* Days (in tabs) */}
             <section className="mb-12">

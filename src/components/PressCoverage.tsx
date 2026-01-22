@@ -15,7 +15,7 @@ interface PressArticle {
     source: string;
     date: string;
     excerpt: string;
-    logo: string;
+    logo?: string;
 }
 
 interface PressCoverageProps {
