@@ -111,18 +111,54 @@
         "highlights": [],
         "exhibitions": [],
         "gallery": [
-            { "image": "https://i.ibb.co/3mYb0x7R/FE418-FCF-F531-44-EE-8-B33-60-F4-F15-EA110-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/spZTfhT0/E4-C279-A0-42-DA-4813-BD05-5-A45-F9-EAFF31-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/JWGdt8Nh/DCF5-BC57-65-E9-41-A4-97-DF-0397-DCF7-DDD7-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/vx50CFpr/D86-FA339-D115-4945-81-DC-3-C40639-F33-E5-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/vvJKyhzm/CBC39-BA5-61-E6-4-A0-D-8-C04-24-CAD4-E08166-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/tMZhHzQ5/A99019-A3-3-ACF-4-C3-C-8-B9-E-5-D0-F6-FB14947-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/qLr8MVPq/6952672-A-77-A7-4266-8902-DFC739-D3-EF08-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/8gdKdLQ5/34-AD012-F-57-BB-42-F3-9182-B4-EB2-FFFDD21-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/HLGwwPhW/23-FE13-FF-3092-4306-A221-BA8-EA7-F25-D72-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/0pG6DW1G/19-B2-F1-EE-0-AB0-443-A-A1-A6-A1-B40-B35-EFC6-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/ymkMdqSW/9-DAD2-BB5-48-C0-4-F4-D-AD14-EEF1-C9-F98-F7-C-1-105-c.jpg", "alt": "Festival 2025" },
-            { "image": "https://i.ibb.co/ccnV3X3T/7-F8-A3352-50-B9-4140-875-F-96-C5-DD7564-B9-1-105-c.jpg", "alt": "Festival 2025" }
+            {
+                "image": "https://i.ibb.co/3mYb0x7R/FE418-FCF-F531-44-EE-8-B33-60-F4-F15-EA110-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/spZTfhT0/E4-C279-A0-42-DA-4813-BD05-5-A45-F9-EAFF31-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/JWGdt8Nh/DCF5-BC57-65-E9-41-A4-97-DF-0397-DCF7-DDD7-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/vx50CFpr/D86-FA339-D115-4945-81-DC-3-C40639-F33-E5-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/vvJKyhzm/CBC39-BA5-61-E6-4-A0-D-8-C04-24-CAD4-E08166-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/tMZhHzQ5/A99019-A3-3-ACF-4-C3-C-8-B9-E-5-D0-F6-FB14947-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/qLr8MVPq/6952672-A-77-A7-4266-8902-DFC739-D3-EF08-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/8gdKdLQ5/34-AD012-F-57-BB-42-F3-9182-B4-EB2-FFFDD21-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/HLGwwPhW/23-FE13-FF-3092-4306-A221-BA8-EA7-F25-D72-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/0pG6DW1G/19-B2-F1-EE-0-AB0-443-A-A1-A6-A1-B40-B35-EFC6-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/ymkMdqSW/9-DAD2-BB5-48-C0-4-F4-D-AD14-EEF1-C9-F98-F7-C-1-105-c.jpg",
+                "alt": "Festival 2025"
+            },
+            {
+                "image": "https://i.ibb.co/ccnV3X3T/7-F8-A3352-50-B9-4140-875-F-96-C5-DD7564-B9-1-105-c.jpg",
+                "alt": "Festival 2025"
+            }
         ],
         "pressCoverage": [
             {

@@ -188,7 +188,7 @@ const Header = () => {
                                                     className="block px-3 py-2 rounded-md text-sm font-medium text-foreground/60 hover:text-accent"
                                                     onClick={() => {
                                                         setMobileMenuOpen(
-                                                            false
+                                                            false,
                                                         );
                                                         setOpenDropdown(null);
                                                     }}

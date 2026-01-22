@@ -16,7 +16,11 @@ import { ExhibitionModal } from "../../../components/ExhibitionModal";
 import { PressCoverage } from "../../../components/PressCoverage";
 import { SlideIn } from "../../../components/SlideIn";
 
-export default async function Festival({ params }: { params: Promise<{ year: string }> }) {
+export default async function Festival({
+    params,
+}: {
+    params: Promise<{ year: string }>;
+}) {
     const { year } = await params;
     const festival = festivalsData[year];
 

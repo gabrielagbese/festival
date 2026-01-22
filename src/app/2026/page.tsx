@@ -26,23 +26,34 @@ export default function Festival2026() {
                             Cavic Festival of Creativity & Technology
                         </h1>
                         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-                            Join us for the next edition of the Cavic Festival – where creativity meets technology. 
-                            Experience inspiring talks, hands-on workshops, and connect with a vibrant community of innovators.
+                            Join us for the next edition of the Cavic Festival –
+                            where creativity meets technology. Experience
+                            inspiring talks, hands-on workshops, and connect
+                            with a vibrant community of innovators.
                         </p>
                         <p className="text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed">
-                            Whether you're an artist, developer, designer, or simply curious about the intersection 
-                            of art and technology, there's a place for you at Cavic 2026.
+                            Whether you're an artist, developer, designer, or
+                            simply curious about the intersection of art and
+                            technology, there's a place for you at Cavic 2026.
                         </p>
 
                         {/* Quick Info */}
                         <div className="grid grid-cols-2 gap-4 mb-8">
                             <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Location</div>
-                                <div className="font-semibold text-zinc-900 dark:text-white">Abuja, Nigeria</div>
+                                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
+                                    Location
+                                </div>
+                                <div className="font-semibold text-zinc-900 dark:text-white">
+                                    Abuja, Nigeria
+                                </div>
                             </div>
                             <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Status</div>
-                                <div className="font-semibold text-orange-600 dark:text-orange-500">Registration Open</div>
+                                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
+                                    Status
+                                </div>
+                                <div className="font-semibold text-orange-600 dark:text-orange-500">
+                                    Registration Open
+                                </div>
                             </div>
                         </div>
 
@@ -70,8 +81,10 @@ export default function Festival2026() {
                         Be Part of Cavic 2026
                     </h2>
                     <p className="text-lg text-orange-100 mb-8 max-w-2xl mx-auto">
-                        We're looking for artists, technologists, traditional practitioners, and hybrid creatives working accross art, tech and culture 
-                        to make this edition unforgettable. Register your interest today!
+                        We're looking for artists, technologists, traditional
+                        practitioners, and hybrid creatives working accross art,
+                        tech and culture to make this edition unforgettable.
+                        Register your interest today!
                     </p>
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSeGNm3ieIXXvjhgQrsDhIc9K6lJQ4M1VGHEMNsc5O1pzZ6FXw/viewform?usp=header"
@@ -82,7 +95,8 @@ export default function Festival2026() {
                         Register to Participate
                     </a>
                     <p className="text-sm text-orange-200 mt-6">
-                        Open to speakers, artists, workshop facilitators, volunteers, and sponsors
+                        Open to speakers, artists, workshop facilitators,
+                        volunteers, and sponsors
                     </p>
                 </section>
             </div>
