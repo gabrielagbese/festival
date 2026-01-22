@@ -9,7 +9,7 @@ export default function Festival2026() {
                     {/* Flyer Image */}
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
                         <Image
-                            src="https://i.ibb.co/vx50CFpr/D86-FA339-D115-4945-81-DC-3-C40639-F33-E5-1-105-c.jpg"
+                            src="/2026-festival-flyer.png"
                             alt="CAVIC Festival 2026"
                             fill
                             className="object-cover"
