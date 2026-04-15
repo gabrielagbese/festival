@@ -1,0 +1,62 @@
+{
+	"title": "Cavic Pre-Festival Workshops 2026",
+	"subtitle": "Where Creativity Meets Technology",
+	"introduction": {
+		"title": "Welcome!",
+		"content": "The Cavic Pre-Festival Workshops 2026 are a prelude to the main festival, offering participants immersive, hands-on experiences at the intersection of art, technology, and culture. This year's workshops bring together distinguished speakers who will guide participants through collaborative creation, strategic thinking, and cultural innovation.\n\nWhether you're an artist exploring digital tools, a technologist seeking creative applications, or a cultural practitioner looking to scale your impact, these workshops provide the space to learn, experiment, and connect with a vibrant community of innovators."
+	},
+	"speakers": [
+		{
+			"name": "Dr. Lanre Phillips",
+			"role": "Business Strategy & Development Expert",
+			"image": "https://i.ibb.co/nMhFPxBp/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986-Photoroom-1.png",
+			"socials": {
+				"website": "https://drlanrephillips.com/"
+			},
+			"bio": "Dr. Lanre Phillips is a seasoned professional with over 25 years of experience spanning FMCG, Banking, and Telecommunications industries. His expertise in social enterprise has led him to work with numerous business hubs, incubators, and accelerators across Africa, particularly in Nigeria.\n\nDr. Phillips holds a passionate belief in small business growth through human capacity development and strategic business implementation. His approach focuses on operational excellence and value creation through people-centered strategies.\n\nAs a faculty member of several training organizations, he specializes in:\n• Business Strategy\n• Storytelling\n• Organisational Behaviour\n• Business Branding\n• Customer Service\n• Leadership\n• Sales Techniques\n• Entrepreneurship\n\nHis notable achievements include:\n• Member of the Global Entrepreneurship Network, Nigeria team\n• Board member of the Integrated Institute of Professional Management (IIPM)\n• Key contributor to projects like You WIN, World Bank's Women X Programme, and the Road to Growth by the Cherie Blaire Foundation\n\nEducation:\n• Doctorate in Business Administration (DBA) - Swiss Management Centre\n• MSc Economics - University of Jos\n• MBA - University of Jos\n• Bachelor's in Economics - University of Ibadan (1995)",
+			"credentials": {
+				"education": [
+					"DBA - Swiss Management Centre",
+					"MSc Economics - University of Jos",
+					"MBA - University of Jos",
+					"BSc Economics - University of Ibadan"
+				],
+				"expertise": [
+					"Business Strategy",
+					"Entrepreneurship Development",
+					"Organizational Development",
+					"Training & Capacity Building"
+				]
+			}
+		},
+		{
+			"name": "Marta Verde Baqueiro",
+			"role": "Visual Artist, Creative Technologist & Educator",
+			"image": "https://i.ibb.co/fG4JhyBs/Marta.jpg",
+			"socials": {
+				"website": "https://www.martaverde.net",
+				"instagram": "https://www.instagram.com/martaverdebaqueiro",
+				"linkedin": "https://www.linkedin.com/in/martaverdebaqueiro"
+			},
+			"bio": "Marta Verde Baqueiro is a visual artist, creative technologist and educator working at the intersection of live performance, real-time media systems and embodied interaction. Her practice focuses on creating responsive environments where sound, light and visuals react to human movement, signal input and physical space.\n\nShe currently works as Associate Faculty at Berklee College of Music (Valencia Campus) and is a Max/MSP Certified Trainer. Her work explores hybrid performance ecosystems combining sensors, creative coding, analog video synthesis and digital fabrication, often bridging organic processes and electronic systems.\n\nAs a faculty member and mentor, she specializes in:\n• Hybrid performance & responsive environments\n• Sensors, embodied interaction & realtime media\n• Creative coding (Max/MSP, Processing, realtime systems)\n• Experimental audiovisual performance & installation\n• Cross-disciplinary workshop and lab facilitation\n\nHer notable achievements include:\n• Forbes España Top 100 Most Creative People in Business (2024)\n• First Prize — We:Now Awards (Music Category) for Espectro Dorado\n• Alumni Award — Universidade de Vigo (2025)\n• Maker of Merit — Maker Faire Galicia (2025)\n• Presentations at Ars Electronica, Sónar +D, MIRA Festival, LEV Festival and Primavera Sound\n\nAcademic Background:\n• Associate Faculty — Berklee College of Music (Valencia Campus)\n• Lecturer — Master in Sonology, Conservatorio Superior de Música Joaquín Rodrigo\n• Lecturer — BAU College of Arts and Design, Barcelona\n• Fab Academy digital fabrication program",
+			"expertise": [
+				"Hybrid Performance & Responsive Environments",
+				"Creative Coding (Max/MSP, Processing)",
+				"Experimental Audiovisual Performance",
+				"Cross-Disciplinary Workshop Facilitation"
+			]
+		},
+		{
+			"name": "Faith Ono",
+			"role": "Artist & Cultural Advocate",
+			"image": "https://i.ibb.co/pjSbnktc/faith.jpg",
+			"bio": "Faith Ono is an artist and cultural advocate dedicated to empowering communities through creative expression. Her work celebrates African heritage while exploring contemporary themes of identity, belonging, and transformation.\n\nWith a commitment to using art as a tool for social change, Faith engages with diverse audiences to foster dialogue, inspire creativity, and build bridges between tradition and innovation.",
+			"expertise": [
+				"Visual Arts",
+				"Cultural Advocacy",
+				"Community Engagement",
+				"Art for Social Change"
+			]
+		}
+	]
+}

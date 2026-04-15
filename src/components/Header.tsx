@@ -29,7 +29,7 @@ const Header = () => {
         setOpenDropdown(null);
     };
 
-    const years = ["2025", "2024", "2023"];
+    const years = ["2026", "2025", "2024", "2023"];
 
     const navItems = [
         { name: "2026", href: "/2026" },
@@ -37,7 +37,7 @@ const Header = () => {
             name: "Festival",
             href: "#",
             dropdown: true,
-            subItems: years.map((year) => ({
+            subItems: years.filter(year => year !== "2026").map((year) => ({
                 name: year,
                 href: `/festival/${year}`,
             })),

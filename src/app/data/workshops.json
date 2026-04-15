@@ -1,4 +1,30 @@
 {
+    "2026": [
+        {
+            "id": "prefest-2026",
+            "title": "Cavic Pre-Festival Workshops 2026",
+            "date": "2026-09-01T09:00:00.000Z",
+            "brief": "The pre-festival workshops serve as a launchpad for innovation, offering participants the chance to collaborate, learn, and create. Activities focus on the intersection of art, technology, and culture, fostering creativity and experimentation.",
+            "speakers": [
+                {
+                    "name": "Dr. Lanre Phillips",
+                    "bio": "Business Strategy & Development Expert with 25+ years of experience",
+                    "image": "https://i.ibb.co/nMhFPxBp/Whats-App-Image-2025-05-09-at-09-45-45-aefcf986-Photoroom-1.png"
+                },
+                {
+                    "name": "Marta Verde Baqueiro",
+                    "bio": "Visual Artist, Creative Technologist & Educator - Associate Faculty at Berklee College of Music, Max/MSP Certified Trainer",
+                    "image": "https://i.ibb.co/fG4JhyBs/Marta.jpg"
+                },
+                {
+                    "name": "Faith Ono",
+                    "bio": "Artist & Cultural Advocate",
+                    "image": "https://i.ibb.co/pjSbnktc/faith.jpg"
+                }
+            ],
+            "images": []
+        }
+    ],
     "2025": [
         {
             "id": "prefest-2025",
