@@ -18,8 +18,11 @@
                 },
                 {
                     "name": "Faith Ono",
-                    "bio": "Artist & Cultural Advocate",
-                    "image": "https://i.ibb.co/pjSbnktc/faith.jpg"
+                    "bio": "Faith Ono is a Community and Programs Manager and a strategic leader within the African startup ecosystem. As the Program and Partnerships Manager at The Enablers Network, she oversees the initiatives of the community that powers Founders Friday, one of Abuja's largest monthly founder meetups. Her expertise lies in building operational frameworks, steering strategic business directions, and managing multidisciplinary teams to drive collaboration and growth.\n\nAt the June CAVIC workshop, Faith serves as a lead facilitator, specializing in community dynamics and collaborative structures:\nTeam Formation & Synergy: She manages the critical process of grouping participants into balanced pods, ensuring a productive \"marriage\" between diverse artistic and technical disciplines.\nCreative Energizing: Faith facilitates sessions designed to spark cross-discipline pairing and idea-sharing, helping participants communicate their visions effectively.\nStrategic Matchmaking: She guides the \"Idea Pitch Circle,\" ensuring that projects are anchored in shared resonance and that each team maintains a balanced ratio of creative to technical hands.\nHer role is essential in transforming a group of individual practitioners into a cohesive community ready to build the next generation of immersive experiences.",
+                    "image": "https://i.ibb.co/pjSbnktc/faith.jpg",
+                    "socials": {
+                        "website": "https://www.foundersfriday.co/"
+                    }
                 }
             ],
             "images": []
