@@ -14,7 +14,7 @@
                 {
                     "name": "Marta Verde Baqueiro",
                     "bio": "Visual Artist, Creative Technologist & Educator - Associate Faculty at Berklee College of Music, Max/MSP Certified Trainer",
-                    "image": "https://i.ibb.co/fG4JhyBs/Marta.jpg"
+                    "image": "https://i.ibb.co/9RBnC6t/Marta-Verde.png"
                 },
                 {
                     "name": "Faith Ono",
@@ -22,6 +22,14 @@
                     "image": "https://i.ibb.co/pjSbnktc/faith.jpg",
                     "socials": {
                         "website": "https://www.foundersfriday.co/"
+                    }
+                },
+                {
+                    "name": "Ugochukwu David Ogbuehi",
+                    "bio": "Creative Technologist, Immersive Arts Producer and Curator focused on projection mapping, Unreal Engine, haptic sound, and accessible design for live performance. His work creates sensory-rich experiences for diverse audiences, with a particular research interest in d/Deaf and hard-of-hearing accessibility.",
+                    "image": "https://i.ibb.co/RGVpSg4F/Whats-App-Image-2026-04-09-at-14-58-35.jpg",
+                    "socials": {
+                        "website": "https://www.udo8o.com/"
                     }
                 }
             ],

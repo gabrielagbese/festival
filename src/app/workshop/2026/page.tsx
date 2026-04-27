@@ -96,7 +96,7 @@ function SpeakersSection({ data, selectedSpeaker, setSelectedSpeaker }) {
                                     src={speaker.image || "/placeholder.svg"}
                                     alt={speaker.name}
                                     fill
-                                    className="object-cover rounded-lg object-top"
+                                    className="object-cover rounded-lg object-center"
                                 />
                             </div>
                             <h3 className="text-xl font-semibold text-center">
@@ -139,7 +139,7 @@ function SpeakersSection({ data, selectedSpeaker, setSelectedSpeaker }) {
                                         }
                                         alt={selectedSpeaker.name}
                                         fill
-                                        className="object-cover"
+                                        className="object-cover object-center"
                                         sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                 </div>

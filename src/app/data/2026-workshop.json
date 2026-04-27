@@ -32,7 +32,7 @@
 		{
 			"name": "Marta Verde Baqueiro",
 			"role": "Visual Artist, Creative Technologist & Educator",
-			"image": "https://i.ibb.co/fG4JhyBs/Marta.jpg",
+			"image": "https://i.ibb.co/9RBnC6t/Marta-Verde.png",
 			"socials": {
 				"website": "https://www.martaverde.net",
 				"instagram": "https://www.instagram.com/martaverdebaqueiro",
@@ -60,6 +60,28 @@
 				"Community Engagement",
 				"Art for Social Change"
 			]
+		},
+		{
+			"name": "Ugochukwu David Ogbuehi",
+			"role": "Creative Technologist, Immersive Arts Producer & Curator",
+			"image": "https://i.ibb.co/RGVpSg4F/Whats-App-Image-2026-04-09-at-14-58-35.jpg",
+			"socials": {
+				"website": "https://www.udo8o.com/"
+			},
+			"bio": "Ugochukwu David Ogbuehi is a combined arts practitioner, creative technologist, and immersive arts producer whose work bridges live performance, virtual environments, and accessible design. Based in London, his practice brings together projection mapping, Unreal Engine, haptic sound, and creative computing to build sensory-rich experiences for diverse audiences, with a strong research focus on accessibility for d/Deaf and hard-of-hearing communities.\n\nDavid's work spans curation, production, and technical delivery across theatre, installation, and public arts programming. As a core member of TCMO (The Collective Members Only), he has led multidisciplinary projects that create opportunities for emerging artists, including immersive public-facing collaborations with Boundless Theatre, Crystal Palace Park Trust, and the Southbank Centre.\n\nAs a technologist and producer, he specializes in:\n• Immersive technology and virtual environment design\n• Projection mapping and realtime media systems\n• Spatial sound, haptic audio and live event production\n• Creative computing with Python and Arduino\n• Inclusive design for live performance and public engagement\n\nHis notable achievements include:\n• Key Project Manager and Artist Liaison for TCMO x Boundless: Box in the Park (2025)\n• Technical Assistant (Audio) on Lost Text/Found Space's Far Away at Ambika P3, contributing to a 14-speaker audio setup on a production nominated for 6 Fringe Theatre awards\n• Motion Graphics and VFX Artist for Opera Greenwich's production of The Magic Flute (2025)\n• Inclusive design researcher on Deaf Rave x Kinda Studios' Resonance project, exploring haptic technology for d/Deaf audiences\n• Producer and Curator for Fear & Faith I as part of The Albany's Revolution Through Music programme\n\nAcademic Background:\n• MA Art and Emerging Technologies — University of Westminster\n• MSc Digital Marketing — Robert Gordon University\n• BSc Computer Science — Babcock University",
+			"credentials": {
+				"education": [
+					"MA Art and Emerging Technologies - University of Westminster",
+					"MSc Digital Marketing - Robert Gordon University",
+					"BSc Computer Science - Babcock University"
+				],
+				"expertise": [
+					"Unreal Engine & Projection Mapping",
+					"Spatial Sound & Haptic Technology",
+					"Creative Computing (Python, Arduino)",
+					"Inclusive Design for Live Performance"
+				]
+			}
 		}
 	]
 }
