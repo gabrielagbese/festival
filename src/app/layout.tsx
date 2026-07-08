@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 
 import Header from "../components/Header";
 import "./globals.css";
+import "@/vendor/react-photo-album/dist/styles/rows.css";
+import "@/vendor/photoswipe/dist/photoswipe.css";
 import Footer from "../components/Footer";
 import { ThemeProvider } from "../components/ThemeProvider";
 import { Analytics } from "@vercel/analytics/react";

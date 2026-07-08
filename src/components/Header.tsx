@@ -33,6 +33,7 @@ const Header = () => {
 
     const navItems = [
         { name: "2026", href: "/2026" },
+        { name: "Gallery", href: "/gallery" },
         {
             name: "Festival",
             href: "#",

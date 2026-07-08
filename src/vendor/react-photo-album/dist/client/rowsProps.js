@@ -1,0 +1,33 @@
+import { resolveCommonProps, resolveResponsiveParameter, unwrapParameter } from "../utils/index.js";
+//#region src/client/rows/resolveRowsProps.ts
+function resolveRowsProps(containerWidth, { photos, targetRowHeight, rowConstraints, ...rest }) {
+	const { spacing, padding, componentsProps, render } = resolveCommonProps(containerWidth, rest);
+	const { singleRowMaxHeight, minPhotos, maxPhotos } = unwrapParameter(rowConstraints, containerWidth) || {};
+	if (singleRowMaxHeight !== void 0 && spacing !== void 0 && padding !== void 0) {
+		const maxWidth = Math.floor(photos.reduce((acc, { width, height }) => acc + width / height * singleRowMaxHeight + 2 * padding, spacing * (photos.length - 1)));
+		if (maxWidth > 0) {
+			componentsProps.container = { ...componentsProps.container };
+			componentsProps.container.style = {
+				maxWidth,
+				...componentsProps.container.style
+			};
+		}
+	}
+	return {
+		...rest,
+		targetRowHeight: resolveResponsiveParameter(targetRowHeight, containerWidth, [
+			(w) => w / 5,
+			(w) => w / 4,
+			(w) => w / 3,
+			(w) => w / 2
+		]),
+		render,
+		spacing,
+		padding,
+		minPhotos,
+		maxPhotos,
+		componentsProps
+	};
+}
+//#endregion
+export { resolveRowsProps as default };

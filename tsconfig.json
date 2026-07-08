@@ -25,6 +25,15 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "react-photo-album": [
+        "./src/vendor/react-photo-album/dist/index.js"
+      ],
+      "photoswipe": [
+        "./src/vendor/photoswipe/dist/photoswipe.esm.js"
+      ],
+      "photoswipe/lightbox": [
+        "./src/vendor/photoswipe/dist/photoswipe-lightbox.esm.js"
       ]
     }
   },
