@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
     type ComponentProps,
+    type SyntheticEvent,
     useEffect,
     useMemo,
     useRef,
@@ -27,6 +28,7 @@ import {
 } from "lucide-react";
 import festivalsData from "../data/festivals.json";
 import homeData from "../data/home.json";
+import workshopsData from "../data/workshops.json";
 import { Button } from "@/components/ui/button";
 import {
     Dialog,
@@ -40,6 +42,14 @@ import {
 type FestivalYear = keyof typeof festivalsData;
 type Festival = (typeof festivalsData)[FestivalYear];
 type GalleryFilter = "All" | "Photos" | "Videos" | "Activities" | "Exhibits";
+type PhotoCategory =
+    | "Festival"
+    | "Exhibits"
+    | "Speakers"
+    | "Workshops"
+    | "Flyers"
+    | "Sponsors"
+    | "Home";
 
 type MediaItem = {
     id: string;
@@ -51,6 +61,7 @@ type MediaItem = {
     video?: string;
     images?: string[];
     location?: string;
+    category?: PhotoCategory;
 };
 
 type GalleryPhoto = Photo & {
@@ -73,6 +84,15 @@ const filters: GalleryFilter[] = [
     "Exhibits",
 ];
 
+const photoCategories: PhotoCategory[] = [
+    "Festival",
+    "Exhibits",
+    "Speakers",
+    "Workshops",
+];
+
+const photoPageSize = 24;
+
 const allTabOrder: Record<MediaItem["kind"], number> = {
     Videos: 0,
     Photos: 1,
@@ -88,16 +108,27 @@ const dotTexture = {
 
 const siteImages = [
     homeData.heroImage,
+    homeData.flyer,
+    ...homeData.sponsors.map((sponsor) => sponsor.logo),
     ...homeData.gallery.map((item) => item.image),
     ...Object.values(festivalsData).flatMap((festival) => [
         festival.thumbnail,
         festival.flyer,
+        ...festival.speakers.map((speaker) => speaker.image),
         ...festival.gallery.map((item) => item.image),
         ...festival.highlights.flatMap((highlight) => [
             highlight.thumbnail,
             ...highlight.images,
         ]),
+        ...festival.exhibitions.map((exhibition) => exhibition.image),
     ]),
+    ...Object.values(workshopsData).flatMap((workshops) =>
+        workshops.flatMap((workshop) => [
+            ...workshop.speakers.map((speaker) => speaker.image),
+            ...workshop.images.map((image) => image.src),
+        ]),
+    ),
+    "/2026-festival-flyer.png",
 ].filter(Boolean);
 
 const fallbackImage = siteImages[0] || "/logo.png";
@@ -129,6 +160,65 @@ const activityKeywords = [
     "masterclass",
 ];
 
+const localImagePaths = new Set([
+    "/2026-festival-flyer.png",
+    "/b2.png",
+    "/logo.png",
+    "/fest-speaker/alkali.jpg",
+    "/fest-speaker/busola.jpg",
+    "/fest-speaker/busola.png",
+    "/fest-speaker/marina.png",
+    "/fest-speaker/oluwadayo.png",
+    "/fest-speaker/onoja.jpg",
+    "/fest-speaker/samson.png",
+    "/fest-speaker/sule.jpg",
+    "/fest-speaker/yene.png",
+]);
+
+const isUsableImage = (image?: string) => {
+    if (!image || image.includes("placeholder.svg")) return false;
+    if (image.startsWith("http")) return true;
+    return localImagePaths.has(image);
+};
+
+const createPhotoCollector = () => {
+    const seen = new Set<string>();
+    const photos: MediaItem[] = [];
+
+    const addPhoto = ({
+        category,
+        description = "",
+        id,
+        image,
+        location,
+        title,
+        year,
+    }: {
+        category: PhotoCategory;
+        description?: string;
+        id: string;
+        image?: string;
+        location?: string;
+        title: string;
+        year: string;
+    }) => {
+        if (!isUsableImage(image) || seen.has(image)) return;
+        seen.add(image);
+        photos.push({
+            id,
+            title,
+            description,
+            year,
+            image,
+            kind: "Photos",
+            category,
+            location,
+        });
+    };
+
+    return { addPhoto, photos };
+};
+
 const getHeroSlides = (): HeroSlide[] => {
     const archiveSlides = (
         Object.entries(festivalsData) as [FestivalYear, Festival][]
@@ -152,20 +242,84 @@ const getHeroSlides = (): HeroSlide[] => {
 };
 
 function buildItems(): MediaItem[] {
-    return (Object.entries(festivalsData) as [FestivalYear, Festival][])
+    const { addPhoto, photos } = createPhotoCollector();
+    const items = (Object.entries(festivalsData) as [FestivalYear, Festival][])
         .sort(([a], [b]) => Number(b) - Number(a))
         .flatMap(([year, festival]) => {
-            const photos: MediaItem[] = festival.gallery
-                .slice(0, 12)
-                .map((photo, index) => ({
+            addPhoto({
+                id: `${year}-thumbnail`,
+                title: `${festival.title} thumbnail`,
+                year,
+                image: festival.thumbnail,
+                category: "Festival",
+                location: festival.location,
+            });
+            addPhoto({
+                id: `${year}-flyer`,
+                title: `${festival.title} flyer`,
+                year,
+                image: festival.flyer,
+                category: "Flyers",
+                location: festival.location,
+            });
+
+            festival.gallery.forEach((photo, index) => {
+                addPhoto({
                     id: `${year}-photo-${index}`,
                     title: festival.title,
-                    description: "",
                     year,
                     image: photo.image,
-                    kind: "Photos",
+                    category: "Festival",
                     location: festival.location,
-                }));
+                });
+            });
+
+            festival.highlights.forEach((highlight, highlightIndex) => {
+                addPhoto({
+                    id: `${year}-highlight-${highlightIndex}-thumbnail`,
+                    title: highlight.title,
+                    description: highlight.description,
+                    year,
+                    image: highlight.thumbnail,
+                    category: "Exhibits",
+                    location: festival.location,
+                });
+                highlight.images.forEach((image, imageIndex) => {
+                    addPhoto({
+                        id: `${year}-highlight-${highlightIndex}-${imageIndex}`,
+                        title: highlight.title,
+                        description: highlight.description,
+                        year,
+                        image,
+                        category: "Exhibits",
+                        location: festival.location,
+                    });
+                });
+            });
+
+            festival.exhibitions.forEach((exhibition, index) => {
+                addPhoto({
+                    id: `${year}-exhibition-${index}`,
+                    title: exhibition.title,
+                    description: exhibition.description,
+                    year,
+                    image: exhibition.image,
+                    category: "Exhibits",
+                    location: festival.location,
+                });
+            });
+
+            festival.speakers.forEach((speaker, index) => {
+                addPhoto({
+                    id: `${year}-speaker-${index}`,
+                    title: speaker.name,
+                    description: speaker.bio,
+                    year,
+                    image: speaker.image,
+                    category: "Speakers",
+                    location: festival.location,
+                });
+            });
 
             const videos: MediaItem[] = festival.highlights
                 .filter((highlight) => Boolean(highlight.video))
@@ -219,8 +373,77 @@ function buildItems(): MediaItem[] {
                     location: festival.location,
                 }));
 
-            return [...videos, ...photos, ...activities, ...exhibits];
+            return [...videos, ...activities, ...exhibits];
         });
+
+    addPhoto({
+        id: "home-hero",
+        title: "Cavic Festival home hero",
+        year: "Home",
+        image: homeData.heroImage,
+        category: "Home",
+    });
+    addPhoto({
+        id: "home-flyer",
+        title: "Cavic Festival flyer",
+        year: "Home",
+        image: homeData.flyer,
+        category: "Flyers",
+    });
+    homeData.gallery.forEach((photo, index) => {
+        addPhoto({
+            id: `home-gallery-${index}`,
+            title: photo.alt,
+            year: photo.alt.match(/\d{4}/)?.[0] || "Home",
+            image: photo.image,
+            category: "Home",
+        });
+    });
+    homeData.sponsors.forEach((sponsor, index) => {
+        addPhoto({
+            id: `home-sponsor-${index}`,
+            title: sponsor.name,
+            year: "Sponsor",
+            image: sponsor.logo,
+            category: "Sponsors",
+        });
+    });
+
+    addPhoto({
+        id: "2026-local-flyer",
+        title: "Cavic Festival 2026 flyer",
+        year: "2026",
+        image: "/2026-festival-flyer.png",
+        category: "Flyers",
+    });
+
+    (Object.entries(workshopsData) as [string, (typeof workshopsData)[keyof typeof workshopsData]][]).forEach(
+        ([year, workshops]) => {
+            workshops.forEach((workshop, workshopIndex) => {
+                workshop.speakers.forEach((speaker, speakerIndex) => {
+                    addPhoto({
+                        id: `${year}-workshop-${workshopIndex}-speaker-${speakerIndex}`,
+                        title: speaker.name,
+                        description: speaker.bio,
+                        year,
+                        image: speaker.image,
+                        category: "Workshops",
+                    });
+                });
+                workshop.images.forEach((image, imageIndex) => {
+                    addPhoto({
+                        id: `${year}-workshop-${workshopIndex}-image-${imageIndex}`,
+                        title: image.alt,
+                        year,
+                        image: image.src,
+                        category: "Workshops",
+                    });
+                });
+            });
+        },
+    );
+
+    return [...items, ...photos];
 }
 
 type GalleryImageProps = Omit<ComponentProps<typeof Image>, "src" | "alt"> & {
@@ -544,6 +767,9 @@ function PhotoGalleryGrid({ items }: { items: MediaItem[] }) {
                         loading: "lazy",
                         decoding: "async",
                         className: "react-photo-album--image",
+                        onError: (event: SyntheticEvent<HTMLImageElement>) => {
+                            event.currentTarget.src = fallbackImage;
+                        },
                     },
                 }}
                 render={{
@@ -557,6 +783,143 @@ function PhotoGalleryGrid({ items }: { items: MediaItem[] }) {
                     ),
                 }}
             />
+        </div>
+    );
+}
+
+function PhotoGridControls({
+    category,
+    categoryOptions,
+    currentPage,
+    from,
+    onCategoryChange,
+    onPageChange,
+    onYearChange,
+    pageCount,
+    total,
+    to,
+    year,
+    yearOptions,
+}: {
+    category: "All" | PhotoCategory;
+    categoryOptions: PhotoCategory[];
+    currentPage: number;
+    from: number;
+    onCategoryChange: (category: "All" | PhotoCategory) => void;
+    onPageChange: (page: number) => void;
+    onYearChange: (year: string) => void;
+    pageCount: number;
+    total: number;
+    to: number;
+    year: string;
+    yearOptions: string[];
+}) {
+    return (
+        <div className="mb-3 rounded-lg border border-zinc-200 bg-white p-3 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-4">
+            <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+                <div>
+                    <p className="text-sm font-black uppercase tracking-normal text-orange-700 dark:text-orange-400">
+                        Photo grid
+                    </p>
+                    <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
+                        Showing {total === 0 ? 0 : from}-{to} of {total} images
+                    </p>
+                </div>
+                <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end">
+                    <label className="flex items-center gap-2 text-sm font-bold text-zinc-700 dark:text-zinc-200">
+                        <span>Year</span>
+                        <select
+                            value={year}
+                            onChange={(event) => onYearChange(event.target.value)}
+                            className="h-10 rounded-md border border-zinc-200 bg-white px-3 text-sm font-semibold text-zinc-950 outline-none transition focus:border-orange-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white"
+                        >
+                            <option value="All">All</option>
+                            {yearOptions.map((option) => (
+                                <option key={option} value={option}>
+                                    {option}
+                                </option>
+                            ))}
+                        </select>
+                    </label>
+                    <label className="flex items-center gap-2 text-sm font-bold text-zinc-700 dark:text-zinc-200">
+                        <span>Collection</span>
+                        <select
+                            value={category}
+                            onChange={(event) =>
+                                onCategoryChange(
+                                    event.target.value as "All" | PhotoCategory,
+                                )
+                            }
+                            className="h-10 rounded-md border border-zinc-200 bg-white px-3 text-sm font-semibold text-zinc-950 outline-none transition focus:border-orange-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white"
+                        >
+                            <option value="All">All</option>
+                            {categoryOptions.map((option) => (
+                                <option key={option} value={option}>
+                                    {option}
+                                </option>
+                            ))}
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            {pageCount > 1 && (
+                <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-zinc-100 pt-3 dark:border-zinc-800">
+                    <button
+                        type="button"
+                        onClick={() => onPageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        className="inline-flex h-10 items-center gap-2 rounded-md border border-zinc-200 bg-white px-3 text-sm font-bold text-zinc-700 transition hover:border-orange-300 hover:text-orange-700 disabled:cursor-not-allowed disabled:opacity-40 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200"
+                    >
+                        <ChevronLeft className="h-4 w-4" />
+                        Previous
+                    </button>
+                    <div className="flex items-center gap-1">
+                        {Array.from({ length: pageCount }, (_, index) => index + 1)
+                            .filter(
+                                (page) =>
+                                    page === 1 ||
+                                    page === pageCount ||
+                                    Math.abs(page - currentPage) <= 1,
+                            )
+                            .map((page, index, pages) => {
+                                const previous = pages[index - 1];
+                                return (
+                                    <span
+                                        key={`page-${page}`}
+                                        className="inline-flex items-center gap-1"
+                                    >
+                                        {previous && page - previous > 1 && (
+                                            <span className="px-1 text-sm font-bold text-zinc-400">
+                                                ...
+                                            </span>
+                                        )}
+                                        <button
+                                            type="button"
+                                            onClick={() => onPageChange(page)}
+                                            className={`grid h-10 min-w-10 place-items-center rounded-md border px-3 text-sm font-black transition ${
+                                                currentPage === page
+                                                    ? "border-orange-600 bg-orange-600 text-white"
+                                                    : "border-zinc-200 bg-white text-zinc-700 hover:border-orange-300 hover:text-orange-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200"
+                                            }`}
+                                        >
+                                            {page}
+                                        </button>
+                                    </span>
+                                );
+                            })}
+                    </div>
+                    <button
+                        type="button"
+                        onClick={() => onPageChange(currentPage + 1)}
+                        disabled={currentPage === pageCount}
+                        className="inline-flex h-10 items-center gap-2 rounded-md border border-zinc-200 bg-white px-3 text-sm font-bold text-zinc-700 transition hover:border-orange-300 hover:text-orange-700 disabled:cursor-not-allowed disabled:opacity-40 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200"
+                    >
+                        Next
+                        <ChevronRight className="h-4 w-4" />
+                    </button>
+                </div>
+            )}
         </div>
     );
 }
@@ -602,6 +965,11 @@ function TextMediaCard({ item }: { item: MediaItem }) {
 
 export default function GalleryPage() {
     const [activeFilter, setActiveFilter] = useState<GalleryFilter>("All");
+    const [photoYearFilter, setPhotoYearFilter] = useState("All");
+    const [photoCategoryFilter, setPhotoCategoryFilter] = useState<
+        "All" | PhotoCategory
+    >("All");
+    const [photoPage, setPhotoPage] = useState(1);
     const allItems = useMemo(() => buildItems(), []);
     const heroSlides = useMemo(() => getHeroSlides(), []);
     const filteredItems = allItems
@@ -609,9 +977,43 @@ export default function GalleryPage() {
         .sort((first, second) => {
             if (activeFilter !== "All") return 0;
             return allTabOrder[first.kind] - allTabOrder[second.kind];
-        })
-        .slice(0, activeFilter === "All" ? 30 : 42);
-    const visiblePhotos = filteredItems.filter((item) => item.kind === "Photos");
+        });
+    const allPhotos = allItems.filter((item) => item.kind === "Photos");
+    const photoYearOptions = Array.from(
+        new Set(
+            allPhotos
+                .map((item) => item.year)
+                .filter((year) => /^\d{4}$/.test(year)),
+        ),
+    ).sort((a, b) => {
+        const numericA = Number(a);
+        const numericB = Number(b);
+        if (!Number.isNaN(numericA) && !Number.isNaN(numericB)) {
+            return numericB - numericA;
+        }
+        return a.localeCompare(b);
+    });
+    const photoCategoryOptions = photoCategories.filter((category) =>
+        allPhotos.some((photo) => photo.category === category),
+    );
+    const visiblePhotos = allPhotos.filter(
+        (item) =>
+            (photoYearFilter === "All" || item.year === photoYearFilter) &&
+            (photoCategoryFilter === "All" ||
+                item.category === photoCategoryFilter),
+    );
+    const photoPageCount = Math.max(
+        1,
+        Math.ceil(visiblePhotos.length / photoPageSize),
+    );
+    const normalizedPhotoPage = Math.min(photoPage, photoPageCount);
+    const photoStartIndex = (normalizedPhotoPage - 1) * photoPageSize;
+    const paginatedPhotos = visiblePhotos.slice(
+        photoStartIndex,
+        photoStartIndex + photoPageSize,
+    );
+    const photoFrom = visiblePhotos.length === 0 ? 0 : photoStartIndex + 1;
+    const photoTo = Math.min(photoStartIndex + photoPageSize, visiblePhotos.length);
     const visibleVideos = filteredItems.filter((item) => item.kind === "Videos");
     const visibleSupportItems = filteredItems.filter(
         (item) => item.kind === "Activities" || item.kind === "Exhibits",
@@ -628,6 +1030,36 @@ export default function GalleryPage() {
         window.history.scrollRestoration = "manual";
         window.scrollTo({ top: 0, left: 0 });
     }, []);
+
+    useEffect(() => {
+        setPhotoPage(1);
+    }, [activeFilter, photoCategoryFilter, photoYearFilter]);
+
+    useEffect(() => {
+        if (photoPage > photoPageCount) {
+            setPhotoPage(photoPageCount);
+        }
+    }, [photoPage, photoPageCount]);
+
+    useEffect(() => {
+        if (
+            photoCategoryFilter !== "All" &&
+            !photoCategoryOptions.includes(photoCategoryFilter)
+        ) {
+            setPhotoCategoryFilter("All");
+        }
+        if (
+            photoYearFilter !== "All" &&
+            !photoYearOptions.includes(photoYearFilter)
+        ) {
+            setPhotoYearFilter("All");
+        }
+    }, [
+        photoCategoryFilter,
+        photoCategoryOptions,
+        photoYearFilter,
+        photoYearOptions,
+    ]);
 
     return (
         <main
@@ -683,7 +1115,28 @@ export default function GalleryPage() {
 
                 {(activeFilter === "All" || activeFilter === "Photos") && (
                     <section className="mb-6">
-                        <PhotoGalleryGrid items={visiblePhotos} />
+                        <PhotoGridControls
+                            category={photoCategoryFilter}
+                            categoryOptions={photoCategoryOptions}
+                            currentPage={normalizedPhotoPage}
+                            from={photoFrom}
+                            onCategoryChange={setPhotoCategoryFilter}
+                            onPageChange={(nextPage) =>
+                                setPhotoPage(
+                                    Math.min(
+                                        Math.max(nextPage, 1),
+                                        photoPageCount,
+                                    ),
+                                )
+                            }
+                            onYearChange={setPhotoYearFilter}
+                            pageCount={photoPageCount}
+                            total={visiblePhotos.length}
+                            to={photoTo}
+                            year={photoYearFilter}
+                            yearOptions={photoYearOptions}
+                        />
+                        <PhotoGalleryGrid items={paginatedPhotos} />
                     </section>
                 )}
 
