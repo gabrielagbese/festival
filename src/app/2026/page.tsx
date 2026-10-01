@@ -8,12 +8,14 @@ export default function Festival2026() {
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                     {/* Flyer Image */}
-                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
+                    <div className="rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
                         <Image
-                            src="/2026-festival-flyer.png"
-                            alt="Cavic Festival 2026"
-                            fill
-                            className="object-cover"
+                            src="/2026-festival-artwork.png"
+                            alt="Cavic Festival of Creativity and Technology — Infinite Realms: Beyond Imagination"
+                            width={1528}
+                            height={1346}
+                            sizes="(min-width: 1024px) 552px, calc(100vw - 32px)"
+                            className="h-auto w-full"
                             priority
                         />
                     </div>
