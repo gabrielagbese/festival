@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TixCheckout from "@/components/TixCheckout";
 
 export default function Festival2026() {
     return (
@@ -57,6 +58,13 @@ export default function Festival2026() {
                             </div>
                         </div>
 
+                        <a
+                            href="#tickets"
+                            className="mb-6 inline-flex w-fit items-center justify-center rounded-lg bg-orange-600 px-8 py-4 font-semibold text-white shadow-sm transition-colors hover:bg-orange-700"
+                        >
+                            Get Tickets
+                        </a>
+
                         {/* View Past Editions */}
                         <div className="flex flex-wrap gap-3">
                             <a
@@ -74,6 +82,26 @@ export default function Festival2026() {
                         </div>
                     </div>
                 </div>
+
+                <section
+                    id="tickets"
+                    aria-labelledby="tickets-heading"
+                    className="mb-16 scroll-mt-28 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-8 lg:p-12"
+                >
+                    <div className="mb-8 text-center">
+                        <h2
+                            id="tickets-heading"
+                            className="mb-3 text-3xl font-bold text-zinc-900 dark:text-white lg:text-4xl"
+                        >
+                            Get Your Cavic 2026 Tickets
+                        </h2>
+                        <p className="mx-auto max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+                            Join us in Abuja to celebrate creativity, technology,
+                            and culture. Choose your tickets below.
+                        </p>
+                    </div>
+                    <TixCheckout />
+                </section>
 
                 {/* Registration CTA Section */}
                 <section className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 lg:p-12 text-center text-white shadow-xl">

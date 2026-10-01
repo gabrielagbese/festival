@@ -60,19 +60,18 @@ export default function Home() {
                             </p>
                             <div className="mb-8 p-4 bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 rounded-r-md">
                                 <div className="text-2xl font-bold text-orange-600 dark:text-orange-500">
-                                    Coming Soon
+                                    Tickets Available
                                 </div>
                                 
                             </div>
                             <div>
-                                <Link href="/2026">
-                                    <Button
-                                        size="lg"
-                                        className="bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200 rounded-md px-8 h-12 text-base font-medium transition-all"
-                                    >
-                                        Learn More
-                                    </Button>
-                                </Link>
+                                <Button
+                                    asChild
+                                    size="lg"
+                                    className="bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200 rounded-md px-8 h-12 text-base font-medium transition-all"
+                                >
+                                    <Link href="/2026#tickets">Get Tickets</Link>
+                                </Button>
                             </div>
                         </div>
                     </div>
