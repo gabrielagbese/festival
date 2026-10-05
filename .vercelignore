@@ -1,0 +1,10 @@
+/node_modules/
+/.next/
+/data/
+/.env*
+/.vercel/
+/test-results/
+/playwright-report/
+*.tsbuildinfo
+/.agents/
+/skills-lock.json

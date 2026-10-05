@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ticketing runtime data
+/data/
+/.node_modules-before-ticketing/
+/test-results/
+/playwright-report/
+!.env.example
+.env*.local

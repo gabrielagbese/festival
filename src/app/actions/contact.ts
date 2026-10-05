@@ -3,7 +3,6 @@
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const schema = z.object({
     name: z.string().min(1, "Name is required"),
@@ -27,9 +26,11 @@ export async function sendEmail(prevState: any, formData: FormData) {
     const { name, email, message } = validatedFields.data;
 
     try {
-        await resend.emails.send({
-            from: "Festival Contact Form <onboarding@resend.dev>",
-            to: process.env.CONTACT_EMAIL || "your-email@example.com",
+        if (!process.env.RESEND_API_KEY || !process.env.EMAIL_FROM) throw new Error("Email delivery is not configured.");
+        const resend = new Resend(process.env.RESEND_API_KEY);
+        const { error } = await resend.emails.send({
+            from: process.env.EMAIL_FROM,
+            to: process.env.CONTACT_EMAIL || "submissions@cavicfestival.africa",
             subject: `New Contact Form Submission from ${name}`,
             text: `
 Name: ${name}
@@ -38,6 +39,7 @@ Message: ${message}
       `,
             replyTo: email,
         });
+        if (error) throw new Error(error.message);
 
         return { success: true };
     } catch (error) {

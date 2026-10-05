@@ -72,6 +72,9 @@ const Footer = () => {
                     <p className="text-sm text-muted-foreground">
                         &copy; 2025 Cavic Nigeria. All rights reserved.
                     </p>
+                    <div className="mt-4">
+                        <Link href="/dashboard" className="text-xs text-muted-foreground hover:text-accent">Organiser dashboard</Link>
+                    </div>
                     <div>
                         <p className="text-gray-500 font-chakra-petch">
                             Developed by{" "}

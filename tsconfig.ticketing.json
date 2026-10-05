@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "plugins": []
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/lib/ticketing/**/*.ts",
+    "src/components/ticketing/**/*.tsx",
+    "src/components/SiteAnalytics.tsx",
+    "src/app/2026/**/*.tsx",
+    "src/app/actions/contact.ts",
+    "src/app/dashboard/**/*.tsx",
+    "src/app/login/**/*.tsx",
+    "src/app/orders/**/*.tsx",
+    "src/app/events/**/*.tsx",
+    "src/app/api/**/*.ts",
+    "tests/ticketing.test.ts"
+  ],
+  "exclude": ["node_modules", ".next"]
+}

@@ -1,0 +1,2617 @@
+.cavic-ticketing {
+  --paper: #f6f4ec;
+  --white: #fffef9;
+  --ink: #213d32;
+  --muted: #747d70;
+  --line: #e2e5d9;
+  --lime: #dceca3;
+  --olive: #315440;
+  --orange: #cf6948;
+  --display: "Instrument Serif", Georgia, serif;
+  --body: "DM Sans", "Avenir Next", sans-serif;
+}
+.cavic-ticketing * {
+  box-sizing: border-box;
+}
+.cavic-ticketing {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.cavic-ticketing button,
+.cavic-ticketing input,
+.cavic-ticketing select,
+.cavic-ticketing textarea {
+  font: inherit;
+}
+.cavic-ticketing button,
+.cavic-ticketing a,
+.cavic-ticketing input,
+.cavic-ticketing textarea,
+.cavic-ticketing select {
+  -webkit-tap-highlight-color: transparent;
+}
+.cavic-ticketing button,
+.cavic-ticketing a {
+  touch-action: manipulation;
+}
+.cavic-ticketing a {
+  color: inherit;
+  text-decoration: none;
+}
+.cavic-ticketing button {
+  cursor: pointer;
+}
+.cavic-ticketing button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.cavic-ticketing button {
+  transition:
+    background 0.15s,
+    transform 0.15s;
+}
+.cavic-ticketing button:not(:disabled):active {
+  transform: translateY(1px);
+}
+.cavic-ticketing :focus-visible {
+  outline: 3px solid #a5bc64;
+  outline-offset: 4px;
+}
+.cavic-ticketing h1,
+.cavic-ticketing h2,
+.cavic-ticketing h3,
+.cavic-ticketing p {
+  margin-top: 0;
+}
+.cavic-ticketing h1,
+.cavic-ticketing h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 1.05;
+}
+.cavic-ticketing h1 {
+  letter-spacing: -1.4px;
+}
+.cavic-ticketing h2 {
+  letter-spacing: -0.5px;
+}
+.cavic-ticketing h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.cavic-ticketing small {
+  font-size: 12px;
+}
+.cavic-ticketing svg {
+  flex-shrink: 0;
+}
+.cavic-ticketing button {
+  border: 0;
+}
+.cavic-ticketing fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.cavic-ticketing .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.cavic-ticketing [hidden] {
+  display: none !important;
+}
+.cavic-ticketing .eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 650;
+}
+.cavic-ticketing .muted {
+  color: var(--muted);
+}
+.cavic-ticketing .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 31px;
+  font-weight: 650;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+.cavic-ticketing .brand-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 38px;
+  color: var(--paper);
+  background: var(--ink);
+  font: italic 40px/1 var(--display);
+  border-radius: 2px 12px 2px 12px;
+  padding: 0 4px 5px 0;
+}
+.cavic-ticketing .brand-dot {
+  font: 11px var(--body);
+  align-self: flex-start;
+  margin-top: 3px;
+}
+.cavic-ticketing .brand.light {
+  color: var(--paper);
+}
+.cavic-ticketing .brand.light .brand-symbol {
+  background: var(--lime);
+  color: var(--ink);
+}
+.cavic-ticketing .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 20px;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 550;
+  white-space: nowrap;
+  min-height: 44px;
+}
+.cavic-ticketing .button:hover:not(:disabled) {
+  background: #335947;
+}
+.cavic-ticketing .button.secondary {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.cavic-ticketing .button.secondary:hover:not(:disabled) {
+  background: #e8ecdf;
+}
+.cavic-ticketing .button.small {
+  padding: 9px 13px;
+  min-height: 36px;
+  font-size: 12px;
+}
+.cavic-ticketing .button.wide {
+  width: 100%;
+  justify-content: space-between;
+}
+.cavic-ticketing .text-link,
+.cavic-ticketing .text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.cavic-ticketing .text-button {
+  background: none;
+  color: var(--ink);
+  padding: 4px;
+}
+.cavic-ticketing .pill {
+  border: 1px solid #bdc5b6;
+  border-radius: 40px;
+  padding: 5px 12px;
+  font-size: 11px;
+}
+.cavic-ticketing .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 17px;
+  font-size: 12px;
+  font-weight: 550;
+}
+.cavic-ticketing .field input,
+.cavic-ticketing .field select,
+.cavic-ticketing .field textarea,
+.cavic-ticketing .orders-toolbar select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--white);
+  padding: 11px 12px;
+  min-height: 42px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 400;
+}
+.cavic-ticketing .field input::placeholder,
+.cavic-ticketing .field textarea::placeholder {
+  color: #9aa090;
+}
+.cavic-ticketing .field textarea {
+  resize: vertical;
+}
+.cavic-ticketing .field small {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.cavic-ticketing .check-field {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 16px 0;
+  line-height: 1.6;
+}
+.cavic-ticketing .check-field input {
+  margin-top: 4px;
+  accent-color: var(--ink);
+  flex-shrink: 0;
+}
+.cavic-ticketing .notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #e9eddd;
+  border: 1px solid #dce3ca;
+  color: #536045;
+  border-radius: 5px;
+  padding: 13px 16px;
+  font-size: 12px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.cavic-ticketing .notice.error {
+  background: #f9e9e2;
+  border-color: #edcabc;
+  color: #9f482b;
+}
+.cavic-ticketing .notice.success {
+  background: #e4eddc;
+  border-color: #d0ddc0;
+  color: #3c5b2c;
+}
+.cavic-ticketing .notice button {
+  background: transparent;
+  color: inherit;
+}
+.cavic-ticketing .status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  font-size: 10px;
+  font-weight: 550;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background: #eff0e9;
+  color: #78806e;
+}
+.cavic-ticketing .status.published,
+.cavic-ticketing .status.paid {
+  background: #e7efda;
+  color: #4c6b35;
+}
+.cavic-ticketing .status.published::before,
+.cavic-ticketing .status.paid::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #6e923e;
+  border-radius: 50%;
+}
+.cavic-ticketing .status.review,
+.cavic-ticketing .status.failed,
+.cavic-ticketing .status.reversed {
+  background: #f8e6dc;
+  color: #a2593f;
+}
+.cavic-ticketing .status.pending {
+  background: #f5edd4;
+  color: #8a772e;
+}
+/* Buyer experience: a printed programme and a ticket counter. */
+.cavic-ticketing .public-header {
+  max-width: 1300px;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .public-header nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-size: 12px;
+}
+.cavic-ticketing .public-header nav a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cavic-ticketing .organiser-link {
+  color: var(--muted);
+  border-left: 1px solid var(--line);
+  padding-left: 28px;
+}
+.cavic-ticketing .public-main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 34px 50px 70px;
+}
+.cavic-ticketing .preview-banner {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  color: #797e65;
+  padding-bottom: 24px;
+}
+.cavic-ticketing .event-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(340px, 1fr);
+  gap: 68px;
+  align-items: start;
+}
+.cavic-ticketing .event-story {
+  padding-top: 10px;
+}
+.cavic-ticketing .event-kicker {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cavic-ticketing .event-kicker .eyebrow {
+  font-size: 9px;
+  color: var(--muted);
+}
+.cavic-ticketing .event-story h1 {
+  font-size: clamp(52px, 6.6vw, 86px);
+  margin: 25px 0 27px;
+  max-width: 620px;
+  line-height: 0.97;
+}
+.cavic-ticketing .event-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  font-size: 11px;
+  margin-bottom: 29px;
+}
+.cavic-ticketing .event-facts span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.cavic-ticketing .poster {
+  position: relative;
+  overflow: hidden;
+  background: #e4d8bc;
+  color: #243d32;
+  border-radius: 5px;
+  aspect-ratio: 1.28;
+  isolation: isolate;
+}
+.cavic-ticketing .poster:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.7' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.cavic-ticketing .poster svg {
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  left: -2.5%;
+  top: -2%;
+}
+.cavic-ticketing .poster-label {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+.cavic-ticketing .poster-name {
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  right: 25px;
+  font: 44px/0.94 var(--display);
+  color: #f3edda;
+  max-width: 370px;
+  z-index: 1;
+}
+.cavic-ticketing .poster-foot {
+  position: absolute;
+  bottom: 16px;
+  left: 25px;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #ced8b8;
+  z-index: 1;
+}
+.cavic-ticketing .about-event {
+  padding: 40px 0 20px;
+}
+.cavic-ticketing .about-event h2 {
+  font-size: 38px;
+  margin: 14px 0 18px;
+}
+.cavic-ticketing .about-event p {
+  color: #6a7466;
+  font-size: 14px;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+.cavic-ticketing .event-promise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+.cavic-ticketing .booking-card {
+  margin-top: 8px;
+  background: var(--white);
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 7px 26px #243d3205;
+}
+.cavic-ticketing .booking-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cavic-ticketing .booking-card h2 {
+  font-size: 42px;
+  margin: 13px 0 10px;
+}
+.cavic-ticketing .booking-card > .muted {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+.cavic-ticketing .ticket-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cavic-ticketing .ticket-option {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 16px 13px;
+  cursor: pointer;
+}
+.cavic-ticketing .ticket-option.selected {
+  border-color: #66835c;
+  background: #f1f5e9;
+}
+.cavic-ticketing .ticket-option input {
+  accent-color: var(--ink);
+  margin-top: 4px;
+}
+.cavic-ticketing .ticket-option > span {
+  flex: 1;
+}
+.cavic-ticketing .ticket-option strong {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+.cavic-ticketing .ticket-option small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.cavic-ticketing .ticket-option b {
+  font-size: 13px;
+}
+.cavic-ticketing .quantity-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 0;
+  font-size: 12px;
+}
+.cavic-ticketing .stepper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 5px;
+}
+.cavic-ticketing .stepper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 24px;
+  height: 26px;
+  color: var(--ink);
+}
+.cavic-ticketing .stepper output {
+  font-size: 12px;
+  min-width: 10px;
+  text-align: center;
+}
+.cavic-ticketing .form-divider {
+  border-top: 1px dashed var(--line);
+  padding: 20px 0 15px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+.cavic-ticketing .total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding: 21px 0;
+  font-size: 12px;
+}
+.cavic-ticketing .total-row small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+.cavic-ticketing .total-row strong {
+  font-size: 25px;
+  font-weight: 500;
+}
+.cavic-ticketing .payment-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 10px;
+  color: var(--muted);
+  padding-top: 15px;
+}
+.cavic-ticketing .setup-note {
+  font-size: 10px;
+  text-align: center;
+  color: #8b7863;
+  margin: 10px 0 0;
+}
+.cavic-ticketing .booking-card .text-link {
+  margin-bottom: 12px;
+}
+.cavic-ticketing .more-events {
+  margin-top: 65px;
+  border-top: 1px solid var(--line);
+  padding-top: 35px;
+}
+.cavic-ticketing .more-events h2 {
+  font-size: 36px;
+}
+.cavic-ticketing .other-events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cavic-ticketing .other-events a {
+  position: relative;
+  border: 1px solid var(--line);
+  padding: 25px;
+  border-radius: 5px;
+}
+.cavic-ticketing .other-events h3 {
+  font-family: var(--display);
+  font-size: 27px;
+  margin: 15px 0 10px;
+}
+.cavic-ticketing .other-events p {
+  font-size: 11px;
+  color: var(--muted);
+}
+.cavic-ticketing .other-events svg {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+.cavic-ticketing .public-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+.cavic-ticketing .public-footer .brand {
+  color: var(--ink);
+  font-size: 25px;
+}
+.cavic-ticketing .empty-public {
+  padding: 80px;
+  max-width: 800px;
+  margin: auto;
+}
+.cavic-ticketing .empty-public h1 {
+  font-size: 64px;
+  margin-top: 70px;
+}
+/* Organiser workspace. */
+.cavic-ticketing.dashboard-shell {
+  display: flex;
+  min-height: 100vh;
+}
+.cavic-ticketing .sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 230px;
+  background: #203e33;
+  color: #d1dacb;
+  padding: 34px 23px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+.cavic-ticketing .sidebar > .brand {
+  margin-left: 7px;
+}
+.cavic-ticketing .workspace-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 37px 0 30px;
+  border-top: 1px solid #ffffff16;
+  border-bottom: 1px solid #ffffff16;
+  padding: 19px 0;
+  font-size: 11px;
+  color: #e9eedd;
+}
+.cavic-ticketing .workspace-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #79917a;
+  border-radius: 6px;
+  width: 33px;
+  height: 33px;
+  background: #ffffff08;
+  font-family: var(--display);
+  font-size: 22px;
+}
+.cavic-ticketing .workspace-tag small {
+  display: block;
+  color: #8eab96;
+  font-size: 9px;
+  margin-top: 2px;
+}
+.cavic-ticketing .sidebar-label {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #8daa96;
+  margin: 0 11px 12px;
+}
+.cavic-ticketing .sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cavic-ticketing .sidebar nav button,
+.cavic-ticketing .sidebar-bottom a,
+.cavic-ticketing .sidebar-bottom button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 12px;
+  text-align: left;
+  color: #b4c5b6;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.cavic-ticketing .sidebar nav button.active {
+  background: var(--lime);
+  color: var(--ink);
+  font-weight: 600;
+}
+.cavic-ticketing .sidebar nav button:hover:not(.active) {
+  background: #ffffff0c;
+}
+.cavic-ticketing .nav-dot {
+  margin-left: auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+.cavic-ticketing .sidebar-bottom {
+  margin-top: auto;
+  padding-top: 50px;
+}
+.cavic-ticketing .sidebar-note {
+  display: block;
+  border-top: 1px solid #ffffff16;
+  padding-top: 19px;
+  margin-top: 18px;
+  color: #829f8b;
+  font-size: 9px;
+}
+.cavic-ticketing .dashboard-body {
+  margin-left: 230px;
+  flex: 1;
+  min-width: 0;
+}
+.cavic-ticketing .dashboard-topbar {
+  height: 73px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 9px;
+  letter-spacing: 0.6px;
+}
+.cavic-ticketing .dashboard-topbar > span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #78806e;
+}
+.cavic-ticketing .dashboard-topbar > div {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.cavic-ticketing .mode-pill {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cavic-ticketing .mode-pill:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #6b8e45;
+  border-radius: 50%;
+}
+.cavic-ticketing .admin-avatar {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #dfdfc8;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cavic-ticketing .dashboard-main {
+  padding: 39px 40px 25px;
+  max-width: 1550px;
+  margin: auto;
+}
+.cavic-ticketing .page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 29px;
+}
+.cavic-ticketing .page-title h1 {
+  font-size: 48px;
+  margin: 11px 0 9px;
+}
+.cavic-ticketing .page-title p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+}
+.cavic-ticketing .page-title > .button {
+  align-self: center;
+}
+.cavic-ticketing .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 27px;
+}
+.cavic-ticketing .stat-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  padding: 20px;
+}
+.cavic-ticketing .stat-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.cavic-ticketing .stat-card .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+.cavic-ticketing .stat-card > strong {
+  font-weight: 400;
+  display: block;
+  font-family: var(--display);
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 15px 0 8px;
+}
+.cavic-ticketing .stat-card > small {
+  font-size: 9px;
+  color: #8a917f;
+}
+.cavic-ticketing .overview-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 22px;
+  margin-bottom: 26px;
+}
+.cavic-ticketing .panel {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.cavic-ticketing .panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 22px 23px;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .panel-heading h2 {
+  font-family: var(--body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+.cavic-ticketing .panel-heading .muted {
+  font-size: 10px;
+}
+.cavic-ticketing .event-row {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 24px 22px;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .event-row:last-child {
+  border-bottom: 0;
+}
+.cavic-ticketing .event-thumbnail {
+  background: #e5d7bc;
+  border-radius: 4px;
+  flex-shrink: 0;
+  width: 57px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  overflow: hidden;
+}
+.cavic-ticketing .event-thumbnail span {
+  font-size: 56px;
+  line-height: 1;
+}
+.cavic-ticketing .event-row-info {
+  flex: 1;
+  min-width: 0;
+}
+.cavic-ticketing .event-row-info > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.cavic-ticketing .event-row-info h3 {
+  font-size: 12px;
+  margin: 0 0 5px;
+}
+.cavic-ticketing .event-row-info p {
+  color: var(--muted);
+  font-size: 9px;
+  margin: 0 0 12px;
+}
+.cavic-ticketing .event-row-info small {
+  font-size: 8px;
+  color: var(--muted);
+}
+.cavic-ticketing .sample-label {
+  font-size: 7px;
+  letter-spacing: 0.7px;
+  color: #9d8d75;
+  background: #f4eddf;
+  padding: 3px 5px;
+  flex-shrink: 0;
+}
+.cavic-ticketing .inventory-track {
+  width: min(100%, 150px);
+  height: 3px;
+  background: #ebede2;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.cavic-ticketing .inventory-track span {
+  display: block;
+  height: 100%;
+  background: #91a76c;
+}
+.cavic-ticketing .event-row .status {
+  font-size: 9px;
+  padding: 4px 8px;
+}
+.cavic-ticketing .event-row .button {
+  font-size: 10px;
+  padding: 8px 9px;
+  min-height: 32px;
+}
+.cavic-ticketing .getting-started {
+  background: #e7edcf;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 25px 25px 20px;
+}
+.cavic-ticketing .getting-started > .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.cavic-ticketing .getting-started h2 {
+  font-size: 35px;
+  line-height: 1.05;
+  margin: 17px 0 13px;
+  position: relative;
+  z-index: 1;
+}
+.cavic-ticketing .getting-started > p {
+  font-size: 10px;
+  color: #74805d;
+  max-width: 180px;
+}
+.cavic-ticketing .setup-step {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border-top: 1px solid #cdd6b4;
+  background: transparent;
+  color: var(--ink);
+  width: 100%;
+  text-align: left;
+  padding: 13px 0;
+  font-size: 10px;
+  position: relative;
+  z-index: 1;
+}
+.cavic-ticketing .setup-step > span {
+  font-size: 9px;
+  display: flex;
+}
+.cavic-ticketing .setup-step > svg {
+  margin-left: auto;
+}
+.cavic-ticketing .asterisk {
+  position: absolute;
+  right: -23px;
+  top: 38px;
+  color: #c7d594;
+  font-size: 145px;
+  line-height: 1;
+}
+.cavic-ticketing .empty-state {
+  text-align: center;
+  padding: 45px 25px;
+  color: var(--muted);
+}
+.cavic-ticketing .empty-state > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background: #f5f6ee;
+  color: #899b77;
+}
+.cavic-ticketing .empty-state h3 {
+  color: var(--ink);
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+.cavic-ticketing .empty-state p {
+  font-size: 11px;
+  max-width: 380px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.cavic-ticketing .dashboard-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #929786;
+  border-top: 1px solid var(--line);
+  padding-top: 23px;
+  margin-top: 35px;
+}
+.cavic-ticketing .dashboard-footer span:last-child {
+  letter-spacing: 0;
+}
+.cavic-ticketing .count-badge {
+  font-size: 9px;
+  background: #edf0e3;
+  border-radius: 20px;
+  padding: 2px 7px;
+  margin-left: 5px;
+}
+.cavic-ticketing .mini-orders > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.cavic-ticketing .mini-orders > div > span:first-child {
+  flex: 1;
+}
+.cavic-ticketing .mini-orders small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 2px;
+}
+.cavic-ticketing .form-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.cavic-ticketing .form-card {
+  padding: 24px;
+}
+.cavic-ticketing .form-card .panel-heading {
+  padding: 0 0 20px;
+  border: 0;
+}
+.cavic-ticketing .form-card h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.cavic-ticketing .form-card > .muted {
+  font-size: 11px;
+}
+.cavic-ticketing .form-field-preview {
+  padding: 10px 0 22px;
+}
+.cavic-ticketing .form-field-preview span,
+.cavic-ticketing .locked-fields span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .form-field-preview b,
+.cavic-ticketing .locked-fields b {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.cavic-ticketing .orders-toolbar {
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .search-field {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 8px 11px;
+  min-width: 100px;
+}
+.cavic-ticketing .search-field input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 100%;
+  font-size: 11px;
+  color: var(--ink);
+  height: 22px;
+}
+.cavic-ticketing .orders-toolbar select {
+  max-width: 140px;
+  font-size: 11px;
+  padding: 10px;
+  min-height: 40px;
+}
+.cavic-ticketing .table-wrap {
+  overflow: auto;
+}
+.cavic-ticketing table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 11px;
+  text-align: left;
+}
+.cavic-ticketing th {
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background: #f8f8f1;
+  padding: 15px 18px;
+  white-space: nowrap;
+}
+.cavic-ticketing td {
+  padding: 19px 18px;
+  vertical-align: top;
+  border-top: 1px solid var(--line);
+}
+.cavic-ticketing td small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  margin-top: 5px;
+}
+.cavic-ticketing td strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 550;
+}
+.cavic-ticketing td details {
+  font-size: 10px;
+  margin-top: 8px;
+  min-width: 130px;
+}
+.cavic-ticketing td details p {
+  margin: 7px 0;
+  font-size: 10px;
+}
+.cavic-ticketing td summary {
+  cursor: pointer;
+  color: #6e8353;
+}
+.cavic-ticketing .delivery-status {
+  font-size: 10px;
+  color: #a68347;
+}
+.cavic-ticketing .delivery-status.good {
+  color: #678142;
+}
+.cavic-ticketing .order-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.cavic-ticketing .order-actions button {
+  background: none;
+  color: #75866a;
+  padding: 0;
+  font-size: 10px;
+}
+.cavic-ticketing .table-footer {
+  padding: 14px 20px;
+  border-top: 1px solid var(--line);
+  font-size: 10px;
+  color: var(--muted);
+}
+.cavic-ticketing .back-button {
+  background: transparent;
+  padding: 0;
+  color: var(--muted);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+.cavic-ticketing .editor-tabs {
+  display: flex;
+  gap: 25px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+}
+.cavic-ticketing .editor-tabs button {
+  background: transparent;
+  padding: 14px 0;
+  font-size: 11px;
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+}
+.cavic-ticketing .editor-tabs button.active {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.cavic-ticketing .editor-section {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 22px;
+}
+.cavic-ticketing .editor-panel {
+  padding: 25px;
+  overflow: visible;
+}
+.cavic-ticketing .editor-panel h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.cavic-ticketing .editor-panel p.muted {
+  font-size: 11px;
+  line-height: 1.8;
+}
+.cavic-ticketing .editor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 18px;
+}
+.cavic-ticketing .field.full {
+  grid-column: 1/-1;
+}
+.cavic-ticketing .editor-panel .panel-heading {
+  padding: 0 0 20px;
+  margin-bottom: 22px;
+}
+.cavic-ticketing .editor-panel .panel-heading h2 {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 0 9px;
+}
+.cavic-ticketing .editor-panel .panel-heading p {
+  margin: 0;
+}
+.cavic-ticketing .ticket-editor-row,
+.cavic-ticketing .custom-field-row {
+  display: flex;
+  align-items: start;
+  gap: 17px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .ticket-editor-row > .editor-grid {
+  flex: 1;
+}
+.cavic-ticketing .row-number {
+  font-size: 10px;
+  color: var(--muted);
+  padding-top: 26px;
+}
+.cavic-ticketing .icon-button {
+  display: flex;
+  background: transparent;
+  color: #9b8877;
+  padding: 8px;
+  margin-top: 17px;
+}
+.cavic-ticketing .custom-field-inputs {
+  flex: 1;
+}
+.cavic-ticketing .locked-fields {
+  background: #f3f5ec;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+.cavic-ticketing .locked-fields span:last-child {
+  border: 0;
+}
+.cavic-ticketing .editor-save {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 25px 0;
+}
+.cavic-ticketing .editor-save > span {
+  margin-right: auto;
+  color: var(--muted);
+  font-size: 11px;
+}
+.cavic-ticketing .checkin-layout,
+.cavic-ticketing .settings-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+.cavic-ticketing .scanner-panel,
+.cavic-ticketing .manual-checkin,
+.cavic-ticketing .setup-guide {
+  padding: 28px;
+}
+.cavic-ticketing .scanner-frame {
+  background: #edf0e3;
+  position: relative;
+  min-height: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 30px;
+}
+.cavic-ticketing .scanner-frame > svg {
+  color: #8eaa70;
+}
+.cavic-ticketing .scanner-frame h2 {
+  font-size: 28px;
+  margin: 25px 0 12px;
+}
+.cavic-ticketing .scanner-frame p {
+  font-size: 11px;
+  color: var(--muted);
+}
+.cavic-ticketing .scanner-frame video {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.cavic-ticketing .scan-corner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: #93a47a;
+  border-style: solid;
+}
+.cavic-ticketing .scan-corner.tl {
+  left: 18px;
+  top: 18px;
+  border-width: 2px 0 0 2px;
+}
+.cavic-ticketing .scan-corner.tr {
+  right: 18px;
+  top: 18px;
+  border-width: 2px 2px 0 0;
+}
+.cavic-ticketing .scan-corner.bl {
+  left: 18px;
+  bottom: 18px;
+  border-width: 0 0 2px 2px;
+}
+.cavic-ticketing .scan-corner.br {
+  right: 18px;
+  bottom: 18px;
+  border-width: 0 2px 2px 0;
+}
+.cavic-ticketing .manual-checkin h2 {
+  font-size: 32px;
+  margin: 17px 0;
+}
+.cavic-ticketing .manual-checkin p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.cavic-ticketing .manual-checkin .notice {
+  margin: 25px 0 0;
+}
+.cavic-ticketing .scanner-panel .notice {
+  margin: 20px 0 0;
+}
+.cavic-ticketing .connection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px;
+  border-bottom: 1px solid var(--line);
+}
+.cavic-ticketing .connection:last-child {
+  border: 0;
+}
+.cavic-ticketing .connection strong {
+  font-size: 12px;
+  display: block;
+}
+.cavic-ticketing .connection small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-top: 5px;
+}
+.cavic-ticketing .setup-guide h2 {
+  font-size: 33px;
+  margin: 18px 0;
+}
+.cavic-ticketing .setup-guide p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.cavic-ticketing .setup-guide .text-link {
+  margin-top: 15px;
+}
+/* Access and issued tickets. */
+.cavic-ticketing.login-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+.cavic-ticketing .login-left {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 70px;
+}
+.cavic-ticketing .login-form {
+  max-width: 360px;
+  margin: auto;
+  width: 100%;
+  padding: 70px 0;
+}
+.cavic-ticketing .login-form h1 {
+  font-size: 58px;
+  margin: 18px 0 22px;
+}
+.cavic-ticketing .login-form > .muted {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.cavic-ticketing .login-form .button {
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+.cavic-ticketing .login-form > small {
+  font-size: 10px;
+}
+.cavic-ticketing .login-left > .eyebrow {
+  color: var(--muted);
+  font-size: 8px;
+}
+.cavic-ticketing .login-art {
+  background: #203e33;
+  display: flex;
+  align-items: center;
+  padding: 55px;
+}
+.cavic-ticketing .login-art .poster {
+  width: 100%;
+  aspect-ratio: 0.85;
+}
+.cavic-ticketing .login-art .poster-name {
+  font-size: 55px;
+  max-width: 360px;
+}
+.cavic-ticketing.order-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 40px 80px;
+}
+.cavic-ticketing .order-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.cavic-ticketing .order-top > a:last-child {
+  font-size: 12px;
+}
+.cavic-ticketing.order-page > h1 {
+  font-size: 65px;
+  margin: 18px 0 20px;
+  max-width: 700px;
+}
+.cavic-ticketing.order-page > p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.cavic-ticketing .print-action {
+  margin: 25px 0;
+}
+.cavic-ticketing .issued-tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.cavic-ticketing .issued-ticket {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+.cavic-ticketing .issued-ticket > div:first-child {
+  padding: 35px;
+}
+.cavic-ticketing .issued-ticket h2 {
+  font-size: 40px;
+  margin: 18px 0;
+}
+.cavic-ticketing .issued-ticket p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.cavic-ticketing .issued-ticket strong {
+  font-size: 14px;
+}
+.cavic-ticketing .qr-wrap {
+  border-left: 1px dashed #cbd3bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.cavic-ticketing .qr-wrap a {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.cavic-ticketing .order-reference {
+  display: block;
+  color: var(--muted);
+  margin-top: 35px;
+  font-size: 10px;
+}
+.cavic-ticketing .issued-ticket.void {
+  opacity: 0.5;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cavic-ticketing .event-story,
+  .cavic-ticketing .booking-card,
+  .cavic-ticketing .page-title,
+  .cavic-ticketing .stats-grid,
+  .cavic-ticketing .overview-grid {
+    animation: arrive 0.45s ease-out both;
+  }
+  .cavic-ticketing .booking-card,
+  .cavic-ticketing .overview-grid {
+    animation-delay: 0.08s;
+  }
+  @keyframes arrive {
+    from {
+      opacity: 0;
+      transform: translateY(7px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+@media (min-width: 1550px) {
+  .cavic-ticketing .dashboard-main {
+    padding: 50px 65px;
+  }
+  .cavic-ticketing .dashboard-topbar {
+    padding: 0 65px;
+  }
+  .cavic-ticketing .page-title h1 {
+    font-size: 55px;
+  }
+  .cavic-ticketing .stat-card {
+    padding: 25px;
+  }
+  .cavic-ticketing .event-row {
+    padding: 32px 24px;
+  }
+}
+@media (max-width: 1150px) {
+  .cavic-ticketing .sidebar {
+    width: 205px;
+    padding: 28px 17px;
+  }
+  .cavic-ticketing .dashboard-body {
+    margin-left: 205px;
+  }
+  .cavic-ticketing .dashboard-main {
+    padding: 30px 25px;
+  }
+  .cavic-ticketing .dashboard-topbar {
+    padding: 0 25px;
+  }
+  .cavic-ticketing .stats-grid {
+    gap: 10px;
+  }
+  .cavic-ticketing .stat-card {
+    padding: 16px;
+  }
+  .cavic-ticketing .stat-card > strong {
+    font-size: 35px;
+  }
+  .cavic-ticketing .stat-card .eyebrow {
+    font-size: 7px;
+  }
+  .cavic-ticketing .stat-card > small {
+    font-size: 8px;
+  }
+  .cavic-ticketing .overview-grid {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 16px;
+  }
+  .cavic-ticketing .event-row {
+    gap: 10px;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+  }
+  .cavic-ticketing .event-row .status {
+    margin-left: auto;
+  }
+  .cavic-ticketing .event-thumbnail {
+    width: 42px;
+    height: 55px;
+  }
+  .cavic-ticketing .event-row-info p {
+    font-size: 8px;
+  }
+  .cavic-ticketing .event-row-info h3 {
+    font-size: 11px;
+  }
+  .cavic-ticketing .event-row-info {
+    min-width: 140px;
+  }
+  .cavic-ticketing .event-row .button {
+    margin-left: auto;
+  }
+  .cavic-ticketing .public-main,
+  .cavic-ticketing .public-header {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .cavic-ticketing .event-layout {
+    gap: 35px;
+  }
+  .cavic-ticketing .booking-card {
+    padding: 24px;
+  }
+  .cavic-ticketing .public-footer {
+    margin: 0 35px;
+  }
+  .cavic-ticketing .editor-section {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .checkin-layout,
+  .cavic-ticketing .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .login-left {
+    padding: 40px;
+  }
+  .cavic-ticketing .login-art {
+    padding: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .cavic-ticketing .sidebar {
+    position: static;
+    width: 100%;
+    padding: 18px 20px;
+    display: block;
+  }
+  .cavic-ticketing .sidebar > .brand {
+    font-size: 26px;
+    margin: 0;
+  }
+  .cavic-ticketing .sidebar .brand-symbol {
+    height: 29px;
+    width: 25px;
+    font-size: 31px;
+  }
+  .cavic-ticketing .workspace-tag,
+  .cavic-ticketing .sidebar-label,
+  .cavic-ticketing .sidebar-bottom,
+  .cavic-ticketing .nav-dot {
+    display: none;
+  }
+  .cavic-ticketing .sidebar nav {
+    flex-direction: row;
+    overflow-x: auto;
+    margin-top: 18px;
+    padding-bottom: 3px;
+  }
+  .cavic-ticketing .sidebar nav button {
+    white-space: nowrap;
+    padding: 9px 10px;
+    font-size: 10px;
+  }
+  .cavic-ticketing .sidebar nav button svg {
+    width: 15px;
+  }
+  .cavic-ticketing.dashboard-shell {
+    display: block;
+  }
+  .cavic-ticketing .dashboard-body {
+    margin: 0;
+  }
+  .cavic-ticketing .dashboard-topbar {
+    height: 56px;
+    padding: 0 24px;
+  }
+  .cavic-ticketing .dashboard-main {
+    padding: 27px 24px;
+  }
+  .cavic-ticketing .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .cavic-ticketing .stat-card > strong {
+    font-size: 42px;
+  }
+  .cavic-ticketing .stat-card .eyebrow {
+    font-size: 8px;
+  }
+  .cavic-ticketing .stat-card > small {
+    font-size: 10px;
+  }
+  .cavic-ticketing .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .event-row {
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+  .cavic-ticketing .event-row-info p {
+    font-size: 10px;
+  }
+  .cavic-ticketing .event-row-info h3 {
+    font-size: 13px;
+  }
+  .cavic-ticketing .getting-started {
+    padding: 25px 30px;
+  }
+  .cavic-ticketing .getting-started h2 {
+    font-size: 40px;
+  }
+  .cavic-ticketing .asterisk {
+    right: 30px;
+    top: 20px;
+    font-size: 185px;
+  }
+  .cavic-ticketing .setup-step {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+  .cavic-ticketing .public-header {
+    padding: 0 25px;
+    height: 85px;
+  }
+  .cavic-ticketing .public-header nav {
+    gap: 20px;
+  }
+  .cavic-ticketing .organiser-link {
+    display: none !important;
+  }
+  .cavic-ticketing .public-main {
+    padding: 25px;
+  }
+  .cavic-ticketing .event-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .cavic-ticketing .event-story h1 {
+    font-size: 75px;
+    max-width: 520px;
+  }
+  .cavic-ticketing .booking-card {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+  }
+  .cavic-ticketing .public-footer {
+    margin: 0 25px;
+  }
+  .cavic-ticketing .event-promise {
+    font-size: 9px;
+  }
+  .cavic-ticketing .other-events {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .form-cards {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing.login-page {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .login-art {
+    display: none;
+  }
+  .cavic-ticketing .login-left {
+    min-height: 100vh;
+    padding: 30px;
+  }
+  .cavic-ticketing .login-form {
+    padding: 50px 0;
+  }
+  .cavic-ticketing .login-left > .eyebrow {
+    text-align: center;
+  }
+  .cavic-ticketing.order-page {
+    padding: 30px 25px;
+  }
+  .cavic-ticketing .issued-ticket {
+    grid-template-columns: 1fr 190px;
+  }
+  .cavic-ticketing .qr-wrap {
+    padding: 10px;
+  }
+  .cavic-ticketing .qr-wrap img {
+    width: 165px;
+    height: 165px;
+  }
+  .cavic-ticketing.order-page > h1 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 500px) {
+  .cavic-ticketing .page-title {
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .cavic-ticketing .page-title h1 {
+    font-size: 40px;
+  }
+  .cavic-ticketing .dashboard-main {
+    padding: 24px 18px;
+  }
+  .cavic-ticketing .dashboard-topbar {
+    padding: 0 18px;
+  }
+  .cavic-ticketing .dashboard-topbar .mode-pill {
+    font-size: 7px;
+  }
+  .cavic-ticketing .stat-card {
+    padding: 16px;
+  }
+  .cavic-ticketing .stat-card > strong {
+    font-size: 38px;
+  }
+  .cavic-ticketing .stat-card > small {
+    font-size: 8px;
+  }
+  .cavic-ticketing .panel-heading {
+    padding: 20px;
+  }
+  .cavic-ticketing .event-row {
+    flex-wrap: wrap;
+    gap: 13px;
+    padding: 20px;
+  }
+  .cavic-ticketing .event-row-info {
+    min-width: 160px;
+  }
+  .cavic-ticketing .event-row .status {
+    margin-left: 55px;
+  }
+  .cavic-ticketing .event-row .button {
+    margin-left: auto;
+  }
+  .cavic-ticketing .event-thumbnail {
+    width: 42px;
+  }
+  .cavic-ticketing .event-row-info p {
+    font-size: 9px;
+  }
+  .cavic-ticketing .event-row-info h3 {
+    font-size: 12px;
+  }
+  .cavic-ticketing .form-cards {
+    gap: 15px;
+  }
+  .cavic-ticketing .orders-toolbar {
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 10px;
+  }
+  .cavic-ticketing .search-field {
+    flex-basis: 100%;
+  }
+  .cavic-ticketing .orders-toolbar select {
+    max-width: none;
+    flex: 1;
+  }
+  .cavic-ticketing .editor-tabs {
+    gap: 14px;
+  }
+  .cavic-ticketing .editor-tabs button {
+    font-size: 9px;
+  }
+  .cavic-ticketing .editor-panel {
+    padding: 20px;
+  }
+  .cavic-ticketing .editor-grid {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .editor-panel .panel-heading {
+    flex-wrap: wrap;
+  }
+  .cavic-ticketing .ticket-editor-row,
+  .cavic-ticketing .custom-field-row {
+    gap: 10px;
+  }
+  .cavic-ticketing .row-number {
+    font-size: 9px;
+  }
+  .cavic-ticketing .custom-field-row .field {
+    font-size: 10px;
+  }
+  .cavic-ticketing .editor-save {
+    flex-wrap: wrap;
+  }
+  .cavic-ticketing .editor-save > span {
+    width: 100%;
+  }
+  .cavic-ticketing .editor-save > .button {
+    flex: 1;
+  }
+  .cavic-ticketing .scanner-panel,
+  .cavic-ticketing .manual-checkin,
+  .cavic-ticketing .setup-guide {
+    padding: 20px;
+  }
+  .cavic-ticketing .connection {
+    padding: 20px;
+    gap: 12px;
+  }
+  .cavic-ticketing .connection small {
+    font-size: 9px;
+  }
+  .cavic-ticketing .connection .status {
+    font-size: 9px;
+  }
+  .cavic-ticketing .dashboard-footer {
+    font-size: 7px;
+  }
+  .cavic-ticketing .public-header {
+    height: 75px;
+    padding: 0 20px;
+  }
+  .cavic-ticketing .public-header .brand {
+    font-size: 27px;
+  }
+  .cavic-ticketing .public-header nav {
+    font-size: 10px;
+    gap: 16px;
+  }
+  .cavic-ticketing .public-header nav > a:first-child {
+    display: none;
+  }
+  .cavic-ticketing .public-main {
+    padding: 25px 20px 45px;
+  }
+  .cavic-ticketing .preview-banner {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+  .cavic-ticketing .event-kicker {
+    gap: 10px;
+  }
+  .cavic-ticketing .event-kicker .eyebrow {
+    font-size: 7px;
+  }
+  .cavic-ticketing .event-kicker .pill {
+    font-size: 9px;
+  }
+  .cavic-ticketing .event-story h1 {
+    font-size: 61px;
+    margin: 25px 0;
+  }
+  .cavic-ticketing .event-facts {
+    font-size: 10px;
+    gap: 13px;
+  }
+  .cavic-ticketing .poster-name {
+    font-size: 36px;
+  }
+  .cavic-ticketing .poster-label {
+    font-size: 7px;
+  }
+  .cavic-ticketing .poster-foot {
+    font-size: 6px;
+  }
+  .cavic-ticketing .about-event h2 {
+    font-size: 33px;
+  }
+  .cavic-ticketing .about-event p {
+    font-size: 13px;
+  }
+  .cavic-ticketing .event-promise {
+    font-size: 7px;
+    gap: 10px;
+  }
+  .cavic-ticketing .booking-card {
+    padding: 24px;
+  }
+  .cavic-ticketing .ticket-option b {
+    font-size: 12px;
+  }
+  .cavic-ticketing .ticket-option strong {
+    font-size: 11px;
+  }
+  .cavic-ticketing .public-footer {
+    margin: 0 20px;
+    font-size: 9px;
+    flex-wrap: wrap;
+  }
+  .cavic-ticketing .public-footer .brand {
+    font-size: 23px;
+  }
+  .cavic-ticketing .public-footer > span:last-child {
+    width: 100%;
+    text-align: right;
+  }
+  .cavic-ticketing .order-top {
+    margin-bottom: 50px;
+  }
+  .cavic-ticketing.order-page > h1 {
+    font-size: 48px;
+  }
+  .cavic-ticketing .issued-ticket {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .issued-ticket > div:first-child {
+    padding: 25px;
+  }
+  .cavic-ticketing .issued-ticket h2 {
+    font-size: 35px;
+  }
+  .cavic-ticketing .qr-wrap {
+    border-left: 0;
+    border-top: 1px dashed var(--line);
+    padding: 20px;
+  }
+  .cavic-ticketing .qr-wrap img {
+    width: 210px;
+    height: 210px;
+  }
+  .cavic-ticketing .order-reference {
+    overflow-wrap: anywhere;
+  }
+}
+@media print {
+  .cavic-ticketing {
+    background: #fff;
+  }
+  .cavic-ticketing .order-top > a,
+  .cavic-ticketing .print-action,
+  .cavic-ticketing .qr-wrap > a {
+    display: none;
+  }
+  .cavic-ticketing.order-page {
+    padding: 0;
+    max-width: none;
+  }
+  .cavic-ticketing .order-top {
+    margin-bottom: 30px;
+  }
+  .cavic-ticketing .issued-ticket {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    grid-template-columns: 1fr 200px;
+    border-color: #bbb;
+    margin-bottom: 20px;
+  }
+  .cavic-ticketing .issued-ticket > div:first-child {
+    padding: 25px;
+  }
+  .cavic-ticketing .qr-wrap {
+    border-top: 0;
+    border-left: 1px dashed #aaa;
+  }
+  .cavic-ticketing .qr-wrap img {
+    width: 180px;
+    height: 180px;
+  }
+  .cavic-ticketing.order-page > h1 {
+    font-size: 40px;
+  }
+  .cavic-ticketing .issued-ticket h2 {
+    font-size: 32px;
+  }
+}
+.cavic-ticketing .mode-pill.unconfigured {
+  color: #94815c;
+}
+.cavic-ticketing .mode-pill.unconfigured:before {
+  background: #bd9e66;
+}
+
+/* Cavic's existing Inter, orange, zinc and dark-mode palette. */
+.cavic-ticketing {
+  --paper: hsl(var(--background));
+  --white: hsl(var(--card));
+  --ink: hsl(var(--foreground));
+  --muted: hsl(var(--muted-foreground));
+  --line: hsl(var(--border));
+  --lime: #ffedd5;
+  --olive: #ea580c;
+  --orange: #ea580c;
+  --display: inherit;
+  --body: inherit;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.cavic-ticketing h1,
+.cavic-ticketing h2,
+.cavic-ticketing h3 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+.cavic-ticketing .button {
+  background: #ea580c;
+  border-color: #ea580c;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.cavic-ticketing .button:hover:not(:disabled) {
+  background: #c2410c;
+}
+.cavic-ticketing .button.secondary {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.cavic-ticketing .button.secondary:hover:not(:disabled) {
+  background: hsl(var(--muted));
+}
+.cavic-ticketing :focus-visible {
+  outline-color: #fb923c;
+}
+.cavic-ticketing input[type="checkbox"],
+.cavic-ticketing input[type="radio"] {
+  accent-color: #ea580c;
+}
+.cavic-ticketing .ticket-option.selected {
+  border-color: #ea580c;
+  background: #fff7ed;
+  color: #18181b;
+}
+.cavic-ticketing .ticket-option.selected small {
+  color: #52525b;
+}
+.cavic-ticketing .sidebar {
+  position: sticky;
+  top: 80px;
+  inset: auto;
+  align-self: flex-start;
+  height: calc(100dvh - 80px);
+  background: #18181b;
+  width: 240px;
+  min-width: 240px;
+  padding: 28px 20px;
+  color: #e4e4e7;
+}
+.cavic-ticketing.dashboard-shell {
+  min-height: calc(100dvh - 80px);
+}
+.cavic-ticketing .dashboard-body {
+  margin-left: 0;
+}
+.cavic-ticketing .sidebar nav button {
+  font-size: 12px;
+  color: #d4d4d8;
+}
+.cavic-ticketing .sidebar nav button.active {
+  background: #ea580c;
+  color: #fff;
+}
+.cavic-ticketing .nav-dot {
+  background: #fff;
+}
+.cavic-ticketing .workspace-tag {
+  color: #fafafa;
+  font-size: 12px;
+}
+.cavic-ticketing .workspace-tag small,
+.cavic-ticketing .sidebar-label,
+.cavic-ticketing .sidebar-note {
+  color: #a1a1aa;
+}
+.cavic-ticketing .workspace-avatar {
+  border-color: #52525b;
+  font-family: inherit;
+  font-weight: 700;
+}
+.cavic-ticketing .sidebar-bottom a,
+.cavic-ticketing .sidebar-bottom button {
+  color: #d4d4d8;
+  font-size: 12px;
+}
+.cavic-ticketing .brand {
+  letter-spacing: -0.02em;
+  gap: 10px;
+  font-size: 17px;
+  line-height: 1.25;
+}
+.cavic-ticketing .brand small {
+  display: block;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: inherit;
+  margin-top: 3px;
+}
+.cavic-ticketing .brand.light {
+  color: #fafafa;
+}
+.cavic-ticketing .brand img {
+  background: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  flex-shrink: 0;
+}
+.cavic-ticketing .page-title h1 {
+  font-size: 36px;
+}
+.cavic-ticketing .stat-card > strong {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+}
+.cavic-ticketing .panel,
+.cavic-ticketing .stat-card {
+  border-radius: 12px;
+}
+.cavic-ticketing .getting-started {
+  background: #fff7ed;
+  color: #18181b;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+}
+.cavic-ticketing .getting-started h2 {
+  font-size: 28px;
+}
+.cavic-ticketing .getting-started > p {
+  color: #71717a;
+}
+.cavic-ticketing .setup-step {
+  color: #18181b;
+  border-color: #fed7aa;
+  font-size: 12px;
+}
+.cavic-ticketing .asterisk {
+  color: #fed7aa;
+}
+.cavic-ticketing .inventory-track span {
+  background: #f97316;
+}
+.cavic-ticketing .inventory-track,
+.cavic-ticketing .locked-fields,
+.cavic-ticketing th,
+.cavic-ticketing .scanner-frame,
+.cavic-ticketing .empty-state > span,
+.cavic-ticketing .count-badge {
+  background: hsl(var(--muted));
+  color: var(--muted);
+}
+.cavic-ticketing .locked-fields,
+.cavic-ticketing th,
+.cavic-ticketing .count-badge {
+  color: var(--ink);
+}
+.cavic-ticketing .event-thumbnail {
+  background: #ffedd5;
+  color: #ea580c;
+}
+.cavic-ticketing .scanner-frame > svg,
+.cavic-ticketing .order-actions button,
+.cavic-ticketing td summary {
+  color: #ea580c;
+}
+.cavic-ticketing .scan-corner {
+  border-color: #f97316;
+}
+.cavic-ticketing .notice {
+  background: #fff7ed;
+  color: #9a3412;
+  border-color: #fed7aa;
+}
+.cavic-ticketing .notice.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+.cavic-ticketing .notice.success {
+  background: #f0fdf4;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+.cavic-ticketing .form-card h2,
+.cavic-ticketing .editor-panel h2,
+.cavic-ticketing .editor-panel .panel-heading h2 {
+  font-family: inherit;
+  font-size: 23px;
+  font-weight: 700;
+}
+.cavic-ticketing .form-card .button {
+  margin-top: 8px;
+}
+.cavic-ticketing .field {
+  font-size: 13px;
+}
+.cavic-ticketing.login-page {
+  min-height: calc(100dvh - 80px);
+}
+.cavic-ticketing.login-page {
+  min-height: calc(100dvh - 80px);
+}
+.cavic-ticketing .login-form h1 {
+  font-size: 40px;
+}
+.cavic-ticketing .login-art {
+  background: #18181b;
+}
+.cavic-ticketing .festival-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.cavic-ticketing .login-left {
+  padding: 40px 60px;
+}
+.cavic-ticketing .login-form {
+  padding: 48px 0;
+  max-width: 400px;
+}
+.cavic-ticketing.order-page > h1,
+.cavic-ticketing.order-page > h1 {
+  font-size: 42px;
+}
+.cavic-ticketing .issued-ticket h2 {
+  font-size: 28px;
+}
+.cavic-ticketing.festival-booking {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 48px;
+  align-items: start;
+  background: transparent;
+}
+.cavic-ticketing .festival-booking-story {
+  position: sticky;
+  top: 110px;
+  padding-top: 24px;
+  overflow: hidden;
+}
+.cavic-ticketing .festival-booking-story > .eyebrow {
+  color: #ea580c;
+  font-size: 10px;
+}
+.cavic-ticketing .festival-booking-story h3 {
+  font-size: 48px;
+  line-height: 1.08;
+  margin: 24px 0;
+}
+.cavic-ticketing .festival-booking-story > p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 370px;
+}
+.cavic-ticketing .festival-booking-facts {
+  display: grid;
+  gap: 22px;
+  border-top: 1px solid var(--line);
+  margin-top: 32px;
+  padding-top: 24px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.cavic-ticketing .festival-booking-facts strong {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.cavic-ticketing .festival-booking-art {
+  font-size: 190px;
+  line-height: 1;
+  color: #ea580c;
+  transform: rotate(-12deg);
+  margin: 24px 0 0 0;
+  opacity: 0.14;
+}
+.cavic-ticketing .booking-card {
+  border-radius: 16px;
+  box-shadow: 0 12px 36px #18181b06;
+  margin-top: 0;
+  padding: 32px;
+}
+.cavic-ticketing .booking-card h2 {
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 20px 0 16px;
+}
+.cavic-ticketing .booking-heading {
+  color: #ea580c;
+}
+.cavic-ticketing .soon-ticket {
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+  padding: 24px 0;
+  margin: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cavic-ticketing .soon-ticket small {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.cavic-ticketing .tickets-soon h2 {
+  font-size: 44px;
+}
+.cavic-ticketing.extra-event {
+  max-width: 1100px;
+  margin: auto;
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.cavic-ticketing.extra-event h1 {
+  font-size: 40px;
+  margin: 24px 0;
+}
+.cavic-ticketing.extra-event > section > p {
+  white-space: pre-line;
+  color: var(--muted);
+}
+@media (max-width: 1000px) {
+  .cavic-ticketing .sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+  .cavic-ticketing .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cavic-ticketing .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .cavic-ticketing .page-title h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .cavic-ticketing .sidebar {
+    position: static;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+  }
+  .cavic-ticketing .sidebar-bottom {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+  .cavic-ticketing .sidebar-note {
+    display: none;
+  }
+  .cavic-ticketing .sidebar nav button {
+    font-size: 12px;
+  }
+  .cavic-ticketing.festival-booking,
+  .cavic-ticketing.extra-event {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .cavic-ticketing .festival-booking-story {
+    position: static;
+    padding: 0;
+  }
+  .cavic-ticketing .festival-booking-story h3 {
+    font-size: 34px;
+    margin: 16px 0;
+  }
+  .cavic-ticketing .festival-booking-art {
+    display: none;
+  }
+  .cavic-ticketing .festival-booking-facts {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .cavic-ticketing .booking-card {
+    max-width: none;
+    padding: 24px;
+  }
+  .cavic-ticketing .login-left {
+    padding: 30px;
+    min-height: calc(100dvh - 80px);
+  }
+}
+@media (max-width: 500px) {
+  .cavic-ticketing .tickets-soon h2 {
+    font-size: 36px;
+  }
+  .cavic-ticketing .soon-ticket {
+    flex-wrap: wrap;
+  }
+  .cavic-ticketing .page-title h1 {
+    font-size: 28px;
+  }
+  .cavic-ticketing .stat-card > strong {
+    font-size: 29px;
+  }
+  .cavic-ticketing .form-card h2 {
+    font-size: 22px;
+  }
+  .cavic-ticketing.order-page > h1 {
+    font-size: 32px;
+  }
+}
+@media print {
+  body > header,
+  body > footer,
+  .cavic-ticketing .order-top,
+  .cavic-ticketing .order-reference {
+    display: none !important;
+  }
+  .cavic-ticketing {
+    --ink: #18181b;
+    --paper: #fff;
+    --white: #fff;
+    --muted: #52525b;
+    --line: #d4d4d8;
+    background: #fff;
+    color: #18181b;
+  }
+  .cavic-ticketing.order-page {
+    max-width: none;
+    padding: 0;
+  }
+  .cavic-ticketing .issued-ticket {
+    margin-bottom: 24px;
+  }
+}
+
+/* Keep organiser navigation usable on short screens. */
+.cavic-ticketing .sidebar { overflow-y: auto; }
+.cavic-ticketing .sidebar-note { display: none; }
