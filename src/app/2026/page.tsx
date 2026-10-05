@@ -1,135 +1,192 @@
 import Image from "next/image";
-import TixCheckout from "@/components/TixCheckout";
+import { Checkout } from "@/components/ticketing/checkout";
+import { eventById } from "@/lib/ticketing/db";
+import { paymentsReady } from "@/lib/ticketing/paystack";
+import { emailReady } from "@/lib/ticketing/email";
+import { bookingOpen, eventDate } from "@/lib/ticketing/types";
 
-export default function Festival2026() {
-    return (
-        <div className="container mx-auto px-4 py-12 lg:py-20">
-            {/* Hero Section with Flyer */}
-            <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                    {/* Flyer Image */}
-                    <div className="rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
-                        <Image
-                            src="/2026-festival-artwork.png"
-                            alt="Cavic Festival of Creativity and Technology — Infinite Realms: Beyond Imagination"
-                            width={1528}
-                            height={1346}
-                            sizes="(min-width: 1024px) 552px, calc(100vw - 32px)"
-                            className="h-auto w-full"
-                            priority
-                        />
-                    </div>
+export const dynamic = "force-dynamic";
 
-                    {/* Info Section */}
-                    <div className="flex flex-col justify-center">
-                        <div className="inline-block px-4 py-1.5 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-sm font-semibold rounded-full mb-6 w-fit">
-                            Coming 2026
-                        </div>
-                        <h1 className="text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tight">
-                            Cavic Festival of Creativity & Technology
-                        </h1>
-                        <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-                            Join us for the next edition of the Cavic Festival –
-                            where creativity meets technology. Experience
-                            inspiring talks, hands-on workshops, and connect
-                            with a vibrant community of innovators.
-                        </p>
-                        <p className="text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed">
-                            Whether you're an artist, developer, designer, or
-                            simply curious about the intersection of art and
-                            technology, there's a place for you at Cavic 2026.
-                        </p>
+export default async function Festival2026() {
+  const event = await eventById("cavic-2026").catch(() => null);
+  const open = Boolean(
+    event?.status === "published" && paymentsReady() && bookingOpen(event),
+  );
+  return (
+    <div className="container mx-auto px-4 py-12 lg:py-20">
+      {/* Hero Section with Flyer */}
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Flyer Image */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
+            <Image
+              src="/2026-festival-artwork.png"
+              alt="Cavic Festival of Creativity and Technology — Infinite Realms: Beyond Imagination"
+              width={1528}
+              height={1346}
+              sizes="(min-width: 1024px) 552px, calc(100vw - 32px)"
+              className="h-auto w-full"
+              priority
+            />
+          </div>
 
-                        {/* Quick Info */}
-                        <div className="grid grid-cols-2 gap-4 mb-8">
-                            <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
-                                    Location
-                                </div>
-                                <div className="font-semibold text-zinc-900 dark:text-white">
-                                    Abuja, Nigeria
-                                </div>
-                            </div>
-                            <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
-                                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
-                                    Status
-                                </div>
-                                <div className="font-semibold text-orange-600 dark:text-orange-500">
-                                    Registration Open
-                                </div>
-                            </div>
-                        </div>
-
-                        <a
-                            href="#tickets"
-                            className="mb-6 inline-flex w-fit items-center justify-center rounded-lg bg-orange-600 px-8 py-4 font-semibold text-white shadow-sm transition-colors hover:bg-orange-700"
-                        >
-                            Get Tickets
-                        </a>
-
-                        {/* View Past Editions */}
-                        <div className="flex flex-wrap gap-3">
-                            <a
-                                href="/festival/2025"
-                                className="text-sm text-zinc-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-500 transition-colors"
-                            >
-                                View 2025 Festival →
-                            </a>
-                            <a
-                                href="/workshop/2025"
-                                className="text-sm text-zinc-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-500 transition-colors"
-                            >
-                                View 2025 Workshops →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <section
-                    id="tickets"
-                    aria-labelledby="tickets-heading"
-                    className="mb-16 scroll-mt-28 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-8 lg:p-12"
-                >
-                    <div className="mb-8 text-center">
-                        <h2
-                            id="tickets-heading"
-                            className="mb-3 text-3xl font-bold text-zinc-900 dark:text-white lg:text-4xl"
-                        >
-                            Get Your Cavic 2026 Tickets
-                        </h2>
-                        <p className="mx-auto max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-                            Join us in Abuja to celebrate creativity, technology,
-                            and culture. Choose your tickets below.
-                        </p>
-                    </div>
-                    <TixCheckout />
-                </section>
-
-                {/* Registration CTA Section */}
-                <section className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 lg:p-12 text-center text-white shadow-xl">
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                        Be Part of Cavic 2026
-                    </h2>
-                    <p className="text-lg text-orange-100 mb-8 max-w-2xl mx-auto">
-                        We're looking for artists, technologists, traditional
-                        practitioners, and hybrid creatives working accross art,
-                        tech and culture to make this edition unforgettable.
-                        Register your interest today!
-                    </p>
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSeGNm3ieIXXvjhgQrsDhIc9K6lJQ4M1VGHEMNsc5O1pzZ6FXw/viewform?usp=header"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-8 py-4 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
-                    >
-                        Register to Participate
-                    </a>
-                    <p className="text-sm text-orange-200 mt-6">
-                        Open to speakers, artists, workshop facilitators,
-                        volunteers, and sponsors
-                    </p>
-                </section>
+          {/* Info Section */}
+          <div className="flex flex-col justify-center">
+            <div className="inline-block px-4 py-1.5 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-sm font-semibold rounded-full mb-6 w-fit">
+              {event?.starts_at
+                ? eventDate(event.starts_at, event.ends_at)
+                : "November 2026"}
             </div>
+            <h1 className="text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tight">
+              Cavic Festival of Creativity & Technology
+            </h1>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
+              Join us for the next edition of the Cavic Festival – where
+              creativity meets technology. Experience inspiring talks, hands-on
+              workshops, and connect with a vibrant community of innovators.
+            </p>
+            <p className="text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed">
+              Whether you're an artist, developer, designer, or simply curious
+              about the intersection of art and technology, there's a place for
+              you at Cavic 2026.
+            </p>
+
+            {/* Quick Info */}
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
+                  Location
+                </div>
+                <div className="font-semibold text-zinc-900 dark:text-white">
+                  Abuja, Nigeria
+                </div>
+              </div>
+              <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800">
+                <div className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">
+                  Status
+                </div>
+                <div className="font-semibold text-orange-600 dark:text-orange-500">
+                  {open ? "Tickets on sale" : "Tickets opening soon"}
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#tickets"
+              className="mb-6 inline-flex w-fit items-center justify-center rounded-lg bg-orange-600 px-8 py-4 font-semibold text-white shadow-sm transition-colors hover:bg-orange-700"
+            >
+              Get Tickets
+            </a>
+
+            {/* View Past Editions */}
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="/festival/2025"
+                className="text-sm text-zinc-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-500 transition-colors"
+              >
+                View 2025 Festival →
+              </a>
+              <a
+                href="/workshop/2025"
+                className="text-sm text-zinc-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-500 transition-colors"
+              >
+                View 2025 Workshops →
+              </a>
+            </div>
+          </div>
         </div>
-    );
+
+        <section
+          id="tickets"
+          aria-labelledby="tickets-heading"
+          className="mb-16 scroll-mt-28 rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-8 lg:p-12"
+        >
+          <div className="mb-8 text-center">
+            <h2
+              id="tickets-heading"
+              className="mb-3 text-3xl font-bold text-zinc-900 dark:text-white lg:text-4xl"
+            >
+              Get Your Cavic 2026 Tickets
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+              Join us in Abuja to celebrate creativity, technology, and culture.
+              Choose your tickets below.
+            </p>
+          </div>
+          <div className="cavic-ticketing festival-booking">
+            <div className="festival-booking-story">
+              <span className="eyebrow">
+                INFINITE REALMS: BEYOND IMAGINATION
+              </span>
+              <h3>
+                A place for your
+                <br />
+                imagination.
+              </h3>
+              <p>
+                Exhibitions, interactive art, performances and conversations.
+                Join the people bringing new creative worlds to life.
+              </p>
+              <div className="festival-booking-facts">
+                <span>
+                  <strong>Abuja, Nigeria</strong>Creativity meets community
+                </span>
+                <span>
+                  <strong>
+                    {event?.starts_at
+                      ? eventDate(event.starts_at, event.ends_at)
+                      : "November 2026"}
+                  </strong>
+                  {event?.venue || "Festival venue to be announced"}
+                </span>
+              </div>
+              <div className="festival-booking-art" aria-hidden="true">
+                ✳
+              </div>
+            </div>
+            {event ? (
+              <Checkout
+                event={event}
+                ready={paymentsReady()}
+                deliveryReady={emailReady()}
+              />
+            ) : (
+              <div className="booking-card">
+                <span className="eyebrow">CAVIC FESTIVAL 2026</span>
+                <h2>Tickets opening soon.</h2>
+                <p className="muted">
+                  We’re preparing ticket sales. Check back soon or contact
+                  submissions@cavicfestival.africa.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Registration CTA Section */}
+        <section className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 lg:p-12 text-center text-white shadow-xl">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            Be Part of Cavic 2026
+          </h2>
+          <p className="text-lg text-orange-100 mb-8 max-w-2xl mx-auto">
+            We're looking for artists, technologists, traditional practitioners,
+            and hybrid creatives working accross art, tech and culture to make
+            this edition unforgettable. Register your interest today!
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeGNm3ieIXXvjhgQrsDhIc9K6lJQ4M1VGHEMNsc5O1pzZ6FXw/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
+          >
+            Register to Participate
+          </a>
+          <p className="text-sm text-orange-200 mt-6">
+            Open to speakers, artists, workshop facilitators, volunteers, and
+            sponsors
+          </p>
+        </section>
+      </div>
+    </div>
+  );
 }
