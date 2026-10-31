@@ -41,15 +41,14 @@ export default function Home() {
             <SlideIn>
                 <section className="relative overflow-hidden mb-16 max-w-7xl mx-auto">
                     <div className="relative z-10 flex flex-col lg:flex-row items-center bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden shadow-sm">
-                        <div className="w-full lg:w-1/2 relative h-64 sm:h-80 lg:h-[500px]">
+                        <div className="w-full lg:w-1/2 relative h-[420px] sm:h-[520px] lg:h-[600px] bg-zinc-950">
                             <Image
                                 src={homeData.heroImage}
                                 alt="Tech Festival Hero"
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit="contain"
                                 className="object-center"
                             />
-                            <div className="absolute inset-0 bg-black/20"></div>
                         </div>
                         <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center">
                             <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-zinc-900 dark:text-white  tracking-tight">
